@@ -1,4 +1,7 @@
 
+# Complexity is O(n) since we go through the list once
+# Space is O(1) since our variables just hold a number
+
 def get_max_profit(stock_prices_yesterday):
     """
     """
