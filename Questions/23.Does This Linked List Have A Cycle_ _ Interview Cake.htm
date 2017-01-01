@@ -1,0 +1,2861 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0064)https://www.interviewcake.com/question/python/linked-list-cycles -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" defer="true" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/jquery.js"></script><script async="" defer="true" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/visits"></script><script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/nr-998.min.js"></script><script type="text/javascript" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/track"></script><script type="text/javascript" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/identify"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <script type="text/javascript" async="" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/prum.min.js"></script><script type="text/javascript" async="" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/f78ae8e419ed65a0b5d9f07bb19c8d3a987aef19.js"></script><script type="text/javascript" async="" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/4774384.js"></script><script type="text/javascript" async="" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/mixpanel-2-latest.min.js"></script><script type="text/javascript" async="" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/0751fb0485a5b0be210d27b9cefd9842c5c65cc6.2.js"></script><script type="text/javascript" async="" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/analytics.js"></script><script type="text/javascript" async="" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/fbevents.js"></script><script type="text/javascript" async="" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/conversion_async.js"></script><script id="facebook-jssdk" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/all.js"></script><script type="text/javascript" async="" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/analytics.min.js"></script><script type="text/javascript">
+        
+        window.IC = window.IC || {};
+        window.IC.currentUser = JSON.parse('{"id":2385549,"username":"gokumd","email":"gokumd@gmail.com","date_joined":"2016-01-02T20:29:37.549407+00:00","first_name":"Goku","last_name":"Mohandas","full_name":"Goku Mohandas","short_name":"Goku","is_anonymous":false,"is_on_last_question":false,"percent_done":66,"num_questions_done":29,"num_questions_remaining":15,"recruiting_is_interested_in_intros":true,"is_full_access":true,"first_payment_date":"2016-01-02T22:17:39.210063Z","last_payment_date":"2016-01-02T22:17:37Z","num_free_questions_left":0,"terms_has_agreed_to_latest":false,"preferred_content_language":"python","preferred_notepad_language":"python","is_staff":false,"auth_providers_human_readable_list":"Google","num_auth_providers":1,"auth_email":"gokumd@gmail.com"}');
+        
+    </script>
+
+
+    
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/1358232165.js"></script>
+    
+
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"transactionName":"ZVwAbEQCDUQCAUwKDFwWJE1YABdeDAwXDhpBUBZdGA4CXg0DSBNNRFAHT0VZMkIGEUwKDFxvC11BTQRSFw==","errorBeacon":"bam.nr-data.net","applicationID":"7328113","queueTime":0,"beacon":"bam.nr-data.net","licenseKey":"9e57878e2e","agent":"","applicationTime":307}</script>
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.interviewcake.com/images/favicon.ico?bust=135">
+        <link rel="canonical" href="https://www.interviewcake.com/question/java/linked-list-cycles">
+        <meta name="description" content="Check to see if a linked list has a cycle. We&#39;ll start with a simple solution and move on to some pretty tricky ones.">
+
+        
+
+        <meta property="og:title" content="Does This Linked List Have A Cycle? | Interview Cake">
+        <meta property="og:description" content="Check to see if a linked list has a cycle. We&#39;ll start with a simple solution and move on to some pretty tricky ones.">
+        <meta property="og:image" content="https://www.interviewcake.com/static/images/cake_white_on_blue_600_600_unrounded.png">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Interview Cake: Programming Interview Questions and Tips">
+        <meta property="fb:app_id" content="149278655279066">
+        <meta property="fb:admins" content="514407734">
+        <meta property="og:url" content="https://www.interviewcake.com/question/java/linked-list-cycles">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@interviewcake">
+        <meta name="twitter:title" content="Does This Linked List Have A Cycle? | Interview Cake">
+        <meta name="twitter:description" content="Check to see if a linked list has a cycle. We&#39;ll start with a simple solution and move on to some pretty tricky ones.">
+        <meta name="twitter:creator" content="@interviewcake">
+        <meta name="twitter:image:src" content="https://www.interviewcake.com/static/images/cake_white_on_blue_600_600_unrounded.png">
+        <meta name="twitter:domain" content="interviewcake.com">
+
+        <title>Does This Linked List Have A Cycle? | Interview Cake</title>
+    
+
+
+    
+
+    
+    <script type="text/javascript">
+        window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(a){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+a+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},window.analytics.SNIPPET_VERSION="2.0.6",
+        window.analytics.load("rowk0wc1g6"),
+        window.analytics.page();
+    </script>
+    
+    
+
+
+    
+
+
+    
+
+        <link href="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/bootstrap-glyphicons.css" rel="stylesheet">
+        <link href="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/font-awesome.min.css" rel="stylesheet">
+        <link href="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/katex.min.css" rel="stylesheet">
+    
+    
+        
+            <link rel="stylesheet" href="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/4d3ba14d6001.css" type="text/css" media="all">
+        
+    
+
+
+
+
+<!--
+<link href='http://fonts.googleapis.com/css?family=Raleway:500,700,100' rel='stylesheet' type='text/css'>
+-->
+<!--
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+-->
+<link href="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/css" rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" href="https://www.interviewcake.com/images/cake_white_on_blue_128_128_unrounded.png">
+<!--
+thought maybe for headings. but nope.
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+-->
+
+
+
+
+<meta name="50fc73d52056532c18787976ceb78fddb87b78b2" content="ceb4cec06fc4a780c7b31b85c07cf75d1ca58d9d">
+
+
+
+
+
+<script type="text/javascript">
+var _vwo_code=(function(){
+var account_id=50155,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script><script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/j.php" type="text/javascript"></script>
+
+<script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/application2.js" async="" defer="" data-cfasync="false"></script><style type="text/css">.olark-key,#hbl_code,#olark-data{display: none !important;}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><link id="habla_style_div" type="text/css" rel="stylesheet" href="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/df26100e954276593311a44753620fda.css"><style type="text/css">@media print {#habla_beta_container_do_not_rely_on_div_classes_or_names {display: none !important}}</style><link rel="stylesheet" href="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/theme.css" type="text/css"></head>
+<body ng-app="prepApp" ng-init="questionIsEmbedded = false" class="user-is-full-access   ng-scope"><div id="olark" style="display: none;"><olark><iframe frameborder="0" id="olark-loader" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/saved_resource.html"></iframe></olark></div>
+
+<div class="print-header navbar-print-header navbar navbar-inverse">
+    <div class="navbar-header">
+        <span class="navbar-brand">
+            <img src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/cake_white_20_21.png" class="logo">
+            Interview Cake
+        </span>
+    </div>
+</div>
+
+
+
+
+<div class="navbar navbar-normal navbar-inverse ng-scope" role="navigation" ng-controller="HeaderCtrl" language="python">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://www.interviewcake.com/">
+            Interview Cake
+        </a>
+    </div>
+
+  <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <a href="https://www.interviewcake.com/coding-interview-tips">Tips and Tricks</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="https://www.interviewcake.com/question/python/linked-list-cycles" class="dropdown-toggle" data-toggle="dropdown" rel="nofollow">
+                    Glossary <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="https://www.interviewcake.com/big-o-notation-time-and-space-complexity">Big O Notation: <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span>, <span complexity="n^2" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.814108em;"></span><span class="strut bottom" style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">n</span><span class="vlist"><span class="" style="top: -0.363em; margin-right: 0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span><span class="mclose">)</span></span></span></span></span></span></span>, etc</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/article/logarithms">Logarithms</a>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/binary-search">Binary Search</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/counting-sort">Counting Sort</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/overlapping-subproblems">Overlapping Subproblems</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/memoization">Memoization</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/bottom-up">Bottom-Up Algorithms</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/lazy">Lazy Evaluation</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/garbage-collection">Garbage Collection</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/integer-overflow">Integer Overflow</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/js-closure">Closure</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/slice">Array Slicing</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/hashing">Hashing</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/mutable">Mutable vs Immutable</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/in-place">In-Place Operation</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/triangular-series">Triangular Series</a>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/array">Array</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/dynamic-array-amortized-analysis">Dynamic Array</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/hash-map">Hash Table</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/linked-list">Linked List</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/queue">Queue</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/stack">Stack</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/binary-tree">Binary Tree</a>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/binary-numbers">Binary Numbers</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/and">Bitwise AND</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/or">Bitwise OR</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/not">Bitwise NOT</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/xor">Bitwise XOR</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/bit-shift">Bit Shifting</a>
+                    </li>
+                </ul>
+            </li>
+
+            
+            
+            
+            <li>
+                
+                <a href="https://www.interviewcake.com/all-questions/python">All Questions</a>
+                
+            </li>
+            
+            <li>
+                
+                
+            </li>
+        </ul>
+
+
+
+        <ul class="nav navbar-nav navbar-right" ng-show="currentUserSet">
+
+            
+            <li>
+                
+
+                <a class="upgrade ng-hide" ng-hide="currentUser.is_full_access" href="https://www.interviewcake.com/upgrade">
+                    <!--
+                    <i class="fa fa-unlock-alt fa-lg" style="margin-right: 5px;" ></i>
+                    -->
+
+                    Get the full course
+
+                    <span class="glyphicon glyphicon-chevron-right full-access-badge"></span>
+
+</a>
+            </li>
+            
+
+
+
+            
+            <li class="dropdown language-dropdown ng-scope" ng-controller="NavbarTranslationCtrl" ng-show="contentLanguage&amp;&amp;currentUser.is_full_access ">
+                <a rel="nofollow" href="https://www.interviewcake.com/question/python/linked-list-cycles" class="dropdown-toggle ng-binding" data-toggle="dropdown">
+                    Python <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                
+                    <!-- ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/linked-list-cycles" ng-click="updateLanguage(language, true)" class="ng-binding">Python</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/linked-list-cycles" ng-click="updateLanguage(language, true)" class="ng-binding">Ruby</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/linked-list-cycles" ng-click="updateLanguage(language, true)" class="ng-binding">Java</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/linked-list-cycles" ng-click="updateLanguage(language, true)" class="ng-binding">JavaScript</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/linked-list-cycles" ng-click="updateLanguage(language, true)" class="ng-binding">C (beta)</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/linked-list-cycles" ng-click="updateLanguage(language, true)" class="ng-binding">C++ (beta)</a>
+                    </li><!-- end ngRepeat: language in contentLanguages -->
+                
+                </ul>
+            </li>
+            
+
+            <li>
+                <p class="navbar-text">
+                    
+                    'sup <a rel="nofollow" trackling="" the-event="Settings Link Click" href="https://www.interviewcake.com/account">Goku</a>.
+                    
+                    <span ng-show="currentUser.is_full_access" class="glyphicon glyphicon-star full-access-badge"></span>
+                </p>
+            </li>
+            <li ng-hide="currentUser.is_anonymous">
+                <a rel="nofollow" tracklink="" the-event="Logout Link Click" the-properties="{&quot;which&quot; : &quot;header top right&quot;}" href="https://www.interviewcake.com/auth/logout/?next=/" class="ng-isolate-scope">Log out</a>
+            </li>
+
+            <li ng-show="currentUser.is_anonymous" class="ng-hide">
+                <a href="https://www.interviewcake.com/question/python/linked-list-cycles" rel="nofollow" ng-click="loginClick(&#39;header top right&#39;)">Log in to save progress</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="below-nav">
+
+    <div class="ic-alerts">
+        
+        
+    </div>
+
+    
+
+    
+    
+
+<div class="quiz ng-scope" ng-controller="PrepSeshApp">
+    
+        
+            
+
+<div ng-controller="NumberlineCtrl" class="numberline-wrapper  user-is-full-access ng-scope">
+
+    <section ng-controller="NumberlineScrollingCtrl" class="numberline-scrolling ng-scope" ngc-scroll="setEdgeFadeIntensity()">
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/stock-price" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Apple Stocks">
+    
+    
+
+            <span class="number">
+                1
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/product-of-other-numbers" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Product of All Other Numbers">
+    
+    
+
+            <span class="number">
+                2
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/highest-product-of-3" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Highest Product of 3">
+    
+    
+
+            <span class="number">
+                3
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/merging-ranges" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Merging Meeting Times">
+    
+    
+
+            <span class="number">
+                4
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/coin" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Making Change">
+    
+    
+
+            <span class="number">
+                5
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/rectangular-love" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Rectangular Love">
+    
+    
+
+            <span class="number">
+                6
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/temperature-tracker" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Temperature Tracker">
+    
+    
+
+            <span class="number">
+                7
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/balanced-binary-tree" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Balanced Binary Tree">
+    
+    
+
+            <span class="number">
+                8
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/bst-checker" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Binary Search Tree Checker">
+    
+    
+
+            <span class="number">
+                9
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/second-largest-item-in-bst" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="2nd Largest Item in a Binary Search Tree">
+    
+    
+
+            <span class="number">
+                10
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/compress-url-list" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="MillionGazillion">
+    
+    
+
+            <span class="number">
+                11
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-in-ordered-set" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find in Ordered Set">
+    
+    
+
+            <span class="number">
+                12
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-rotation-point" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find Rotation Point">
+    
+    
+
+            <span class="number">
+                13
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/inflight-entertainment" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Inflight Entertainment">
+    
+    
+
+            <span class="number">
+                14
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/nth-fibonacci" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Compute nth Fibonacci Number">
+    
+    
+
+            <span class="number">
+                15
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/cake-thief" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="The Cake Thief">
+    
+    
+
+            <span class="number">
+                16
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/js-scope" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="JavaScript Scope">
+    
+    
+
+            <span class="number">
+                17
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/js-whats-wrong" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="What&#39;s Wrong with This JavaScript?">
+    
+    
+
+            <span class="number">
+                18
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/queue-two-stacks" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Queue Two Stacks">
+    
+    
+
+            <span class="number">
+                19
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/largest-stack" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Largest Stack">
+    
+    
+
+            <span class="number">
+                20
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-unique-int-among-duplicates" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="The Stolen Breakfast Drone">
+    
+    
+
+            <span class="number">
+                21
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/delete-node" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Delete Node">
+    
+    
+
+            <span class="number">
+                22
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper current                                                              done                             ng-scope" ng-controller="NumberlineCurrentQuestionCtrl">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/linked-list-cycles" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Does This Linked List Have A Cycle?">
+    
+    
+
+            <span class="number">
+                23
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/reverse-linked-list" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Reverse A Linked List">
+    
+    
+
+            <span class="number">
+                24
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/kth-to-last-node-in-singly-linked-list" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Kth to Last Node in a Singly-Linked List">
+    
+    
+
+            <span class="number">
+                25
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/reverse-string-in-place" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Reverse String in Place">
+    
+    
+
+            <span class="number">
+                26
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/reverse-words" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Reverse Words">
+    
+    
+
+            <span class="number">
+                27
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/matching-parens" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Parenthesis Matching">
+    
+    
+
+            <span class="number">
+                28
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/bracket-validator" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Bracket Validator">
+    
+    
+
+            <span class="number">
+                29
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/permutation-palindrome" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Permutation Palindrome">
+    
+    
+
+            <span class="number">
+                30
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/recursive-string-permutations" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Recursive String Permutations">
+    
+    
+
+            <span class="number">
+                31
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/top-scores" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Top Scores">
+    
+    
+
+            <span class="number">
+                32
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/which-appears-twice" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Which Appears Twice">
+    
+    
+
+            <span class="number">
+                33
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/word-cloud" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Word Cloud Data">
+    
+    
+
+            <span class="number">
+                34
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/shuffle" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="In-Place Shuffle">
+    
+    
+
+            <span class="number">
+                35
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/single-rifle-check" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Single Riffle Shuffle">
+    
+    
+
+            <span class="number">
+                36
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/simulate-5-sided-die" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Simulate 5-sided die">
+    
+    
+
+            <span class="number">
+                37
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/simulate-7-sided-die" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Simulate 7-sided die">
+    
+    
+
+            <span class="number">
+                38
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/two-egg-problem" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Two Egg Problem">
+    
+    
+
+            <span class="number">
+                39
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-duplicate-optimize-for-space" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find Repeat, Space Edition">
+    
+    
+
+            <span class="number">
+                40
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-duplicate-optimize-for-space-beast-mode" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find Repeat, Space Edition BEAST MODE">
+    
+    
+
+            <span class="number">
+                41
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-duplicate-files" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find Duplicate Files">
+    
+    
+
+            <span class="number">
+                42
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/merge-sorted-arrays" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Merge Sorted Arrays">
+    
+    
+
+            <span class="number">
+                43
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/url-shortener" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="URL Shortener">
+    
+    
+
+            <span class="number">
+                44
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+    </section>
+
+    <div class="edge-fade left" ng-style="{left: edgeFadePositions.left + &#39;px&#39;}" style="left: -160px;"></div>
+    <div class="edge-fade right" ng-style="{right: edgeFadePositions.right + &#39;px&#39;}" style="right: 0px;"></div>
+
+    <div class="scroll-on-hover left ng-hide" ng-mouseenter="scrollDirection = &#39;-&#39;; toggleScroll()" ng-mouseleave="toggleScroll()" ng-hide="edgeFadePositions.left === -edgeFadeWidth">
+    </div>
+    <div class="scroll-on-hover right" ng-mouseenter="scrollDirection = &#39;+&#39;; toggleScroll()" ng-mouseleave="toggleScroll()" ng-hide="edgeFadePositions.right &lt;= -(edgeFadeWidth - 2)"> <!-- cuz chrome only scrolls to 2px less than it can -->
+    </div>
+
+</div>
+
+        
+    
+
+    
+        <div class="free-questions-left ng-hide" ng-show="currentUserSet &amp;&amp; !currentUser.is_full_access">
+
+
+<p>
+<span ng-show="currentUser.getNumFreeQuestionsLeft()&gt;0" class="ng-hide">
+
+    <span ng-show="currentUser.getNumFreeQuestionsLeft()==1" class="ng-hide">Just </span>
+    <strong class="num ng-binding">0</strong>
+
+</span>
+<span ng-show="currentUser.getNumFreeQuestionsLeft()==0">
+    No
+</span>
+
+more free question<span ng-show="currentUser.getNumFreeQuestionsLeft() != 1">s</span>
+
+left!
+</p>
+
+
+
+<a href="https://www.interviewcake.com/upgrade" class="btn btn-default btn-sm btn-rarr">
+    Upgrade Now
+</a>
+
+</div>
+
+    
+
+    
+    <div class="wrapper-hack" ng-init="slug=&#39;linked-list-cycles&#39;">
+<div class="card ng-scope" ng-class="{&#39;started&#39;: btnPresses.length &gt; 0}" ng-controller="CardCtrl">
+
+    <div class="sections">
+        
+    <div>
+<span class="question-data" data-name="Does This Linked List Have A Cycle?" data-meta_desc="Check to see if a linked list has a cycle. We&#39;ll start with a simple solution and move on to some pretty tricky ones." data-title="" data-meta_keywords="" data-weight="1" data-difficulty="4" data-num-hints="11" data-num-gotchas="2" ng-init="setNumHints(11); setNumGotchas(2); ">
+
+</span>
+<div class="section-wrapper ng-isolate-scope section-question" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="question">
+    <h3 class="heading slide ng-binding ng-isolate-scope ng-hide" ng-show="shouldShow()" heading="question" hide-heading=""></h3>
+
+    <div class="section section-question" ng-class="getSectionClass()" ng-transclude="">
+<p class="ng-scope">
+<strong>
+You have a <span concept="linked-list" class="ng-isolate-scope"><span class="concept-wrapper" ng-init="showConcept=false">
+
+    <span ng-click="showConcept=!showConcept" class="concept">
+        <span class="concept-name" ng-transclude=""><span class="ng-scope">singly-linked list</span></span>
+        <span class="show-concept-icon">↴</span>
+    </span>
+
+    <!-- ngInclude: conceptPartialUrl --><div ng-show="showConcept" class="slide concept-explanation ng-scope ng-hide" ng-include="conceptPartialUrl"><div class="ng-scope">
+<p>
+A <strong>linked list</strong> is a low-level data structure. It stores an <em>ordered</em> list of items in individual "node" objects that have pointers to other nodes.
+</p>
+
+<p>
+In a <strong>singly linked list</strong>, the nodes each have one pointer to the next node.
+</p>
+
+<div code-block="concept__linked-list__singly-linked-node-class" language="python" translation-highlighting="dynamic" class="ng-isolate-scope"><pre class=" language-python">  <code class=" language-python" ng-transclude=""><span class="token keyword">class</span> <span class="token class-name">LinkedListNode</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>value <span class="token operator">=</span> value
+        self<span class="token punctuation">.</span>next  <span class="token operator">=</span> None</code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p>
+So we could build a singly linked list like this:
+</p>
+
+<div code-block="concept__linked-list__singly-linked-nodes" language="python" translation-highlighting="dynamic" class="ng-isolate-scope"><pre class=" language-python">  <code class=" language-python" ng-transclude="">a <span class="token operator">=</span> LinkedListNode<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> LinkedListNode<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+c <span class="token operator">=</span> LinkedListNode<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span>
+
+a<span class="token punctuation">.</span>next <span class="token operator">=</span> b
+b<span class="token punctuation">.</span>next <span class="token operator">=</span> c</code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<div class="diagram">
+    <img src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/linked_list__nodes_and_pointers.svg" height="115" width="455" alt="A singly-linked list with 3 nodes. The first node has value 5 and an arrow pointing to the second node, which has value 1 and an arrow pointing to the third node, which has value 9 and and arrow pointing to &quot;None.&quot;">
+
+
+    
+</div>
+
+
+<p>
+In a linked list, the first node is called the <strong>head</strong> and the last node is called the <strong>tail</strong>.
+</p>
+
+<div class="diagram">
+    <img src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/linked_list__nodes_and_pointers_labeled_head_and_tail.svg" height="140" width="455" alt="A linked list with 3 nodes. The first node is labelled &quot;head&quot; and the last node is labelled &quot;tail.&quot;">
+
+
+    
+</div>
+
+
+<p>
+Often, our only connection to <em>the list itself</em> is a variable pointing to the head. From there we can walk down the list to all the other nodes.
+</p>
+
+<p>
+Like linked lists, <strong>arrays</strong> also store ordered lists of items, so you usually have a choice of which one to use.
+</p>
+
+<p>
+<strong>
+Advantages of linked lists:
+</strong>
+</p>
+<ol>
+<li>
+Linked lists have <strong>constant-time insertions and deletions</strong> in any position (you just change some pointers). Arrays require <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> time to do the same thing, because you'd have to "shift" all the subsequent items over 1 index.
+</li>
+<li>
+Linked lists can <strong>continue to expand</strong> as long as there is space on the machine. Arrays (in low-level languages) must have their size specified ahead of time. Even in languages with "dynamic arrays" that automatically resize themselves when they run out of space (like Python, Ruby and JavaScript), the operation to resize a dynamic array has a large cost which can make a single insertion unexpectedly expensive.
+</li>
+</ol>
+
+<p>
+<strong>
+Disadvantages of linked lists:
+</strong>
+</p>
+<ol>
+<li>
+To access or edit an item in a linked list, you have to <strong>take <span complexity="i" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span></span></span></span></span></span></span> time to walk from the head of the list to the <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.65952em;"></span><span class="strut bottom" style="height: 0.65952em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">i</span></span></span></span></span>th item</strong> (unless of course you already have a pointer directly to that item). Arrays have <em>constant-time</em> lookups and edits to the <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.65952em;"></span><span class="strut bottom" style="height: 0.65952em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">i</span></span></span></span></span>th item.
+</li>
+</ol>
+
+<p>
+Another type of linked list is a <strong>doubly linked list</strong>, which has pointers to the next <em>and the previous</em> nodes.
+</p>
+
+<div code-block="concept__linked-list__doubly-linked-node-class" language="python" translation-highlighting="dynamic" class="ng-isolate-scope"><pre class=" language-python">  <code class=" language-python" ng-transclude=""><span class="token keyword">class</span> <span class="token class-name">LinkedListNode</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>value    <span class="token operator">=</span> value
+        self<span class="token punctuation">.</span>next     <span class="token operator">=</span> None
+        self<span class="token punctuation">.</span>previous <span class="token operator">=</span> None</code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p>
+So we could build a doubly linked list like this:
+</p>
+
+<div code-block="concept__linked-list__doubly-linked-nodes" language="python" translation-highlighting="dynamic" class="ng-isolate-scope"><pre class=" language-python">  <code class=" language-python" ng-transclude="">a <span class="token operator">=</span> LinkedListNode<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> LinkedListNode<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+c <span class="token operator">=</span> LinkedListNode<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># put b after a</span>
+a<span class="token punctuation">.</span>next <span class="token operator">=</span> b
+b<span class="token punctuation">.</span>previous <span class="token operator">=</span> a
+
+<span class="token comment" spellcheck="true"># put c after b</span>
+b<span class="token punctuation">.</span>next <span class="token operator">=</span> c
+c<span class="token punctuation">.</span>previous <span class="token operator">=</span> b</code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<div class="diagram">
+    <img src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/linked_list__doubly_linked_nodes_and_pointers.svg" height="145" width="455" alt="A doubly-linked list with 3 nodes. The first node has value 5 with a &quot;next&quot; arrow pointing ahead to the second node and a &quot;previous&quot; arrow pointing back to &quot;None.&quot; The second node has value 1 with a &quot;next&quot; arrow pointing ahead to the third node and a &quot;previous&quot; arrow pointing bacl to the first node. The third node has value 9 with a &quot;next&quot; arrow pointing ahead to &quot;None&quot; and a &quot;previous&quot; arrow pointing back to the second node.">
+
+
+    
+</div>
+
+
+<p>
+Doubly linked lists allow us to traverse our list <em>backwards</em>. In a <em>singly</em> linked list, if you just had a pointer to a node in the <em>middle</em> of a list, there would be <em>no way</em> to know what its previous node was. Not a problem in a doubly linked list.
+</p>
+
+<script type="text/javascript">
+            var elTranslations = {"code-blocks": {"concept__linked-list__singly-linked-node-class": {"python": {"code": "class LinkedListNode:\n\n    def __init__(self, value):\n        self.value = value\n        self.next  = None", "tests": "test_single()"}, "cpp": "class LinkedListNode \n{\npublic:\n    int value_;\n    LinkedListNode* next_;\n\n    LinkedListNode(int value) :\n        value_(value),\n        next_(nullptr)\n    {\n    }\n};", "c": "typedef struct LinkedListNode {\n    int value;\n    LinkedListNode *next;\n} LinkedListNode;\n\nLinkedListNode *linkedListNodeNew(int value) {\n    LinkedListNode *newNode = malloc(sizeof(LinkedListNode));\n\n    assert(newNode != NULL);\n    newNode->value = value;\n    newNode->next = NULL;\n\n    return newNode;\n}", "ruby": {"code": "class LinkedListNode\n\n    attr_accessor :value, :next\n\n    def initialize(value)\n        @value = value\n        @next  = nil\n    end\nend", "tests": "test_single()"}, "javascript": "function LinkedListNode(value) {\n    this.value = value;\n    this.next = null;\n}", "java": "public static class LinkedListNode {\n\n    public int value;\n    public LinkedListNode next;\n\n    public LinkedListNode(int value) {\n        this.value = value;\n    }\n}"}, "concept__linked-list__singly-linked-nodes": {"python": "a = LinkedListNode(5)\nb = LinkedListNode(1)\nc = LinkedListNode(9)\n\na.next = b\nb.next = c", "cpp": "LinkedListNode* a = new LinkedListNode(5);\nLinkedListNode* b = new LinkedListNode(1);\nLinkedListNode* c = new LinkedListNode(9);\n\na->next = b;\nb->next = c;", "c": "LinkedListNode* a = linkedListNodeNew(5);\nLinkedListNode* b = linkedListNodeNew(1);\nLinkedListNode* c = linkedListNodeNew(9);\n\na->next = b;\nb->next = c;", "ruby": "a = LinkedListNode.new(5)\nb = LinkedListNode.new(1)\nc = LinkedListNode.new(9)\n\na.next = b\nb.next = c", "javascript": "var a = new LinkedListNode(5);\nvar b = new LinkedListNode(1);\nvar c = new LinkedListNode(9);\n\na.next = b;\nb.next = c;", "java": "LinkedlistNode a = new LinkedListNode(5);\nLinkedlistNode b = new LinkedListNode(1);\nLinkedlistNode c = new LinkedListNode(9);\n\na.next = b;\nb.next = c;"}, "setup": {"python": "def test_single():\n    a = LinkedListNode(7)\n    b = LinkedListNode(4)\n    a.next = b\n    assertEqual(a.value, 7)\n    assertEqual(a.next.value, 4)\n\ndef test_double():\n    a = LinkedListNode(7)\n    b = LinkedListNode(4)\n    c = LinkedListNode(3)\n    d = LinkedListNode(1)\n\n    a.next = b\n\n    b.previous = a\n    b.next = c\n\n    c.previous = b\n    c.next = d\n\n    d.previous = c\n\n    assertEqual(c.next.value, 1, 'assigns next')\n    assertEqual(c.previous.value, 4, 'assigns previous')", "javascript": "function testSingle() {\n    var b = new LinkedListNode(4);\n    var a = new LinkedListNode(7);\n    a.next = b;\n    assertEqual(a.value, 7);\n    assertEqual(a.next.value, 4);\n}\n\nfunction testDouble() {\n    var a = new LinkedListNode(7);\n    var b = new LinkedListNode(4);\n    var c = new LinkedListNode(3);\n    var d = new LinkedListNode(1);\n\n    a.next = b;\n\n    b.previous = a;\n    b.next = c;\n\n    c.previous = b;\n    c.next = d;\n\n    d.previous = c;\n\n    assertEqual(c.next.value, 1, 'assigns next');\n    assertEqual(c.previous.value, 4, 'assigns previous');\n}", "ruby": "def test_single\n    b = LinkedListNode.new(4)\n    a = LinkedListNode.new(7)\n    a.next = b\n    assertEqual(a.value, 7)\n    assertEqual(a.next.value, 4)\nend\n\ndef test_double\n    a = LinkedListNode.new(7)\n    b = LinkedListNode.new(4)\n    c = LinkedListNode.new(3)\n    d = LinkedListNode.new(1)\n\n    a.next = b\n\n    b.previous = a\n    b.next = c\n\n    c.previous = b\n    c.next = d\n\n    d.previous = c\n\n    assertEqual(c.next.value, 1, 'assigns next')\n    assertEqual(c.previous.value, 4, 'assigns previous')\nend"}, "concept__linked-list__doubly-linked-node-class": {"python": {"code": "class LinkedListNode:\n\n    def __init__(self, value):\n        self.value    = value\n        self.next     = None\n        self.previous = None", "tests": "test_single()\ntest_double()"}, "cpp": "class LinkedListNode \n{\npublic:\n    int value_;\n    LinkedListNode* next_;\n    LinkedListNode* previous_;\n\n    LinkedListNode(int value) :\n        value_(value),\n        next_(nullptr),\n        previous_(nullptr)\n    {\n    }\n};", "c": "typedef struct LinkedListNode {\n    int value;\n    LinkedListNode *next;\n    LinkedListNode *previous;\n} LinkedListNode;\n\nLinkedListNode *linkedListNodeNew(int value) {\n    LinkedListNode *newNode = malloc(sizeof(LinkedListNode));\n\n    assert(newNode != NULL);\n    newNode->value = value;\n    newNode->next = NULL;\n    newNode->previous = NULL;\n\n    return newNode;\n}", "ruby": {"code": "class LinkedListNode\n\n    attr_accessor :value, :next, :previous\n\n    def initialize(value)\n        @value    = value\n        @next     = nil\n        @previous = nil\n    end\nend", "tests": "test_single()\ntest_double()"}, "javascript": "function LinkedListNode(value) {\n    this.value = value;\n    this.next = null;\n    this.previous = null;\n}", "java": "public static class LinkedListNode {\n\n    public int value;\n    public LinkedListNode next;\n    public LinkedListNode previous;\n\n    public LinkedListNode(int value) {\n        this.value = value;\n    }\n}"}, "concept__linked-list__doubly-linked-nodes": {"python": "a = LinkedListNode(5)\nb = LinkedListNode(1)\nc = LinkedListNode(9)\n\n# put b after a\na.next = b\nb.previous = a\n\n# put c after b\nb.next = c\nc.previous = b", "cpp": "LinkedListNode* a = new LinkedListNode(5);\nLinkedListNode* b = new LinkedListNode(1);\nLinkedListNode* c = new LinkedListNode(9);\n\n// put b after a\na->next = b;\nb->previous = a;\n\n// put c after b\nb->next = c;\nc->previous = b;", "c": "LinkedListNode* a = linkedListNodeNew(5);\nLinkedListNode* b = linkedListNodeNew(1);\nLinkedListNode* c = linkedListNodeNew(9);\n\n// put b after a\na->next = b;\nb->previous = a;\n\n// put c after b\nb->next = c;\nc->previous = b;", "ruby": "a = LinkedListNode.new(5)\nb = LinkedListNode.new(1)\nc = LinkedListNode.new(9)\n\n# put b after a\na.next = b\nb.previous = a\n\n# put c after b\nb.next = c\nc.previous = b", "javascript": "var a = new LinkedListNode(5);\nvar b = new LinkedListNode(1);\nvar c = new LinkedListNode(9);\n\n// put b after a\na.next = b;\nb.previous = a;\n\n// put c after b\nb.next = c;\nc.previous = b;", "java": "LinkedListNode a = new LinkedListNode(5);\nLinkedListNode b = new LinkedListNode(1);\nLinkedListNode c = new LinkedListNode(9);\n\n// put b after a\na.next = b;\nb.previous = a;\n\n// put c after b\nb.next = c;\nc.previous = b;"}}};
+            var codeTypes = ['words', 'code-blocks', 'vars', 'funcs', 'code-inlines'];
+
+            var mergeObjects = function(objectA, objectB) {
+                objectA = objectA || {};
+                objectB = objectB || {};
+                for (var key in objectB) {
+                    objectA[key] = objectB[key];
+                }
+                return objectA;
+            }
+
+            if (!window.contentTranslations) {
+                window.contentTranslations = elTranslations;
+            } else {
+                for (var i=0; i<codeTypes.length; i++) {
+                    window.contentTranslations[codeTypes[i]] = mergeObjects(window.contentTranslations[codeTypes[i]], elTranslations[codeTypes[i]]);
+                }
+            }
+            </script>
+</div>
+</div>
+
+</span>
+</span> and want to check if it contains a cycle.
+</strong>
+</p>
+<p class="ng-scope">
+A singly-linked list is built with nodes, where each <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__node"><span class="ng-scope">node</span></span> has:
+</p>
+<ul class="ng-scope">
+<li>
+<span class="ic-code-inline ng-isolate-scope" ng-transclude="" code-inline="question__linked-list-cycles__node-next"><span class="ng-scope">node.next</span></span>—the next node in the list.
+</li>
+<li>
+<span class="ic-code-inline ng-isolate-scope" ng-transclude="" code-inline="question__linked-list-cycles__node-data"><span class="ng-scope">node.value</span></span>—the data held in the node. For example, if our linked list stores people in line at the movies, <span class="ic-code-inline ng-isolate-scope" ng-transclude="" code-inline="question__linked-list-cycles__node-data"><span class="ng-scope">node.value</span></span> might be the person's name.
+</li>
+</ul>
+<p class="ng-scope">For example:</p>
+<div code-block="question__linked-list-cycles__linked-list-node-class" language="python" translation-highlighting="dynamic" class="ng-scope ng-isolate-scope" style="overflow: hidden; width: 100%;"><pre class="  language-python">  <code class="  language-python" ng-transclude=""><span class="token keyword">class</span> <span class="token class-name">LinkedListNode</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>value <span class="token operator">=</span> value
+        self<span class="token punctuation">.</span>next  <span class="token operator">=</span> None</code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+<p class="ng-scope">
+A <strong>cycle</strong> occurs when a node’s <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__next-instance-var"><span class="ng-scope">next</span></span> points <em>back to a previous node in the list</em>. The linked list is no longer linear with a beginning and end—instead, it cycles through a loop of nodes.
+</p>
+<p class="ng-scope">
+<strong>Write a function <span class="ic-function ng-isolate-scope" func="question__linked-list-cycles__contains-cycle"><span class="name" ng-transclude=""><span class="ng-scope">contains_cycle</span></span>()</span> that takes the first node in a singly-linked list and returns a boolean indicating whether the list contains a cycle.</strong>
+</p>
+</div>
+
+    
+</div>
+
+<div class="section-wrapper ng-isolate-scope section-gotchas ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="gotchas">
+    <h3 class="heading slide ng-binding ng-isolate-scope ng-hide" ng-show="shouldShow()" heading="gotchas" hide-heading="">Gotchas</h3>
+
+    <div class="section section-gotchas" ng-class="getSectionClass()" ng-transclude="">
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="1" type="gotcha">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+Careful—a cycle can occur in the <em>middle</em> of a list, or it can simply mean the last node links back to the first node. Does your function work for both?
+</p>
+</div>
+</div>
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="2" type="gotcha">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+We can do this in <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> time and <span complexity="1" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></span></span> space!
+</p>
+</div>
+</div>
+</div>
+
+    
+</div>
+
+<div class="section-wrapper ng-isolate-scope section-breakdown ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="breakdown">
+    <h3 class="heading slide ng-binding ng-isolate-scope ng-hide" ng-show="shouldShow()" heading="breakdown" hide-heading="">Breakdown</h3>
+
+    <div class="section section-breakdown" ng-class="getSectionClass()" ng-transclude="">
+
+<!--
+
+this was intended to communicate an n^2 approach. but it's more trouble to explain how this approach works than it's worth, since it's pretty far from our final answer (and i don't imagine it's super likely that people will think of this approach)
+
+<div note>
+<p>
+A somewhat "brute force" way to break down the problem might be to check <em>each node</em> and for each of those nodes see if it's in a cycle.
+</p>
+
+<p>
+<strong>How do we know if a given node is in a cycle?</strong>
+</p>
+
+<p>
+Try drawing pictures of some sample inputs! (You do have some paper or a whiteboard that you're writing your answers on, right?)
+</p>
+</div>
+
+<div note>
+<p>
+We can notice that when we have a cycle, a pointer walking through our cycle suddenly gets "closer" to the start when it gets back to the start of the cycle:
+</p>
+
+<p>
+So if this is our linked list with a cycle:
+</p>
+
+<div code-block>
+&#9633; &#9632;
+&#9633; &#10230; &#9633; &#10142; &#9633; &#10142; &#9633; &#10142; &#9633;
+&#8598; &#10229;  &#10550;
+               ^                 |
+               '-----------------'
+</div>
+
+<div code-block>
+
+[ ] -> [ ] -> [ ]
+             &#8599;   &#8600;
+            [ ] <- [ ]
+</div>
+
+<p>
+If we're at the "end" of the cycle (far right of the diagram), we're 5 steps from the start:
+</p>
+
+<div code-block>
+[ ] -&gt; [ ] -&gt; [ ] -&gt; [ ] -&gt; [O] -.
+               ^                 |
+               '-----------------'
+</div>
+
+<p>
+But when we step our pointer to the next node, we end up back at the start of our cycle and we're suddenly only <strong>3</strong> steps from the start:
+</p>
+
+<div code-block>
+[ ] -&gt; [ ] -&gt; [O] -&gt; [ ] -&gt; [ ] -.
+               ^                 |
+               '-----------------'
+</div>
+
+</div>
+
+(another way to put it:)
+
+
+<div note>
+<p>
+A brute force approach would be to iterate through every node in the list. For each node, we&#8217;d keep a pointer at the <em>previous</em> node and traverse the linked list <strong><em>from the beginning</em></strong> until we reach that previous node. If we ever run into the <em>current</em> node along the way, we know we have a cycle in our list.
+</p>
+<p>
+But this would take <span complexity="n^2"></span> time. We can do better than that.
+</p>
+</div>
+-->
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="1" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+Because a cycle could result from the last node linking to the first node, we might need to look at every node before we even see the start of our cycle again. So it seems like we can’t do better than <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> runtime.
+</p>
+<p class="ng-scope">
+How can we track the nodes we’ve already seen?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="2" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+<strong>Using a <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__linked-list-cycles__hash-set"><span class="ng-scope">set</span></span>, we could store all the nodes we’ve seen so far</strong>. The algorithm is simple:
+</p>
+
+<ol class="ng-scope">
+<li>
+If the current node is already in our <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__linked-list-cycles__hash-set"><span class="ng-scope">set</span></span>, we have a cycle. Return <span class="ic-code-inline ng-isolate-scope" ng-transclude="" code-inline="question__linked-list-cycles__true"><span class="ng-scope">True</span></span>.
+</li>
+<li>
+If the current node is <span class="ic-code-inline ng-isolate-scope" ng-transclude="" code-inline="question__linked-list-cycles__none"><span class="ng-scope">None</span></span> we've hit the end of the list. Return <span class="ic-code-inline ng-isolate-scope" ng-transclude="" code-inline="question__linked-list-cycles__false"><span class="ng-scope">False</span></span>.
+</li>
+<li>
+Else throw the current node in our <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__linked-list-cycles__hash-set"><span class="ng-scope">set</span></span> and keep going.
+</li>
+</ol>
+
+<p class="ng-scope">
+What are the time and space costs of this approach? Can we do better?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="3" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+Our runtime is <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span>, the best we can do. But our space cost is also <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span>. Can we get our space cost down to <span complexity="1" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></span></span> by storing a <em>constant</em> number of nodes?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="4" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+Think about a <em>looping</em> list and a <em>linear</em> list. What happens when you traverse one versus the other?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="5" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+A linear list has an <em>end</em>—a node that doesn’t have a <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__next-instance-var"><span class="ng-scope">next</span></span> node. But a looped list will run forever. We know we don’t have a loop if we ever reach an end node, but how can we tell if we’ve run into a loop?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="6" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+We can’t just run our function for a really long time, because we’d never really know with certainty if we were in a loop or just a really long list.
+</p>
+
+<p class="ng-scope">
+Imagine that you're running on a long, mountainous running trail that happens to be a loop. What are some ways you can tell you're running in a loop?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="7" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+One way is to <strong>look for landmarks</strong>. You could remember one specific point, and if you pass that point again, you know you’re running in a loop. Can we use that principle here?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="8" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+<strong>Well, our cycle can occur <em>after</em> a non-cyclical "head" section in the beginning of our linked list</strong>. So we'd need to make sure we chose a "landmark" node that is in the cyclical "tail" and not in the non-cyclical "head." That seems impossible unless we <em>already know</em> whether or not there's a cycle...
+</p>
+
+<p class="ng-scope">
+Think back to the running trail. Besides landmarks, what are some other ways you could tell you’re running in a loop? What if you had <strong>another runner</strong>? (Remember, it’s a <em>singly</em>-linked list, so no running backwards!)
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="9" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+A tempting approach could be to have the other runner stop and act as a "landmark," and see if you pass her again. But we still have the problem of making sure our "landmark" is in the loop and not in the non-looping beginning of the trail.
+</p>
+
+<p class="ng-scope">
+<strong>What if our "landmark" runner moves continuously but <em>slowly</em>?</strong>
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="10" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+If we sprint <em>quickly</em> down the trail and the landmark runner jogs <em>slowly</em>, we will eventually "lap" (catch up to) the landmark runner!
+</p>
+<p class="ng-scope">
+But what if there isn't a loop?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="11" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+Then we (the faster runner) will simply hit the end of the trail (or linked list).
+</p>
+<p class="ng-scope">
+So let's make two variables, <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span> and <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span>. We’ll start both on the first node, and every time <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span> advances one node, we’ll have <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> advance <em>two</em> nodes.
+</p>
+<p class="ng-scope">
+If <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> catches up with <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span>, we know we have a loop. If not, eventually <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> will hit the end of the linked list and we'll know we <em>don't</em> have a loop.
+</p>
+<p class="ng-scope">
+This is a complete solution! Can you code it up?
+</p>
+<p class="ng-scope">
+Make sure the function eventually terminates in all cases!
+</p>
+</div>
+</div>
+
+
+<!--
+<div note>
+<p>
+Let&#8217;s make two variables, <span var="slow-runner"></span> and <span var="fast-runner"></span>. We&#8217;ll start both on the first node, and every time <span var="slow-runner"></span> advances one node, we&#8217;ll have <span var="fast-runner"></span> advance <em>two</em> nodes.
+</p>
+<p>
+How do we know if we&#8217;re in a loop? How do we know if we&#8217;re not?
+</p>
+</div>
+
+<div note>
+<p>
+If the linked list has a cycle, <span var="fast-runner"></span> will lap <span var="slow-runner"></span> and they will equal each other. If the list is not a lot, <span var="fast-runner"></span> will reach the end.
+</p>
+</div>
+-->
+</div>
+
+    
+</div>
+
+
+<div class="section-wrapper ng-isolate-scope section-solution ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="solution">
+    <h3 class="heading slide ng-binding ng-isolate-scope" ng-show="shouldShow()" heading="solution" hide-heading="">Solution</h3>
+
+    <div class="section section-solution" ng-class="getSectionClass()" ng-transclude="">
+<p class="ng-scope">
+We keep two pointers to nodes (we'll call these “runners”), both starting at the first node. Every time <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span> moves one node ahead, <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> moves <em>two</em> nodes ahead.
+</p>
+<p class="ng-scope">
+If the linked list has a cycle, <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> will "lap" (catch up with) <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span>, and they will momentarily equal each other.
+</p>
+<p class="ng-scope">
+If the list does not have a cycle, <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> will reach the end.
+</p>
+<div code-block="question__linked-list-cycles__solution" language="python" translation-highlighting="dynamic" class="ng-scope ng-isolate-scope"><pre class="  language-python">  <code class="  language-python" ng-transclude=""><span class="token keyword">def</span> <span class="token function">contains_cycle</span><span class="token punctuation">(</span>first_node<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token comment" spellcheck="true"># start both runners at the beginning</span>
+    slow_runner <span class="token operator">=</span> first_node
+    fast_runner <span class="token operator">=</span> first_node
+
+    <span class="token comment" spellcheck="true"># until we hit the end of the list</span>
+    <span class="token keyword">while</span> fast_runner <span class="token keyword">is</span> <span class="token operator">not</span> None <span class="token operator">and</span> fast_runner<span class="token punctuation">.</span>next <span class="token keyword">is</span> <span class="token operator">not</span> None<span class="token punctuation">:</span>
+        slow_runner <span class="token operator">=</span> slow_runner<span class="token punctuation">.</span>next
+        fast_runner <span class="token operator">=</span> fast_runner<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next
+
+        <span class="token comment" spellcheck="true"># case: fast_runner is about to "lap" slow_runner</span>
+        <span class="token keyword">if</span> fast_runner <span class="token keyword">is</span> slow_runner<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+
+    <span class="token comment" spellcheck="true"># case: fast_runner hit the end of the list</span>
+    <span class="token keyword">return</span> <span class="token boolean">False</span></code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+</div>
+
+    
+</div>
+
+<div class="section-wrapper ng-isolate-scope section-complexity ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="complexity">
+    <h3 class="heading slide ng-binding ng-isolate-scope" ng-show="shouldShow()" heading="complexity" hide-heading="">Complexity</h3>
+
+    <div class="section section-complexity" ng-class="getSectionClass()" ng-transclude="">
+<p class="ng-scope">
+<span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> time and <span complexity="1" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></span></span> space.
+</p>
+
+<p class="ng-scope">
+The runtime analysis is a little tricky. The worst case is when we <em>do</em> have a cycle, so we don't return until <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> equals <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span>. But how long will that take?
+</p>
+
+<p class="ng-scope">
+First, we notice that when both runners are circling around the cycle <strong><span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> can never skip over <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span></strong>. Why is this true?
+</p>
+
+<p class="ng-scope">
+Suppose <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> <em>had just</em> skipped over <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span>. <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> would only be 1 node ahead of <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span>, since their speeds differ by only 1. So we would have something like this:
+</p>
+
+<div code-block="question__linked-list-cycles__fast-runner-one-node-ahead" language="none" translation-highlighting="static" class="ng-scope ng-isolate-scope"><pre class="  language-none">  <code class="  language-none" ng-transclude="">[ ] -&gt; [s] -&gt; [f]</code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language ng-hide" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p class="ng-scope">
+What would the step right <em>before</em> this "skipping step" look like? <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> would be 2 nodes back, and <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span> would be 1 node back. But wait, that means they would be at <em>the same node</em>! So <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> <em>didn't</em> skip over <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span>! (This is a proof by contradiction.)
+</p>
+
+
+<p class="ng-scope">
+Since <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> can't skip over <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span>, <em>at most</em> <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__slow-runner"><span class="ng-scope">slow_runner</span></span> will run around the cycle once and <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__fast-runner"><span class="ng-scope">fast_runner</span></span> will run around twice. This gives us a runtime of <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span>.
+</p>
+
+<p class="ng-scope">
+For space, we store two variables no matter how long the linked list is, which gives us a space cost of <span complexity="1" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></span></span>.
+</p>
+</div>
+
+    
+</div>
+
+<div class="section-wrapper ng-isolate-scope section-bonus ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="bonus">
+    <h3 class="heading slide ng-binding ng-isolate-scope" ng-show="shouldShow()" heading="bonus" hide-heading="">Bonus</h3>
+
+    <div class="section section-bonus" ng-class="getSectionClass()" ng-transclude="">
+<ol class="ng-scope">
+<li>
+How would you detect the <em>first node</em> in the cycle? Define the first node of the cycle as the one closest to the head of the list.
+</li>
+<li>
+Would the program always work if the fast runner moves <em>three</em> steps every time the slow runner moves one step?
+</li>
+<li>
+What if instead of a simple linked list, you had a structure where each node could have several "<span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__linked-list-cycles__next-instance-var"><span class="ng-scope">next</span></span>" nodes? This data structure is called a "directed graph." How would you test if your directed graph had a cycle?
+</li>
+</ol>
+</div>
+
+    
+</div>
+
+<div class="section-wrapper ng-isolate-scope section-learnings ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="learnings">
+    <h3 class="heading slide ng-binding ng-isolate-scope" ng-show="shouldShow()" heading="learnings" hide-heading="">What We Learned</h3>
+
+    <div class="section section-learnings" ng-class="getSectionClass()" ng-transclude="">
+<p class="ng-scope">
+Some people have trouble coming up with the "two runners" approach. That's expected—it's somewhat of a blind insight. Even great candidates might need a few hints to get all the way there. And that's fine.
+</p>
+
+<p class="ng-scope">
+Remember that the coding interview is a <em>dialogue</em>, and sometimes your interviewer <em>expects</em> she'll have to offer some hints along the way.
+</p>
+
+<p class="ng-scope">
+One of the most impressive things you can do as a candidate is listen to a hint, fully understand it, and take it to its next logical step. Interview Cake gives you lots of opportunities to practice this. Don't be shy about showing <em>lots</em> of hints on our exercises—that's what they're there for!
+</p>
+</div>
+
+    
+</div>
+
+<script type="text/javascript">
+            var elTranslations = {"code-inlines": {"question__linked-list-cycles__true": {"default": "true", "c": "1", "python": "True"}, "question__linked-list-cycles__node-next": {"default": "node.next", "cpp": "node->next_", "c": "node->next"}, "question__linked-list-cycles__node-data": {"default": "node.value", "cpp": "node->value_", "c": "node->value"}, "question__linked-list-cycles__none": {"python": "None", "ruby": "nil", "default": "null", "c": "NULL", "swift": "nil", "cpp": "nullptr"}, "question__linked-list-cycles__false": {"default": "false", "c": "0", "python": "False"}}, "code-blocks": {"question__linked-list-cycles__solution": {"javascript": {"code": "function containsCycle(firstNode) {\n\n    // start both runners at the beginning\n    var slowRunner = firstNode;\n    var fastRunner = firstNode;\n\n    // until we hit the end of the list\n    while (fastRunner && fastRunner.next) {\n        slowRunner = slowRunner.next;\n        fastRunner = fastRunner.next.next;\n\n        // case: fastRunner is about to \"lap\" slowRunner\n        if (fastRunner === slowRunner) {\n            return true;\n        }\n    }\n\n    // case: fastRunner hit the end of the list\n    return false;\n}", "tests": "assertEqual(containsCycle(a), false);\ne.next = c;\nassertEqual(containsCycle(a), true);\ne.next = a;\nassertEqual(containsCycle(a), true);"}, "python": {"code": "def contains_cycle(first_node):\n\n    # start both runners at the beginning\n    slow_runner = first_node\n    fast_runner = first_node\n\n    # until we hit the end of the list\n    while fast_runner is not None and fast_runner.next is not None:\n        slow_runner = slow_runner.next\n        fast_runner = fast_runner.next.next\n\n        # case: fast_runner is about to \"lap\" slow_runner\n        if fast_runner is slow_runner:\n            return True\n\n    # case: fast_runner hit the end of the list\n    return False", "tests": "assertEqual(contains_cycle(a), False)\ne.next = c\nassertEqual(contains_cycle(a), True)\ne.next = a\nassertEqual(contains_cycle(a), True)"}, "ruby": {"code": "def contains_cycle(first_node)\n\n    # start both runners at the beginning\n    slow_runner = first_node\n    fast_runner = first_node\n\n    # until we hit the end of the list\n    while fast_runner != nil && fast_runner.next != nil\n        slow_runner = slow_runner.next\n        fast_runner = fast_runner.next.next\n\n        # case: fast_runner is about to \"lap\" slow_runner\n        if fast_runner == slow_runner\n            return true\n        end\n    end\n\n    # case: fast_runner hit the end of the list\n    return false\nend", "tests": "assertEqual(contains_cycle(a), false)\ne.next = c\nassertEqual(contains_cycle(a), true)\ne.next = a\nassertEqual(contains_cycle(a), true)"}, "c": {"code": "int containsCycle(const LinkedListNode* firstNode) {\n    // start both runners at the beginning\n    const LinkedListNode *slowRunner = firstNode;\n    const LinkedListNode *fastRunner = firstNode;\n\n    // until we hit the end of the list\n    while (fastRunner != NULL && fastRunner->next != NULL) {\n        slowRunner = slowRunner->next;\n        fastRunner = fastRunner->next->next;\n\n        // case: fastRunner is about to \"lap\" slowRunner\n        if (fastRunner == slowRunner) {\n            return 1;\n        }\n    }\n\n    // case: fastRunner hit the end of the list\n    return 0;\n}", "tests": "setupTestData();\n\nASSERT(!containsCycle(a));\ne->next = c;\nASSERT(containsCycle(a));\ne->next = a;\nASSERT(containsCycle(a));\n\nfreeTestData();"}, "java": {"code": "public boolean containsCycle(LinkedListNode firstNode) {\n\n    // start both runners at the beginning\n    LinkedListNode slowRunner = firstNode;\n    LinkedListNode fastRunner = firstNode;\n\n    // until we hit the end of the list\n    while (fastRunner != null && fastRunner.next != null) {\n        slowRunner = slowRunner.next;\n        fastRunner = fastRunner.next.next;\n\n        // case: fastRunner is about to \"lap\" slowRunner\n        if (fastRunner == slowRunner) {\n            return true;\n        }\n    }\n\n    // case: fastRunner hit the end of the list\n    return false;\n}", "tests": "assertEqual(t.containsCycle(a), false);\ne.next = c;\nassertEqual(t.containsCycle(a), true);\ne.next = a;\nassertEqual(t.containsCycle(a), true);"}, "swift": {"code": "func containsCycle&lt;T>(firstNode: LinkedListNode&lt;T>) -> Bool {\n    \n    // start both runners at the beginning\n    var slowRunner = firstNode\n    var fastRunner = firstNode\n    \n    // until we hit the end of the list\n    while let nextSlowRunner = slowRunner.next,\n        let nextFastRunner = fastRunner.next?.next {\n            slowRunner = nextSlowRunner\n            fastRunner = nextFastRunner\n            \n            // case: fastRunner is about to \"lap\" slowRunner\n            if fastRunner == slowRunner {\n                return true\n            }\n    }\n    \n    // case: fastRunner hit the end of the list\n    return false\n}", "tests": "try assertEqual(containsCycle(firstNode: a), false)\ne.next = c\ntry assertEqual(containsCycle(firstNode: a), true)\ne.next = a\ntry assertEqual(containsCycle(firstNode: a), true)"}, "cpp": {"code": "bool containsCycle(const LinkedListNode* firstNode) {\n\n    // start both runners at the beginning\n    const LinkedListNode* slowRunner = firstNode;\n    const LinkedListNode* fastRunner = firstNode;\n\n    // until we hit the end of the list\n    while (fastRunner != nullptr && fastRunner->next_) {\n        slowRunner = slowRunner->next_;\n        fastRunner = fastRunner->next_->next_;\n\n        // case: fastRunner is about to \"lap\" slowRunner\n        if (fastRunner == slowRunner) {\n            return true;\n        }\n    }\n\n    // case: fastRunner hit the end of the list\n    return false;\n}", "tests": "assertEqual(containsCycle(a), false);\ne->next_ = c;\nassertEqual(containsCycle(a), true);\ne->next_ = a;\nassertEqual(containsCycle(a), true);"}}, "setup": {"javascript": "var a = new LinkedListNode(\"A\");\nvar b = new LinkedListNode(\"B\");\nvar c = new LinkedListNode(\"C\");\nvar d = new LinkedListNode(\"D\");\nvar e = new LinkedListNode(\"E\");\n\na.next = b;\nb.next = c;\nc.next = d;\nd.next = e;", "python": "a = LinkedListNode('A')\nb = LinkedListNode('B')\nc = LinkedListNode('C')\nd = LinkedListNode('D')\ne = LinkedListNode('E')\n\na.next = b\nb.next = c\nc.next = d\nd.next = e", "ruby": "a = LinkedListNode.new('A')\nb = LinkedListNode.new('B')\nc = LinkedListNode.new('C')\nd = LinkedListNode.new('D')\ne = LinkedListNode.new('E')\n\na.next = b\nb.next = c\nc.next = d\nd.next = e", "c": "// Instead of using LinkedListNode with void* value from general test\n// setup, we redefine it here with simpler implementation with int value\n// from 'linked-list-node-class' code block\n\ntypedef struct LinkedListNode_int {\n    int value;\n    struct LinkedListNode_int *next;\n} LinkedListNode_int;\n\n#define LinkedListNode LinkedListNode_int\n\n// Replacement for newLinkedListNode; name newLinkedListNode_int is already\n// taken by general test setup, so add another _int suffix.\nLinkedListNode * newLinkedListNode_int_int(int value) {\n    LinkedListNode *node = malloc(sizeof(LinkedListNode));\n    assert(node != NULL);\n    node->value = value;\n    node->next = NULL;\n    return node;\n}\n\nvoid freeLinkedListNode_int(LinkedListNode *node) {\n    free(node);\n}\n\n#define newLinkedListNode newLinkedListNode_int_int\n#define freeLinkedListNode freeLinkedListNode_int\n\n\nLinkedListNode *a, *b, *c, *d, *e;\n\nvoid setupTestData() {\n    a = newLinkedListNode(1);\n    b = newLinkedListNode(2);\n    c = newLinkedListNode(3);\n    d = newLinkedListNode(4);\n    e = newLinkedListNode(5);\n\n    a->next = b;\n    b->next = c;\n    c->next = d;\n    d->next = e;\n}\n\nvoid freeTestData() {\n    freeLinkedListNode(a);\n    freeLinkedListNode(b);\n    freeLinkedListNode(c);\n    freeLinkedListNode(d);\n    freeLinkedListNode(e);\n}", "java": "LinkedListNode a = new LinkedListNode(\"A\");\nLinkedListNode b = new LinkedListNode(\"B\");\nLinkedListNode c = new LinkedListNode(\"C\");\nLinkedListNode d = new LinkedListNode(\"D\");\nLinkedListNode e = new LinkedListNode(\"E\");\n\na.next = b;\nb.next = c;\nc.next = d;\nd.next = e;", "swift": "extension LinkedListNode: Equatable {\n    public static func ==(lhs: LinkedListNode, rhs: LinkedListNode) -> Bool {\n        return lhs.value == rhs.value\n    }\n}\n\nlet a = LinkedListNode(\"A\")\nlet b = LinkedListNode(\"B\")\nlet c = LinkedListNode(\"C\")\nlet d = LinkedListNode(\"D\")\nlet e = LinkedListNode(\"E\")\n\na.next = b\nb.next = c\nc.next = d\nd.next = e", "cpp": "LinkedListNode* a = new LinkedListNode(1);\nLinkedListNode* b = new LinkedListNode(2);\nLinkedListNode* c = new LinkedListNode(3);\nLinkedListNode* d = new LinkedListNode(4);\nLinkedListNode* e = new LinkedListNode(5);\n\nstruct SetupTestData\n{\n    SetupTestData()\n    {\n        a->next_ = b;\n        b->next_ = c;\n        c->next_ = d;\n        d->next_ = e;\n    }\n};\n\nSetupTestData setupTestDataObject;"}, "question__linked-list-cycles__linked-list-node-class": {"javascript": "function LinkedListNode(value) {\n    this.value = value;\n    this.next = null;\n}", "python": "class LinkedListNode:\n\n    def __init__(self, value):\n        self.value = value\n        self.next  = None", "ruby": "class LinkedListNode\n\n    attr_accessor :value, :next\n\n    def initialize(value)\n        @value = value\n        @next  = nil\n    end\nend", "c": "typedef struct LinkedListNode {\n    int value;\n    struct LinkedListNode *next;\n} LinkedListNode;\n\nLinkedListNode * newLinkedListNode(int value) {\n    LinkedListNode *node = malloc(sizeof(LinkedListNode));\n    assert(node != NULL);\n    node->value = value;\n    node->next = NULL;\n    return node;\n}\n\nvoid freeLinkedListNode(LinkedListNode *node) {\n    free(node);\n}", "java": "public static class LinkedListNode {\n\n    public int value;\n    public LinkedListNode next;\n\n    public LinkedListNode(int value) {\n        this.value = value;\n    }\n}", "swift": "class LinkedListNode&lt;Value: Equatable> {\n    \n    var value: Value\n    var next: LinkedListNode?\n    \n    init(_ value: Value) {\n        self.value = value\n    }\n}", "cpp": "class LinkedListNode\n{\npublic:\n    int value_;\n    LinkedListNode* next_;\n\n    LinkedListNode(int value) :\n        value_(value),\n        next_(nullptr)\n    {\n    }\n};"}, "question__linked-list-cycles__fast-runner-one-node-ahead": {"default": "[ ] -> [s] -> [f]"}}, "funcs": {"question__linked-list-cycles__contains-cycle": {"snake": "contains_cycle", "camel": "containsCycle"}}, "vars": {"question__linked-list-cycles__node": {"default": "node"}, "question__linked-list-cycles__next-instance-var": {"default": "next", "cpp": "next_", "ruby": "@next"}, "question__linked-list-cycles__slow-runner": {"snake": "slow_runner", "camel": "slowRunner"}, "question__linked-list-cycles__fast-runner": {"snake": "fast_runner", "camel": "fastRunner"}}, "words": {"question__linked-list-cycles__hash-set": {"ruby": "set", "csharp": "hash set", "python": "set", "javascript": "set", "default": "set", "c": "set", "php": "array", "java": "hash set", "cpp": "unordered set"}}};
+            var codeTypes = ['words', 'code-blocks', 'vars', 'funcs', 'code-inlines'];
+
+            var mergeObjects = function(objectA, objectB) {
+                objectA = objectA || {};
+                objectB = objectB || {};
+                for (var key in objectB) {
+                    objectA[key] = objectB[key];
+                }
+                return objectA;
+            }
+
+            if (!window.contentTranslations) {
+                window.contentTranslations = elTranslations;
+            } else {
+                for (var i=0; i<codeTypes.length; i++) {
+                    window.contentTranslations[codeTypes[i]] = mergeObjects(window.contentTranslations[codeTypes[i]], elTranslations[codeTypes[i]]);
+                }
+            }
+            </script>
+</div>
+
+
+    </div>
+
+    <div class="btn-sets">
+
+        <p class="prompt ng-binding" ng-bind="getPromptStr()" ng-hide="&#39;full&#39; !== &#39;full&#39; &amp;&amp; endedQuestion">Do you have an answer?</p>
+
+        <div class="btn-set btn-set-during ng-hide" ng-show="isSingleTrack &amp;&amp; getBtnSet()==&#39;during&#39;">
+                <a ng-click="showPress()" id="btn-show" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-chevron-down"></span><span class="text ng-binding" ng-bind="getShowBtnText()">Show answer</span></a>
+        </div>
+
+        <div class="btn-set btn-set-during" ng-show="!isSingleTrack &amp;&amp; getBtnSet()==&#39;during&#39;">
+                <a ng-click="haveAnswerPress()" id="btn-got-it" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-ok"></span><span class="text ng-binding" ng-bind="getHaveAnswerBtnText()">I have an answer</span></a>
+                <a ng-click="dontHaveAnswerPress()" id="btn-hint" class="btn btn-default btn-large" style=""><span class="fa fa-question"></span><span class="text ng-binding" ng-bind="getDontHaveAnswerBtnText()">I need a hint</span></a>
+        </div>
+
+        
+            <div class="btn-set btn-set-after-option ng-hide" ng-show="getBtnSet()==&#39;after-option&#39;">
+                    <a ng-click="feelExpertPress()" id="btn-feel-good" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-ok"></span><span class="text">Yes, I'm expert on this</span></a>
+                    <a ng-click="dontFeelExpertPress()" id="btn-need-review" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-repeat"></span><span class="text">Not quite, review later</span></a>
+            </div>
+            <div class="btn-set btn-set-after-must-review ng-hide" ng-show="getBtnSet()==&#39;after-must-review&#39;">
+                    <a ng-click="nextQuestionPress()" id="btn-next" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-chevron-right"></span><span class="text">Next question</span></a>
+            </div>
+        
+
+        <div class="share-btns share-btns-quiz-end ng-hide" ng-show="getBtnSet()==&#39;after-option&#39;">
+            <p>
+                Like this problem? Pass it on!
+            </p>
+
+            
+
+<a class="custom-share facebook-share ng-isolate-scope" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.interviewcake.com/question/python/linked-list-cycles" target="_blank" tracklink="" the-event="FB share click" the-properties="{&quot;which&quot; : &quot;post-question option&quot;}"><i class="fa fa-facebook"> </i> Share</a>
+<a class="custom-share twitter-share ng-isolate-scope" href="https://twitter.com/intent/tweet?text=Solved%20this%20coding%20interview%20question%21&amp;via=interviewcake&amp;related=interviewcake&amp;url=https%3A//www.interviewcake.com/question/python/linked-list-cycles" target="_blank" tracklink="" the-event="Twitter share click" the-properties="{&quot;which&quot; : &quot;post-question option&quot;}"><i class="fa fa-twitter"> </i> Tweet</a>
+<a class="custom-share linkedin-share ng-isolate-scope" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.interviewcake.com/question/python/linked-list-cycles&amp;title=&amp;summary=Solved%20this%20coding%20interview%20question%21&amp;source=Interview%20Cake" target="_blank" tracklink="" the-event="LinkedIn share click" the-properties="{&quot;which&quot; : &quot;post-question option&quot;}"><i class="fa fa-linkedin"> </i> Share</a>
+
+
+        </div>
+        <div class="share-btns share-btns-quiz-end ng-hide" ng-show="getBtnSet()==&#39;after-must-review&#39;">
+            <p>
+                Like this problem? Pass it on!
+            </p>
+
+            
+
+<a class="custom-share facebook-share ng-isolate-scope" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.interviewcake.com/question/python/linked-list-cycles" target="_blank" tracklink="" the-event="FB share click" the-properties="{&quot;which&quot; : &quot;post-question must review&quot;}"><i class="fa fa-facebook"> </i> Share</a>
+<a class="custom-share twitter-share ng-isolate-scope" href="https://twitter.com/intent/tweet?text=Tough%20coding%20interview%20question%21&amp;via=interviewcake&amp;related=interviewcake&amp;url=https%3A//www.interviewcake.com/question/python/linked-list-cycles" target="_blank" tracklink="" the-event="Twitter share click" the-properties="{&quot;which&quot; : &quot;post-question must review&quot;}"><i class="fa fa-twitter"> </i> Tweet</a>
+<a class="custom-share linkedin-share ng-isolate-scope" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.interviewcake.com/question/python/linked-list-cycles&amp;title=&amp;summary=Tough%20coding%20interview%20question%21&amp;source=Interview%20Cake" target="_blank" tracklink="" the-event="LinkedIn share click" the-properties="{&quot;which&quot; : &quot;post-question must review&quot;}"><i class="fa fa-linkedin"> </i> Share</a>
+
+        </div>
+
+    </div>
+
+    
+        <div ng-controller="NotepadCtrl" class="notepad-outer-wrapper ng-scope tab-mode" ng-class="notepadMode" style="bottom: 0px;">
+    <div class="notepad-inner-wrapper tab-mode" ng-class="notepadMode">
+        <div class="notepad-buttons tab-mode" ng-class="notepadMode">
+            <div class="select-language ng-hide" ng-mousedown="isNotepadRelatedElementClicked=true" ng-mouseup="isNotepadRelatedElementClicked=false" ng-show="notepadMode!==&#39;tab-mode&#39;">
+                <select ng-model="selectedLanguage" ng-options="language.display_name for language in codemirrorLanguages | orderBy: &#39;dropdown_rank&#39;" ng-change="selectFromLanguageDropdown()" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Java">Java</option><option value="2" label="Ruby">Ruby</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option><option value="6" label="C# (beta)">C# (beta)</option><option value="7" label="Objective-C (beta)">Objective-C (beta)</option><option value="8" label="PHP (beta)">PHP (beta)</option><option value="9" label="Haskell">Haskell</option><option value="10" label="No syntax">No syntax</option></select>
+            </div>
+            <span class="tab ng-hide" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="clickIcon(&#39;tab-mode&#39;)" ng-mouseup="isNotepadRelatedElementClicked=false" ng-show="notepadMode!==&#39;tab-mode&#39;"></span>
+            <span class="type-and-look" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="clickIcon(&#39;type-and-look-mode&#39;)" ng-mouseup="isNotepadRelatedElementClicked=false"></span>
+            <span class="focus" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="clickIcon(&#39;focus-mode&#39;)" ng-mouseup="isNotepadRelatedElementClicked=false"></span>
+        </div>
+        <div class="notepad-typing tab-mode" ng-class="{&#39;output-displayed&#39;: outputDisplayed &amp;&amp; selectedLanguage.codewars}">
+            <div class="ng-pristine ng-untouched ng-valid cm-s-default CodeMirror" ui-codemirror-opts="editorOptions" ui-refresh="isCodemirrorUpdated" ng-model="userCode"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 26px; left: 22px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" not-content="true" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" not-content="true" style="min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" not-content="true"></div><div class="CodeMirror-gutter-filler" not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-width: 86.9688px; min-height: 29px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 17.85px;">&nbsp;</div></div><div class="CodeMirror-code"><pre><span style="padding-right: 0.1px;"><span class="cm-variable">Type</span> <span class="cm-variable">code</span><span class="cm-operator">!</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 29px;"></div><div class="CodeMirror-gutters" style="display: none; height: 62px;"></div></div></div>
+        </div>
+
+        
+
+        <div class="notepad-run tab-mode" ng-class="notepadMode" ng-show="selectedLanguage.codewars">
+            <span class="output-button ng-binding ng-hide" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="outputDisplayed = !outputDisplayed; codemirrorElement.focus()" ng-mouseup="isNotepadRelatedElementClicked=false" ng-show="outputDisplayed || output !== undefined" ng-bind="outputDisplayed ? &#39;HIDE&#39; : &#39;SHOW&#39;">SHOW</span>
+            <span class="output-button" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="runCode()" ng-mouseup="isNotepadRelatedElementClicked=false">RUN</span>
+        </div>
+        <div class="notepad-output tab-mode" ng-class="notepadMode" ng-show="selectedLanguage.codewars" ng-mousedown="isNotepadRelatedElementClicked=true" ng-mouseup="isNotepadRelatedElementClicked=false">
+            <span class="powered-by">
+                Code execution powered by Qualified.io
+            </span>
+            <p class="content output-help ng-binding ng-hide" ng-show="outputHelp" ng-bind="outputHelp"></p>
+            <p class="content output ng-binding ng-hide" ng-show="output" ng-bind="output"></p>
+            <p class="content output-error ng-binding" ng-bind="outputError"></p>
+        </div>
+
+        
+    </div>
+</div>
+
+    
+
+</div>
+</div>
+
+
+
+    <div ng-view=""></div>
+</div>
+
+
+    
+    
+    
+
+
+    <div id="print-footer">
+        <p>
+            Want more coding interview help?
+        </p>
+
+        <p>
+            Check out <span class="url">interviewcake.com</span> for more advice, guides, and practice questions.
+        </p>
+    </div>
+
+    <div id="footer">
+
+        <a class="newsletter-link" href="https://www.interviewcake.com/free-weekly-coding-interview-problem-newsletter">Subscribe to our weekly question email list »</a>
+
+        <div class="links">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="by-company">
+                            <h5>
+                                Programming interview questions by company:
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="https://www.interviewcake.com/google-interview-questions">Google interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/facebook-interview-questions">Facebook interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/amazon-interview-questions">Amazon interview questions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="by-language">
+                            <h5>
+                                Programming interview questions by language:
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="https://www.interviewcake.com/java-interview-questions">Java interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/python-interview-questions">Python interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/ruby-interview-questions">Ruby interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/javascript-interview-questions">JavaScript interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/sql-interview-questions">SQL interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/testing-and-qa-interview-questions">Testing and QA interview questions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+
+            <a class="facebook ng-isolate-scope" href="https://www.facebook.com/interviewcake" target="_blank" tracklink="" the-event="FB footer click"><i class="fa fa-facebook"></i></a>
+            <a class="twitter ng-isolate-scope" href="https://www.twitter.com/interviewcake" target="_blank" tracklink="" the-event="Twitter footer click"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        
+
+            <div itemscope="" itemtype="http://schema.org/Corporation">
+                <span class="schemaorghide" itemprop="description">Programming interview practice and tips for software engineers looking for jobs.</span>
+
+                Copyright © 2016
+                <span itemprop="name">Cake Labs, Inc.</span> All rights reserved.
+                <span class="schemaorghide" itemprop="image">https://www.interviewcake.com/static//images/cake_white_on_blue_600.png</span>
+                <span class="schemaorghide" itemprop="logo">https://www.interviewcake.com/static//images/cake_white_on_blue_600.png</span>
+                <span class="schemaorghide" itemprop="url">https://www.interviewcake.com</span>
+                <span class="schemaorghide" itemprop="telephone">(804) 876-2253</span>
+
+                <address itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">228 Park Ave S #82632</span>,
+                    <span itemprop="addressLocality">New York</span>,
+                    <span itemprop="addressRegion">NY</span>
+                    <span itemprop="addressCountry">US</span>
+                    <span itemprop="postalCode">10003</span>
+                    <span itemprop="telephone">(804) 876-2253</span>
+                </address>
+
+                <address class="schemaorghide" itemprop="location" itemscope="" itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="addressCountry">US</span>
+                    <span itemprop="addressLocality">New York</span>
+                    <span itemprop="addressRegion">NY</span>
+                    <span itemprop="streetAddress">228 Park Ave S #82632</span>
+                    <span itemprop="postalCode">10003</span>
+                    <span itemprop="telephone">(804) 876-2253</span>
+                </address>
+
+                <div itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                    <div itemprop="geo" itemscope="" itemtype="http://schema.org/GeoCoordinates">
+                        <meta itemprop="latitude" content="37.76480">
+                        <meta itemprop="longitude" content="-122.41872">
+                    </div>
+                </div>
+            </div>
+        
+        <div>
+
+            
+                <a href="https://www.interviewcake.com/about">About</a>
+                |
+            
+            <a rel="nofollow" href="https://www.interviewcake.com/privacy-policy">Privacy</a>
+            |
+            <a rel="nofollow" href="https://www.interviewcake.com/terms-and-conditions">Terms</a>
+        </div>
+    </div>
+
+    
+
+</div> <!-- /"below-nav" -->
+
+    
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/jquery.min.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/bootstrap.min.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/angular.min.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/angular-route.min.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/angular-cookies.min.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/angular-animate.min.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/katex.min.js"></script>
+
+    
+
+    
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/underscore-min.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/angular-django-rest-resource.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/angular-seo.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/sticky.js"></script>
+    
+
+    <script type="text/javascript">
+        (function(){
+  var FLAGS = {
+    'learnings': true,'only_3_free_questions': true,'new_header': true,'allow_anonymous_purchase': false
+    },
+    SWITCHES = {
+    
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+    </script>
+
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/base.js"></script>
+
+    
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/prism.min.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/codemirror.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/python.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/ruby.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/javascript.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/clike.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/php.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/haskell.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/ui-codemirror.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/jquery.payment.js"></script>
+    <script src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/edgeUtils.js"></script>
+    
+
+
+
+
+    <script type="text/javascript">
+        window.CACHEBUST_QUERY_STR = '?bust=135';
+        //TODO: move above into the below
+        window.JS_CONSTANTS = {"INTEGRATIONS_SETTING_ONLY_INTEGRATIONS_THAT_SUPPORT_FRONT_END_ONLY": {"All": false, "Google Analytics": true, "Optimizely": true, "Adwords": true, "Facebook Pixel": true}, "C18N_LANGUAGES": [{"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}, {"dropdown_rank": 3, "prism": "ruby", "codemirror": "text/x-ruby", "codewars": "ruby", "short_name": "ruby", "case_convention": "snake", "notepad_template": "def my_function(arg)\n    # write the body of your function here\n    return \"running with #{arg}\"\nend\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nputs my_function('test input')\n", "display_name": "Ruby"}, {"dropdown_rank": 2, "prism": "java", "codemirror": "text/x-java", "codewars": "java", "short_name": "java", "case_convention": "camel", "notepad_template": "public class Solution {\n    public static String myFunction(String arg) {\n        // write the body of your function here\n        return \"running with \" + arg;\n    }\n    public static void main(String[] args) {\n        // run your function through some test cases here\n        // remember: debugging is half the battle!\n        String testInput = \"test input\";\n        System.out.println(myFunction(testInput));\n    }\n}", "display_name": "Java"}, {"dropdown_rank": 4, "prism": "javascript", "codemirror": "text/javascript", "codewars": "javascript", "short_name": "javascript", "case_convention": "camel", "notepad_template": "function myFunction(arg) {\n    // write the body of your function here\n    return 'running with ' + arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\nconsole.log(myFunction('test input'));\n", "display_name": "JavaScript"}, {"dropdown_rank": 5, "closest_languages": ["cpp", "java"], "prism": "c", "codemirror": "text/x-csrc", "codewars": "c", "short_name": "c", "case_convention": "camel", "notepad_template": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nconst char * my_function(char * arg) {\n    // write the body of your function here\n    return arg;\n}\n\nint main() {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    printf(\"%s\", my_function(\"test input\"));\n    return 0;\n}", "display_name": "C (beta)"}, {"dropdown_rank": 6, "closest_languages": ["c", "java"], "prism": "cpp", "codemirror": "text/x-c++src", "codewars": "cpp", "short_name": "cpp", "case_convention": "camel", "notepad_template": "#include <iostream>\nusing namespace std;\n\nstring myFunction (const string& arg)\n{\n    // write the body of your function here\n    return \"running with \" + arg;\n}\n\nint main ()\n{\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    cout << myFunction (\"test input\");\n    return 0;\n}", "display_name": "C++ (beta)"}], "CODEMIRROR_LANGUAGES": [{"dropdown_rank": 10, "codemirror": "text/x-haskell", "codewars": "haskell", "short_name": "haskell", "display_name": "Haskell", "notepad_template": "myFunction :: String -> String\n-- write the body of your function here\nmyFunction arg = \"running with \" ++ arg\n\nmain = do\n  -- run your function through some test cases here\n  -- remember: debugging is half the battle!\n  let result = myFunction \"test input\"\n  putStrLn result\n"}, {"dropdown_rank": 11, "codemirror": "", "short_name": "nolanguage", "prism": "none", "display_name": "No syntax"}, {"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}, {"dropdown_rank": 3, "prism": "ruby", "codemirror": "text/x-ruby", "codewars": "ruby", "short_name": "ruby", "case_convention": "snake", "notepad_template": "def my_function(arg)\n    # write the body of your function here\n    return \"running with #{arg}\"\nend\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nputs my_function('test input')\n", "display_name": "Ruby"}, {"dropdown_rank": 2, "prism": "java", "codemirror": "text/x-java", "codewars": "java", "short_name": "java", "case_convention": "camel", "notepad_template": "public class Solution {\n    public static String myFunction(String arg) {\n        // write the body of your function here\n        return \"running with \" + arg;\n    }\n    public static void main(String[] args) {\n        // run your function through some test cases here\n        // remember: debugging is half the battle!\n        String testInput = \"test input\";\n        System.out.println(myFunction(testInput));\n    }\n}", "display_name": "Java"}, {"dropdown_rank": 4, "prism": "javascript", "codemirror": "text/javascript", "codewars": "javascript", "short_name": "javascript", "case_convention": "camel", "notepad_template": "function myFunction(arg) {\n    // write the body of your function here\n    return 'running with ' + arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\nconsole.log(myFunction('test input'));\n", "display_name": "JavaScript"}, {"dropdown_rank": 5, "closest_languages": ["cpp", "java"], "prism": "c", "codemirror": "text/x-csrc", "codewars": "c", "short_name": "c", "case_convention": "camel", "notepad_template": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nconst char * my_function(char * arg) {\n    // write the body of your function here\n    return arg;\n}\n\nint main() {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    printf(\"%s\", my_function(\"test input\"));\n    return 0;\n}", "display_name": "C (beta)"}, {"dropdown_rank": 6, "closest_languages": ["c", "java"], "prism": "cpp", "codemirror": "text/x-c++src", "codewars": "cpp", "short_name": "cpp", "case_convention": "camel", "notepad_template": "#include <iostream>\nusing namespace std;\n\nstring myFunction (const string& arg)\n{\n    // write the body of your function here\n    return \"running with \" + arg;\n}\n\nint main ()\n{\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    cout << myFunction (\"test input\");\n    return 0;\n}", "display_name": "C++ (beta)"}, {"dropdown_rank": 7, "closest_languages": ["java"], "prism": "csharp", "codemirror": "text/x-csharp", "codewars": "csharp", "short_name": "csharp", "case_convention": "camel", "notepad_template": "using System;\n\nnamespace Solution\n{\n    class Solution\n    {\n        public static string MyFunction(string arg)\n        {\n            // Write the body of your function here\n            return $\"Running with {arg}\";\n        }\n\n        public static void Main(string[] args)\n        {\n            // Run your function through some test cases here.\n            // Remember: debugging is half the battle!\n            string testInput = \"test input\";\n            Console.WriteLine(MyFunction(testInput));\n        }\n    }\n}\n", "display_name": "C# (beta)"}, {"dropdown_rank": 9, "closest_languages": ["javascript"], "prism": "php", "codemirror": "text/x-php", "codewars": "php", "short_name": "php", "case_convention": "camel", "notepad_template": "<?php\n\nfunction myFunction($arg) {\n    // write the body of your function here\n    return \"running with \" . $arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\necho myFunction(\"test input\");\n\n?>", "display_name": "PHP (beta)"}, {"dropdown_rank": 8, "closest_languages": ["c", "java"], "prism": "objectivec", "codemirror": "text/x-objectivec", "short_name": "objectivec", "case_convention": "camel", "notepad_template": "#import <Foundation/Foundation.h>\n#import <stdio.h>\n\n@interface Solution : NSObject\n\n+ (NSString *)myFunction:(NSString *)arg;\n\n@end\n\n@implementation Solution\n\n+ (NSString *)myFunction:(NSString *)arg\n{\n  // write the body of your function here\n  return [@\"running with \" stringByAppendingString:arg];\n}\n\n@end\n\nint main (int argc, const char * argv[])\n{\n  @autoreleasepool {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    NSString * result = [Solution myFunction:@\"test input\"];\n    printf(\"%s\", [result UTF8String]);\n  }\n}", "display_name": "Objective-C (beta)"}], "PRISM_LANGUAGES": [{"dropdown_rank": 11, "codemirror": "", "short_name": "nolanguage", "prism": "none", "display_name": "No syntax"}, {"short_name": "html", "prism": "markup", "display_name": "HTML"}, {"short_name": "sql", "prism": "sql", "display_name": "SQL"}, {"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}, {"dropdown_rank": 3, "prism": "ruby", "codemirror": "text/x-ruby", "codewars": "ruby", "short_name": "ruby", "case_convention": "snake", "notepad_template": "def my_function(arg)\n    # write the body of your function here\n    return \"running with #{arg}\"\nend\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nputs my_function('test input')\n", "display_name": "Ruby"}, {"dropdown_rank": 2, "prism": "java", "codemirror": "text/x-java", "codewars": "java", "short_name": "java", "case_convention": "camel", "notepad_template": "public class Solution {\n    public static String myFunction(String arg) {\n        // write the body of your function here\n        return \"running with \" + arg;\n    }\n    public static void main(String[] args) {\n        // run your function through some test cases here\n        // remember: debugging is half the battle!\n        String testInput = \"test input\";\n        System.out.println(myFunction(testInput));\n    }\n}", "display_name": "Java"}, {"dropdown_rank": 4, "prism": "javascript", "codemirror": "text/javascript", "codewars": "javascript", "short_name": "javascript", "case_convention": "camel", "notepad_template": "function myFunction(arg) {\n    // write the body of your function here\n    return 'running with ' + arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\nconsole.log(myFunction('test input'));\n", "display_name": "JavaScript"}, {"dropdown_rank": 5, "closest_languages": ["cpp", "java"], "prism": "c", "codemirror": "text/x-csrc", "codewars": "c", "short_name": "c", "case_convention": "camel", "notepad_template": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nconst char * my_function(char * arg) {\n    // write the body of your function here\n    return arg;\n}\n\nint main() {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    printf(\"%s\", my_function(\"test input\"));\n    return 0;\n}", "display_name": "C (beta)"}, {"dropdown_rank": 6, "closest_languages": ["c", "java"], "prism": "cpp", "codemirror": "text/x-c++src", "codewars": "cpp", "short_name": "cpp", "case_convention": "camel", "notepad_template": "#include <iostream>\nusing namespace std;\n\nstring myFunction (const string& arg)\n{\n    // write the body of your function here\n    return \"running with \" + arg;\n}\n\nint main ()\n{\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    cout << myFunction (\"test input\");\n    return 0;\n}", "display_name": "C++ (beta)"}, {"dropdown_rank": 7, "closest_languages": ["java"], "prism": "csharp", "codemirror": "text/x-csharp", "codewars": "csharp", "short_name": "csharp", "case_convention": "camel", "notepad_template": "using System;\n\nnamespace Solution\n{\n    class Solution\n    {\n        public static string MyFunction(string arg)\n        {\n            // Write the body of your function here\n            return $\"Running with {arg}\";\n        }\n\n        public static void Main(string[] args)\n        {\n            // Run your function through some test cases here.\n            // Remember: debugging is half the battle!\n            string testInput = \"test input\";\n            Console.WriteLine(MyFunction(testInput));\n        }\n    }\n}\n", "display_name": "C# (beta)"}, {"dropdown_rank": 9, "closest_languages": ["javascript"], "prism": "php", "codemirror": "text/x-php", "codewars": "php", "short_name": "php", "case_convention": "camel", "notepad_template": "<?php\n\nfunction myFunction($arg) {\n    // write the body of your function here\n    return \"running with \" . $arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\necho myFunction(\"test input\");\n\n?>", "display_name": "PHP (beta)"}, {"closest_languages": ["java"], "prism": "swift", "codewars": "swift", "short_name": "swift", "case_convention": "camel", "display_name": "Swift (beta)"}, {"dropdown_rank": 8, "closest_languages": ["c", "java"], "prism": "objectivec", "codemirror": "text/x-objectivec", "short_name": "objectivec", "case_convention": "camel", "notepad_template": "#import <Foundation/Foundation.h>\n#import <stdio.h>\n\n@interface Solution : NSObject\n\n+ (NSString *)myFunction:(NSString *)arg;\n\n@end\n\n@implementation Solution\n\n+ (NSString *)myFunction:(NSString *)arg\n{\n  // write the body of your function here\n  return [@\"running with \" stringByAppendingString:arg];\n}\n\n@end\n\nint main (int argc, const char * argv[])\n{\n  @autoreleasepool {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    NSString * result = [Solution myFunction:@\"test input\"];\n    printf(\"%s\", [result UTF8String]);\n  }\n}", "display_name": "Objective-C (beta)"}], "next_step_type_enum": {"login": "_NEXT_STEP_TYPE_LOGIN_", "purchase": "_NEXT_STEP_TYPE_PURCHASE_", "done": "_NEXT_STEP_TYPE_DONE_", "question": "_NEXT_STEP_TYPE_QUESTION_"}, "CACHEBUST_QUERY_STR": "?bust=135", "DEFAULT_C18N_LANGUAGE": {"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}};
+
+        
+        window.JS_VARS = {"questions_fully_attempted": ["largest-stack", "find-in-ordered-set", "stock-price", "queue-two-stacks", "which-appears-twice", "find-rotation-point", "matching-parens", "reverse-string-in-place", "balanced-binary-tree", "compress-url-list", "bst-checker", "bracket-validator", "permutation-palindrome", "temperature-tracker", "inflight-entertainment", "recursive-string-permutations", "shuffle", "highest-product-of-3", "top-scores", "simulate-5-sided-die", "reverse-linked-list", "linked-list-cycles", "merging-ranges", "second-largest-item-in-bst", "find-duplicate-optimize-for-space", "rectangular-love", "word-cloud", "two-egg-problem", "simulate-7-sided-die", "nth-fibonacci", "product-of-other-numbers", "find-unique-int-among-duplicates", "cake-thief", "delete-node", "kth-to-last-node-in-singly-linked-list", "reverse-words"], "url_content_type": "question"};
+        
+
+        
+    </script>
+
+
+
+    
+
+    
+    <script type="text/javascript" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/saved_resource"></script>
+    <script type="text/javascript">
+        Stripe.setPublishableKey('pk_live_4wtgGTkgBtk4YIB9JDjYdOD0');
+    </script>
+    
+
+    
+    
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/iPrOY23SGAp.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f27b2c82738ffc" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/ping.html" style="display: none;"></iframe></div></div></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=149278655279066";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script id="twitter-wjs" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/widgets.js"></script>
+    
+
+    
+    
+        
+            <script type="text/ng-template" id="/partials/animation.html"><div class="animation-wrapper">
+    <div class="animation" id="Stage-[[getCompId()]]" ng-class="getCompId()">
+    </div>
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/animation_iframe.html"><div class="animation-iframe-wrapper">
+    <iframe class="animation-iframe animation-iframe-[[getCompId()]]"></iframe>
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/code-inline.html"><span class="ic-code-inline" ng-transclude></span></script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/code-block.html"><pre class="language-[[language]]">
+  <code class="language-[[language]]" ng-transclude></code>
+</pre>
+<span class="warning-message" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage" ng-cloak>
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)"></select>
+
+</div>
+<span class="only-content-language" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/complexity.html"><span class="complexity"><span math>O([[getComplexityMarkup()]])</span></span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/concept.html"><span class="concept-wrapper" ng-init="showConcept=false">
+
+    <span ng-click="showConcept=!showConcept" class="concept">
+        <span class="concept-name" ng-transclude></span>
+        <span class="show-concept-icon">&#8628;</span>
+    </span>
+
+    <div ng-show="showConcept" class="slide concept-explanation" ng-include="conceptPartialUrl">
+        Loading...
+    </div>
+
+</span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/function.html"><span class="ic-function"><span class="name" ng-transclude></span>()</span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/heading.html"><h3 class="heading slide" ng-show="shouldShow()" ng-cloak>[[getHeadingText()]]</h3>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/inline-footnote.html"><span class="footnote-wrapper" ng-init="show = false">
+    <span class="show-footnote-icon" ng-click="show = !show">&#8628;</span>
+    <p class="footnote" ng-transclude ng-show="show">Loading...</p>
+</span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/loading.html"><div class="Loading">
+    Loading...
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/math.html"><span class="ic-math" ng-class="{'block': isBlock()}" ng-transclude></span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/note.html"><div class="note slide" ng-show="shouldShow()">
+    <div class="note-content" ng-transclude>
+    </div>
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/section.html"><div class="section-wrapper" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()">
+    <span heading="[[section]]" hide-heading="[[hideHeading]]"></span>
+
+    <div class="section" ng-class="getSectionClass()" ng-transclude>
+    </div>
+
+    
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/variable.html"><span class="ic-variable" ng-transclude></span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/words.html"><span class="ic-words" ng-transclude></span>
+</script>
+        
+    
+
+
+    <!-- load current-user json with initial http request -->
+    <div class="hidden" data-preload-resource="/api/v1/current-user/" data-thejson="{&quot;id&quot;:2385549,&quot;username&quot;:&quot;gokumd&quot;,&quot;email&quot;:&quot;gokumd@gmail.com&quot;,&quot;date_joined&quot;:&quot;2016-01-02T20:29:37.549407+00:00&quot;,&quot;first_name&quot;:&quot;Goku&quot;,&quot;last_name&quot;:&quot;Mohandas&quot;,&quot;full_name&quot;:&quot;Goku Mohandas&quot;,&quot;short_name&quot;:&quot;Goku&quot;,&quot;is_anonymous&quot;:false,&quot;is_on_last_question&quot;:false,&quot;percent_done&quot;:66,&quot;num_questions_done&quot;:29,&quot;num_questions_remaining&quot;:15,&quot;recruiting_is_interested_in_intros&quot;:true,&quot;is_full_access&quot;:true,&quot;first_payment_date&quot;:&quot;2016-01-02T22:17:39.210063Z&quot;,&quot;last_payment_date&quot;:&quot;2016-01-02T22:17:37Z&quot;,&quot;num_free_questions_left&quot;:0,&quot;terms_has_agreed_to_latest&quot;:false,&quot;preferred_content_language&quot;:&quot;python&quot;,&quot;preferred_notepad_language&quot;:&quot;python&quot;,&quot;is_staff&quot;:false,&quot;auth_providers_human_readable_list&quot;:&quot;Google&quot;,&quot;num_auth_providers&quot;:1,&quot;auth_email&quot;:&quot;gokumd@gmail.com&quot;}">
+        {"id":2385549,"username":"gokumd","email":"gokumd@gmail.com","date_joined":"2016-01-02T20:29:37.549407+00:00","first_name":"Goku","last_name":"Mohandas","full_name":"Goku Mohandas","short_name":"Goku","is_anonymous":false,"is_on_last_question":false,"percent_done":66,"num_questions_done":29,"num_questions_remaining":15,"recruiting_is_interested_in_intros":true,"is_full_access":true,"first_payment_date":"2016-01-02T22:17:39.210063Z","last_payment_date":"2016-01-02T22:17:37Z","num_free_questions_left":0,"terms_has_agreed_to_latest":false,"preferred_content_language":"python","preferred_notepad_language":"python","is_staff":false,"auth_providers_human_readable_list":"Google","num_auth_providers":1,"auth_email":"gokumd@gmail.com"}
+    </div>
+
+    
+
+    <!-- Login Modal -->
+    <div ng-controller="LoginModalCtrl" class="modal fade login-modal ng-scope" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Log In" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 ng-bind="note" class="ng-binding">Log in to continue</h3>
+                    <button type="button" ng-show="closeable" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="login-btns">
+    <a ng-href="/auth/login/github/?next=%2Fnext" class="btn btn-soc-github" href="https://www.interviewcake.com/auth/login/github/?next=%2Fnext"><i class="fa fa-github"></i> | Log in with Github</a>
+    <a ng-href="/auth/login/google-oauth2/?next=%2Fnext" class="btn btn-soc-google-plus" href="https://www.interviewcake.com/auth/login/google-oauth2/?next=%2Fnext"><i class="fa my-fa-google-plus"></i> | Log in with Google</a>
+    <a ng-href="/auth/login/facebook/?next=%2Fnext" class="btn btn-soc-facebook" href="https://www.interviewcake.com/auth/login/facebook/?next=%2Fnext"><i class="fa my-fa-facebook"></i> | Log in with Facebook</a>
+</div>
+<p class="login-reassurance">
+    <small>
+        We'll never post on your wall or message your friends.
+    </small>
+</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="vLOJoz4QDBe9WcRIbpBt3qUVHXnY03kf2kd5GEfK9awQLh3OzUQMA9iD2MDrehyu">
+<div id="loading">
+. . .
+</div>
+
+
+<link href="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/css(1)" rel="stylesheet" type="text/css">
+
+<iframe name="stripeXDM_default484405_provider" id="stripeXDM_default484405_provider" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/saved_resource(1).html"></iframe><span style="display: none;"><iframe style="display: none !important;" id="_olark_framesocket31509" src="./23.Does This Linked List Have A Cycle_ _ Interview Cake_files/storage.html"></iframe></span><div><div id="olark-wrapper" class="" data-reactid=".0"><style rel="stylesheet" type="text/css" data-reactid=".0.0">#olark-wrapper .olark-launch-button {
+  background-color: #59a8c4 !important;
+}
+#olark-wrapper .olark-launch-button svg path {
+  fill: #ffffff !important;
+}
+#olark-wrapper .olark-launch-button .olark-button-text {
+  color: #ffffff !important;
+}
+#olark-wrapper .olark-top-bar {
+  background-color: #59a8c4 !important;
+  color: #ffffff !important;
+  border-color: #469dbe !important;
+}
+#olark-wrapper .olark-top-bar-text {
+  color: #ffffff !important;
+}
+#olark-wrapper .olark-top-bar-arrow {
+  fill: #ffffff !important;
+}
+#olark-wrapper #olark-container .olark-visitor-message {
+  background-color: rgba(89, 168, 196, 0.25) !important;
+  border: none !important;
+}
+#olark-wrapper #olark-container .olark-form-send-button {
+  background-color: #59a8c4 !important;
+  color: #ffffff !important;
+}
+#olark-wrapper #olark-container .olark-feedback-form-button {
+  background-color: #59a8c4 !important;
+  color: #ffffff !important;
+}
+#olark-wrapper #olark-container .olark-branding-panel .olark-branding-cancel-button {
+  background-color: #59a8c4 !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+#olark-wrapper #olark-container .olark-branding-panel .olark-branding-go-button {
+  border: none !important;
+  background: rgba(89, 168, 196, 0.35) !important;
+}
+#olark-wrapper .olark-end-chat-flag {
+  fill: #59a8c4 !important;
+}
+#olark-wrapper #olark-container .olark-form-confirmation-icon .olark-launch-button-icon {
+  fill: #59a8c4 !important;
+}
+#olark-wrapper #olark-container .olark-form-input:focus {
+  border-color: #59a8c4 !important;
+}
+#olark-wrapper #olark-container .olark-form-message-input:focus {
+  border-color: #59a8c4 !important;
+}
+</style><button class="olark-launch-button" data-reactid=".0.2"><svg x="0px" y="0px" viewBox="0 0 28 18" data-reactid=".0.2.0"><path fill="#ffffff" d="M28,3.2C28,1.5,26.5,0,24.8,0H3.2C1.5,0,0,1.5,0,3.2v11.5C0,16.5,1.5,18,3.2,18h21.5c1.8,0,3.2-1.5,3.2-3.2 V3.2z M24.7,14.8c-0.2,0.1-0.4,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.6-0.3l-5-5.3l-3.6,3c-0.3,0.2-0.6,0.3-0.9,0.3s-0.7-0.1-0.9-0.4l-3.6-3 l-5,5.3c-0.2,0.2-0.4,0.3-0.6,0.3c-0.2,0-0.4-0.1-0.6-0.2c-0.3-0.3-0.4-0.8,0-1.2l4.9-5.3L3.3,4.5C3,4.2,2.9,3.6,3.2,3.3 C3.5,2.9,4,2.9,4.4,3.2l9.6,7.9l9.6-7.9c0.4-0.3,0.9-0.2,1.2,0.1c0.3,0.4,0.2,0.9-0.1,1.2l-4.8,3.9l4.9,5.3 C25.1,14,25,14.5,24.7,14.8z" data-reactid=".0.2.0.0"></path></svg><div class="olark-notification-badge olark-hidden" data-reactid=".0.2.1"><div class="olark-notification-badge-text" data-reactid=".0.2.1.0">0</div></div></button><div id="olark-container" class="olark-hidden" data-reactid=".0.3"><div class="olark-top-bar" data-reactid=".0.3.0"><div class="olark-top-bar-text" data-reactid=".0.3.0.0">Send me a message!</div><div class="olark-top-bar-button" data-reactid=".0.3.0.1"><svg viewBox="0 0 15.1 8.9" fill="#ffffff" data-reactid=".0.3.0.1.0"><polygon class="olark-top-bar-arrow" points="0.2,1.4 7.6,8.9 15.1,1.4 13.7,0 7.6,6 1.6,0" data-reactid=".0.3.0.1.0.0"></polygon></svg></div></div><div class="olark-conversation-container olark-form-conversation-container olark-no-message-form" data-reactid=".0.3.1"><div class="olark-form-message" data-reactid=".0.3.1.0">Parker from Interview Cake here. You can reach my email inbox through this handy form!</div><div class="olark-form-container" data-reactid=".0.3.1.1"><form class="olark-form" novalidate="" data-reactid=".0.3.1.1.0"><div class="olark-form-input-container" data-reactid=".0.3.1.1.0.0:$fname"><input type="text" name="fname" class="olark-form-input-filled olark-form-input" id="olark-form-input-fname" tabindex="1" autocomplete="on" value="Goku Mohandas" required="" data-reactid=".0.3.1.1.0.0:$fname.0"><label class="olark-float-label" for="olark-form-input-fname" data-reactid=".0.3.1.1.0.0:$fname.1">click here and type your Name</label><span class="olark-required-asterisk" data-reactid=".0.3.1.1.0.0:$fname.2"><svg viewBox="0 0 20 20" x="0" y="0" fill="currentcolor" data-reactid=".0.3.1.1.0.0:$fname.2.0"><path d="M10,0C4.5,0,0,4.5,0,10c0,5.5,4.5,10,10,10s10-4.5,10-10C20,4.5,15.5,0,10,0z M13.8,13.6L12,15l-2-3L8,15l-1.8-1.4l2-2.8 L5,9.6l0.8-2.2L9,8.6L8.8,5h2.4L11,8.6l3.2-1.3L15,9.6l-3.2,1.1L13.8,13.6z" data-reactid=".0.3.1.1.0.0:$fname.2.0.0"></path></svg></span></div><div class="olark-form-input-container" data-reactid=".0.3.1.1.0.0:$email"><input type="email" name="email" class="olark-form-input-filled olark-form-input" id="olark-form-input-email" tabindex="2" autocomplete="on" value="gokumd@gmail.com" required="" data-reactid=".0.3.1.1.0.0:$email.0"><label class="olark-float-label" for="olark-form-input-email" data-reactid=".0.3.1.1.0.0:$email.1">click here and type your Email</label><span class="olark-required-asterisk" data-reactid=".0.3.1.1.0.0:$email.2"><svg viewBox="0 0 20 20" x="0" y="0" fill="currentcolor" data-reactid=".0.3.1.1.0.0:$email.2.0"><path d="M10,0C4.5,0,0,4.5,0,10c0,5.5,4.5,10,10,10s10-4.5,10-10C20,4.5,15.5,0,10,0z M13.8,13.6L12,15l-2-3L8,15l-1.8-1.4l2-2.8 L5,9.6l0.8-2.2L9,8.6L8.8,5h2.4L11,8.6l3.2-1.3L15,9.6l-3.2,1.1L13.8,13.6z" data-reactid=".0.3.1.1.0.0:$email.2.0.0"></path></svg></span></div><div class="olark-form-input-container" data-reactid=".0.3.1.1.0.0:$body"><div data-reactid=".0.3.1.1.0.0:$body.0"><div class="olark-form-message-input olark-clone-textarea" data-reactid=".0.3.1.1.0.0:$body.0.0" style="width: 330px !important; overflow-wrap: break-word;">Type a message...</div><textarea class="olark-form-message-input" tabindex="3" name="body" id="olark-form-input-body" placeholder="Type a message..." title="Type a message..." required="" data-reactid=".0.3.1.1.0.0:$body.0.1"></textarea></div><span class="olark-required-asterisk" data-reactid=".0.3.1.1.0.0:$body.2"><svg viewBox="0 0 20 20" x="0" y="0" fill="currentcolor" data-reactid=".0.3.1.1.0.0:$body.2.0"><path d="M10,0C4.5,0,0,4.5,0,10c0,5.5,4.5,10,10,10s10-4.5,10-10C20,4.5,15.5,0,10,0z M13.8,13.6L12,15l-2-3L8,15l-1.8-1.4l2-2.8 L5,9.6l0.8-2.2L9,8.6L8.8,5h2.4L11,8.6l3.2-1.3L15,9.6l-3.2,1.1L13.8,13.6z" data-reactid=".0.3.1.1.0.0:$body.2.0.0"></path></svg></span></div><button class="olark-form-send-button" type="submit" data-reactid=".0.3.1.1.0.2">Send</button></form></div></div></div></div></div></body></html>

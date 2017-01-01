@@ -1,0 +1,1032 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0053)https://www.interviewcake.com/concept/python/mutable? -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" defer="true" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/jquery.js"></script><script async="" defer="true" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/visits"></script><script type="text/javascript" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/identify"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <script type="text/javascript" async="" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/prum.min.js"></script><script type="text/javascript" async="" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/f78ae8e419ed65a0b5d9f07bb19c8d3a987aef19.js"></script><script type="text/javascript" async="" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/4774384.js"></script><script type="text/javascript" async="" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/mixpanel-2-latest.min.js"></script><script type="text/javascript" async="" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/0751fb0485a5b0be210d27b9cefd9842c5c65cc6.2.js"></script><script type="text/javascript" async="" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/analytics.js"></script><script type="text/javascript" async="" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/fbevents.js"></script><script type="text/javascript" async="" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/conversion_async.js"></script><script id="facebook-jssdk" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/all.js"></script><script type="text/javascript" async="" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/analytics.min.js"></script><script type="text/javascript">
+        
+        window.IC = window.IC || {};
+        window.IC.currentUser = JSON.parse('{"id":2385549,"username":"gokumd","email":"gokumd@gmail.com","date_joined":"2016-01-02T20:29:37.549407+00:00","first_name":"Goku","last_name":"Mohandas","full_name":"Goku Mohandas","short_name":"Goku","is_anonymous":false,"is_on_last_question":false,"percent_done":66,"num_questions_done":29,"num_questions_remaining":15,"recruiting_is_interested_in_intros":true,"is_full_access":true,"first_payment_date":"2016-01-02T22:17:39.210063Z","last_payment_date":"2016-01-02T22:17:37Z","num_free_questions_left":0,"terms_has_agreed_to_latest":false,"preferred_content_language":"python","preferred_notepad_language":"python","is_staff":false,"auth_providers_human_readable_list":"Google","num_auth_providers":1,"auth_email":"gokumd@gmail.com"}');
+        
+    </script>
+
+
+    
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/1358232165.js"></script>
+    
+
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"transactionName":"ZVwAbEQCDUQCAUwKDFwWJE1YABdeDAwXDhpBUBZdGA4CXg0DSBNNRFAHT0VZIFgNAV0TF2RQB08YBAZD","errorBeacon":"bam.nr-data.net","applicationID":"7328113","queueTime":0,"beacon":"bam.nr-data.net","licenseKey":"9e57878e2e","agent":"","applicationTime":302}</script>
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.interviewcake.com/images/favicon.ico?bust=135">
+        <link rel="canonical" href="https://www.interviewcake.com/concept/java/mutable">
+        <meta name="description" content="Mutable objects can be changed, while immutable objects can&#39;t. In Python, strings are immutable, so strings can&#39;t be edited &quot;in place&quot;. You have to make  a copy.">
+
+        
+
+        <meta property="og:title" content="Mutable vs Immutable Objects | Interview Cake">
+        <meta property="og:description" content="Mutable objects can be changed, while immutable objects can&#39;t. In Python, strings are immutable, so strings can&#39;t be edited &quot;in place&quot;. You have to make  a copy.">
+        <meta property="og:image" content="https://www.interviewcake.com/static/images/cake_white_on_blue_600_600_unrounded.png">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Interview Cake: Programming Interview Questions and Tips">
+        <meta property="fb:app_id" content="149278655279066">
+        <meta property="fb:admins" content="514407734">
+        <meta property="og:url" content="https://www.interviewcake.com/concept/java/mutable">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@interviewcake">
+        <meta name="twitter:title" content="Mutable vs Immutable Objects | Interview Cake">
+        <meta name="twitter:description" content="Mutable objects can be changed, while immutable objects can&#39;t. In Python, strings are immutable, so strings can&#39;t be edited &quot;in place&quot;. You have to make  a copy.">
+        <meta name="twitter:creator" content="@interviewcake">
+        <meta name="twitter:image:src" content="https://www.interviewcake.com/static/images/cake_white_on_blue_600_600_unrounded.png">
+        <meta name="twitter:domain" content="interviewcake.com">
+
+        <title>Mutable vs Immutable Objects | Interview Cake</title>
+    
+
+
+    
+
+    
+    <script type="text/javascript">
+        window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(a){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+a+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},window.analytics.SNIPPET_VERSION="2.0.6",
+        window.analytics.load("rowk0wc1g6"),
+        window.analytics.page();
+    </script>
+    
+    
+
+
+    
+
+
+    
+
+        <link href="./14.Mutable vs Immutable Objects _ Interview Cake_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./14.Mutable vs Immutable Objects _ Interview Cake_files/bootstrap-glyphicons.css" rel="stylesheet">
+        <link href="./14.Mutable vs Immutable Objects _ Interview Cake_files/font-awesome.min.css" rel="stylesheet">
+        <link href="./14.Mutable vs Immutable Objects _ Interview Cake_files/katex.min.css" rel="stylesheet">
+    
+    
+        
+            <link rel="stylesheet" href="./14.Mutable vs Immutable Objects _ Interview Cake_files/4d3ba14d6001.css" type="text/css" media="all">
+        
+    
+
+
+
+
+<!--
+<link href='http://fonts.googleapis.com/css?family=Raleway:500,700,100' rel='stylesheet' type='text/css'>
+-->
+<!--
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+-->
+<link href="./14.Mutable vs Immutable Objects _ Interview Cake_files/css" rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" href="https://www.interviewcake.com/images/cake_white_on_blue_128_128_unrounded.png">
+<!--
+thought maybe for headings. but nope.
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+-->
+
+
+
+
+<meta name="50fc73d52056532c18787976ceb78fddb87b78b2" content="ceb4cec06fc4a780c7b31b85c07cf75d1ca58d9d">
+
+
+
+
+
+<script type="text/javascript">
+var _vwo_code=(function(){
+var account_id=50155,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script><script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/j.php" type="text/javascript"></script>
+
+<script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/application2.js" async="" defer="" data-cfasync="false"></script><style type="text/css">.olark-key,#hbl_code,#olark-data{display: none !important;}</style><link id="habla_style_div" type="text/css" rel="stylesheet" href="./14.Mutable vs Immutable Objects _ Interview Cake_files/df26100e954276593311a44753620fda.css"><style type="text/css">@media print {#habla_beta_container_do_not_rely_on_div_classes_or_names {display: none !important}}</style><link rel="stylesheet" href="./14.Mutable vs Immutable Objects _ Interview Cake_files/theme.css" type="text/css"></head>
+<body ng-app="prepApp" ng-init="questionIsEmbedded = false" class="user-is-full-access   ng-scope"><div id="olark" style="display: none;"><olark><iframe frameborder="0" id="olark-loader" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/saved_resource.html"></iframe></olark></div>
+
+<div class="print-header navbar-print-header navbar navbar-inverse">
+    <div class="navbar-header">
+        <span class="navbar-brand">
+            <img src="./14.Mutable vs Immutable Objects _ Interview Cake_files/cake_white_20_21.png" class="logo">
+            Interview Cake
+        </span>
+    </div>
+</div>
+
+
+
+
+<div class="navbar navbar-normal navbar-inverse ng-scope" role="navigation" ng-controller="HeaderCtrl" language="python">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://www.interviewcake.com/">
+            Interview Cake
+        </a>
+    </div>
+
+  <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <a href="https://www.interviewcake.com/coding-interview-tips">Tips and Tricks</a>
+            </li>
+
+            <li class="dropdown open">
+                <a href="https://www.interviewcake.com/concept/python/mutable?" class="dropdown-toggle" data-toggle="dropdown" rel="nofollow" aria-expanded="true">
+                    Glossary <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="https://www.interviewcake.com/big-o-notation-time-and-space-complexity">Big O Notation: <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span>, <span complexity="n^2" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.814108em;"></span><span class="strut bottom" style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">n</span><span class="vlist"><span class="" style="top: -0.363em; margin-right: 0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span><span class="mclose">)</span></span></span></span></span></span></span>, etc</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/article/logarithms">Logarithms</a>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/binary-search">Binary Search</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/counting-sort">Counting Sort</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/overlapping-subproblems">Overlapping Subproblems</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/memoization">Memoization</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/bottom-up">Bottom-Up Algorithms</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/lazy">Lazy Evaluation</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/garbage-collection">Garbage Collection</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/integer-overflow">Integer Overflow</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/js-closure">Closure</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/slice">Array Slicing</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/hashing">Hashing</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/mutable">Mutable vs Immutable</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/in-place">In-Place Operation</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/triangular-series">Triangular Series</a>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/array">Array</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/dynamic-array-amortized-analysis">Dynamic Array</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/hash-map">Hash Table</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/linked-list">Linked List</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/queue">Queue</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/stack">Stack</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/binary-tree">Binary Tree</a>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/binary-numbers">Binary Numbers</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/and">Bitwise AND</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/or">Bitwise OR</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/not">Bitwise NOT</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/xor">Bitwise XOR</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/bit-shift">Bit Shifting</a>
+                    </li>
+                </ul>
+            </li>
+
+            
+            
+            
+            <li>
+                
+                <a href="https://www.interviewcake.com/all-questions/python">All Questions</a>
+                
+            </li>
+            
+            <li>
+                
+                
+            </li>
+        </ul>
+
+
+
+        <ul class="nav navbar-nav navbar-right" ng-show="currentUserSet">
+
+            
+            <li>
+                
+                    <a rel="nofollow" ng-show="currentUser.is_full_access" href="https://www.interviewcake.com/next">Next Question</a>
+                
+
+                <a class="upgrade ng-hide" ng-hide="currentUser.is_full_access" href="https://www.interviewcake.com/upgrade">
+                    <!--
+                    <i class="fa fa-unlock-alt fa-lg" style="margin-right: 5px;" ></i>
+                    -->
+
+                    Get the full course
+
+                    <span class="glyphicon glyphicon-chevron-right full-access-badge"></span>
+
+</a>
+            </li>
+            
+
+
+
+            
+            <li class="dropdown language-dropdown ng-scope" ng-controller="NavbarTranslationCtrl" ng-show="contentLanguage&amp;&amp;currentUser.is_full_access ">
+                <a rel="nofollow" href="https://www.interviewcake.com/concept/python/mutable?" class="dropdown-toggle ng-binding" data-toggle="dropdown">
+                    Python <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                
+                    <!-- ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/concept/python/mutable?" ng-click="updateLanguage(language, true)" class="ng-binding">Python</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/concept/python/mutable?" ng-click="updateLanguage(language, true)" class="ng-binding">Ruby</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/concept/python/mutable?" ng-click="updateLanguage(language, true)" class="ng-binding">Java</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/concept/python/mutable?" ng-click="updateLanguage(language, true)" class="ng-binding">JavaScript</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/concept/python/mutable?" ng-click="updateLanguage(language, true)" class="ng-binding">C (beta)</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/concept/python/mutable?" ng-click="updateLanguage(language, true)" class="ng-binding">C++ (beta)</a>
+                    </li><!-- end ngRepeat: language in contentLanguages -->
+                
+                </ul>
+            </li>
+            
+
+            <li>
+                <p class="navbar-text">
+                    
+                    'sup <a rel="nofollow" trackling="" the-event="Settings Link Click" href="https://www.interviewcake.com/account">Goku</a>.
+                    
+                    <span ng-show="currentUser.is_full_access" class="glyphicon glyphicon-star full-access-badge"></span>
+                </p>
+            </li>
+            <li ng-hide="currentUser.is_anonymous">
+                <a rel="nofollow" tracklink="" the-event="Logout Link Click" the-properties="{&quot;which&quot; : &quot;header top right&quot;}" href="https://www.interviewcake.com/auth/logout/?next=/" class="ng-isolate-scope">Log out</a>
+            </li>
+
+            <li ng-show="currentUser.is_anonymous" class="ng-hide">
+                <a href="https://www.interviewcake.com/concept/python/mutable?" rel="nofollow" ng-click="loginClick(&#39;header top right&#39;)">Log in to save progress</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="below-nav">
+
+    <div class="ic-alerts">
+        
+        
+    </div>
+
+    
+
+    
+    
+
+<div class="article ng-scope" ng-controller="PrepSeshApp">
+
+<div class="section-wrapper heading">
+<div class="section">
+
+
+<h1>
+    Mutable vs Immutable Objects
+</h1>
+
+</div>
+</div>
+
+<section class="article-content">
+
+<div class="section-wrapper shaded">
+<div class="section">
+
+    <div>
+<p>
+A <strong>mutable</strong> object can be changed after it's created, and an <strong>immutable</strong> object can't.
+</p>
+
+<p>
+For example, let's look at <strong>lists</strong> <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__mutable__list-explanation"></span> and <strong>tuples</strong> in Python. Lists are mutable and tuples are immutable:
+</p>
+
+<div code-block="concept__mutable__python-lists-and-tuples" language="python" translation-highlighting="static" class="ng-isolate-scope"><pre class="  language-python">  <code class="  language-python" ng-transclude=""><span class="token comment" spellcheck="true"># Python</span>
+
+int_list  <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+int_tuple <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">)</span>
+
+int_list<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment" spellcheck="true"># list is now [1, 9]</span>
+
+int_tuple<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment" spellcheck="true"># raises: TypeError: 'tuple' object does not support item assignment</span></code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language ng-hide" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding" ng-show="staticLanguage" ng-bind="onlyLanguage">Python</span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p>
+Different languages have different policies on whether strings should be mutable. Ruby has mutable strings:
+</p>
+
+<div code-block="concept__mutable__ruby-strings" language="ruby" translation-highlighting="static" class="ng-isolate-scope"><pre class="  language-ruby">  <code class="  language-ruby" ng-transclude="">test_string <span class="token operator">=</span> <span class="token string">'mutable?'</span>
+test_string<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!'</span>
+<span class="token comment" spellcheck="true"># string is now 'mutable!'</span></code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language ng-hide" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding" ng-show="staticLanguage" ng-bind="onlyLanguage">Ruby</span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p>
+But strings are <em>immutable</em> in Python:
+</p>
+
+<div code-block="concept__mutable__python-strings" language="python" translation-highlighting="static" class="ng-isolate-scope"><pre class="  language-python">  <code class="  language-python" ng-transclude="">test_string <span class="token operator">=</span> <span class="token string">'mutable?'</span>
+test_string<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!'</span>
+<span class="token comment" spellcheck="true"># TypeError: 'str' object does not support item assignment</span></code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language ng-hide" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding" ng-show="staticLanguage" ng-bind="onlyLanguage">Python</span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p>
+And strings are also immutable in JavaScript:
+</p>
+
+<div code-block="concept__mutable__javascript-strings" language="javascript" translation-highlighting="static" class="ng-isolate-scope"><pre class="  language-javascript">  <code class="  language-javascript" ng-transclude=""><span class="token keyword">var</span> testString <span class="token operator">=</span> <span class="token string">'mutable?'</span><span class="token punctuation">;</span>
+testString<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!'</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// string is still 'mutable?'</span>
+<span class="token comment" spellcheck="true">// (but no error is raised!)</span></code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language ng-hide" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding" ng-show="staticLanguage" ng-bind="onlyLanguage">JavaScript</span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p>
+In C++ and C, strings can either be mutable or immutable, depending on whether the string is declared with the <strong>const</strong> modifier:
+</p>
+
+<div code-block="concept__mutable__cpp-strings" language="cpp" translation-highlighting="static" class="ng-isolate-scope"><pre class="  language-cpp">  <code class="  language-cpp" ng-transclude="">string <span class="token function">testString</span><span class="token punctuation">(</span><span class="token string">"mutable?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+testString<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!'</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// testString is now "mutable!"</span>
+
+<span class="token keyword">const</span> string <span class="token function">testString2</span><span class="token punctuation">(</span><span class="token string">"mutable?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+testString2<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// compile-time error</span></code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language ng-hide" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding" ng-show="staticLanguage" ng-bind="onlyLanguage">C++ (beta)</span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+<div code-block="concept__mutable__c-strings" language="c" translation-highlighting="static" class="ng-isolate-scope"><pre class="  language-c">  <code class="  language-c" ng-transclude=""><span class="token keyword">char</span> testString<span class="token punctuation">[</span><span class="token number">16</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"mutable?"</span><span class="token punctuation">;</span>
+testString<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!'</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// testString is now "mutable!"</span>
+
+<span class="token keyword">const</span> <span class="token keyword">char</span> testString2<span class="token punctuation">[</span><span class="token number">16</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"mutable?"</span><span class="token punctuation">;</span>
+testString2<span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'!'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// compile-time error</span></code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language ng-hide" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding" ng-show="staticLanguage" ng-bind="onlyLanguage">C (beta)</span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p>
+Mutable objects are nice because you can make changes "in-place," without allocating a new object. But be careful—whenever you make an in-place change to an object, <em>all</em> references to that object will now reflect the change (whether you like it or not)!
+</p>
+
+<!--
+vars should not change based on the current content
+language - their context is already language specific
+-->
+<script type="text/javascript">
+            var elTranslations = {"code-blocks": {"concept__mutable__python-lists-and-tuples": {"default": "# Python\n\nint_list  = [4, 9]\nint_tuple = (4, 9)\n\nint_list[0] = 1\n# list is now [1, 9]\n\nint_tuple[0] = 1\n# raises: TypeError: 'tuple' object does not support item assignment"}, "concept__mutable__python-strings": {"default": "test_string = 'mutable?'\ntest_string[7] = '!'\n# TypeError: 'str' object does not support item assignment"}, "concept__mutable__cpp-strings": {"default": "string testString(\"mutable?\");\ntestString[7] = '!';\n// testString is now \"mutable!\"\n\nconst string testString2(\"mutable?\");\ntestString2[7] = '!'; // compile-time error"}, "concept__mutable__c-strings": {"default": "char testString[16] = \"mutable?\";\ntestString[7] = '!';\n// testString is now \"mutable!\"\n\nconst char testString2[16] = \"mutable?\";\ntestString2[7] = '!'; // compile-time error"}, "concept__mutable__ruby-strings": {"default": "test_string = 'mutable?'\ntest_string[7] = '!'\n# string is now 'mutable!'"}, "concept__mutable__javascript-strings": {"default": "var testString = 'mutable?';\ntestString[7] = '!';\n// string is still 'mutable?'\n// (but no error is raised!)"}}, "words": {"concept__mutable__list-explanation": {"javascript": "", "ruby": "(dynamic arrays)", "python": "", "default": "", "c": "", "java": "", "cpp": ""}}};
+            var codeTypes = ['words', 'code-blocks', 'vars', 'funcs', 'code-inlines'];
+
+            var mergeObjects = function(objectA, objectB) {
+                objectA = objectA || {};
+                objectB = objectB || {};
+                for (var key in objectB) {
+                    objectA[key] = objectB[key];
+                }
+                return objectA;
+            }
+
+            if (!window.contentTranslations) {
+                window.contentTranslations = elTranslations;
+            } else {
+                for (var i=0; i<codeTypes.length; i++) {
+                    window.contentTranslations[codeTypes[i]] = mergeObjects(window.contentTranslations[codeTypes[i]], elTranslations[codeTypes[i]]);
+                }
+            }
+            </script>
+</div>
+
+
+
+
+</div>
+</div>
+
+</section> <!-- .article-content -->
+
+
+
+<div class="section-wrapper">
+<div class="section">
+
+
+<h2>
+What's next?
+</h2>
+
+<p>
+If you're ready to start applying these concepts to some problems, check out <a href="https://www.interviewcake.com/next">our mock coding interview questions</a>.
+</p>
+
+<p>
+They mimic a real interview by offering hints when you're stuck or you're missing an optimization.
+</p>
+
+<p>
+<a ng-click="start(&#39;Concept Bottom&#39;)" class="btn btn-lg get-started btn-branded btn-rarr">Try some questions now</a>
+</p>
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="section-wrapper">
+    <div class="section">
+        <div class="article-share-bottom text-center">
+            <h2 class="whisper">
+                Psst. Pass it on.
+            </h2>
+            
+            
+                
+
+<a class="custom-share facebook-share ng-isolate-scope" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.interviewcake.com/concept/python/mutable" target="_blank" tracklink="" the-event="FB share click" the-properties="{&quot;which&quot; : &quot;concept bottom Mutable vs Immutable Objects&quot;}"><i class="fa fa-facebook"> </i> Share</a>
+<a class="custom-share twitter-share ng-isolate-scope" href="https://twitter.com/intent/tweet?text=Mutable%20vs%20Immutable%20Objects&amp;via=interviewcake&amp;related=interviewcake&amp;url=https%3A//www.interviewcake.com/concept/python/mutable" target="_blank" tracklink="" the-event="Twitter share click" the-properties="{&quot;which&quot; : &quot;concept bottom Mutable vs Immutable Objects&quot;}"><i class="fa fa-twitter"> </i> Tweet</a>
+<a class="custom-share linkedin-share ng-isolate-scope" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.interviewcake.com/concept/python/mutable&amp;title=&amp;summary=Mutable%20vs%20Immutable%20Objects&amp;source=Interview%20Cake" target="_blank" tracklink="" the-event="LinkedIn share click" the-properties="{&quot;which&quot; : &quot;concept bottom Mutable vs Immutable Objects&quot;}"><i class="fa fa-linkedin"> </i> Share</a>
+
+            
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+    
+    
+    
+
+
+    <div id="print-footer">
+        <p>
+            Want more coding interview help?
+        </p>
+
+        <p>
+            Check out <span class="url">interviewcake.com</span> for more advice, guides, and practice questions.
+        </p>
+    </div>
+
+    <div id="footer">
+
+        <a class="newsletter-link" href="https://www.interviewcake.com/free-weekly-coding-interview-problem-newsletter">Subscribe to our weekly question email list »</a>
+
+        <div class="links">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="by-company">
+                            <h5>
+                                Programming interview questions by company:
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="https://www.interviewcake.com/google-interview-questions">Google interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/facebook-interview-questions">Facebook interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/amazon-interview-questions">Amazon interview questions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="by-language">
+                            <h5>
+                                Programming interview questions by language:
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="https://www.interviewcake.com/java-interview-questions">Java interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/python-interview-questions">Python interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/ruby-interview-questions">Ruby interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/javascript-interview-questions">JavaScript interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/sql-interview-questions">SQL interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/testing-and-qa-interview-questions">Testing and QA interview questions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+
+            <a class="facebook ng-isolate-scope" href="https://www.facebook.com/interviewcake" target="_blank" tracklink="" the-event="FB footer click"><i class="fa fa-facebook"></i></a>
+            <a class="twitter ng-isolate-scope" href="https://www.twitter.com/interviewcake" target="_blank" tracklink="" the-event="Twitter footer click"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        
+
+            <div itemscope="" itemtype="http://schema.org/Corporation">
+                <span class="schemaorghide" itemprop="description">Programming interview practice and tips for software engineers looking for jobs.</span>
+
+                Copyright © 2016
+                <span itemprop="name">Cake Labs, Inc.</span> All rights reserved.
+                <span class="schemaorghide" itemprop="image">https://www.interviewcake.com/static//images/cake_white_on_blue_600.png</span>
+                <span class="schemaorghide" itemprop="logo">https://www.interviewcake.com/static//images/cake_white_on_blue_600.png</span>
+                <span class="schemaorghide" itemprop="url">https://www.interviewcake.com</span>
+                <span class="schemaorghide" itemprop="telephone">(804) 876-2253</span>
+
+                <address itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">228 Park Ave S #82632</span>,
+                    <span itemprop="addressLocality">New York</span>,
+                    <span itemprop="addressRegion">NY</span>
+                    <span itemprop="addressCountry">US</span>
+                    <span itemprop="postalCode">10003</span>
+                    <span itemprop="telephone">(804) 876-2253</span>
+                </address>
+
+                <address class="schemaorghide" itemprop="location" itemscope="" itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="addressCountry">US</span>
+                    <span itemprop="addressLocality">New York</span>
+                    <span itemprop="addressRegion">NY</span>
+                    <span itemprop="streetAddress">228 Park Ave S #82632</span>
+                    <span itemprop="postalCode">10003</span>
+                    <span itemprop="telephone">(804) 876-2253</span>
+                </address>
+
+                <div itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                    <div itemprop="geo" itemscope="" itemtype="http://schema.org/GeoCoordinates">
+                        <meta itemprop="latitude" content="37.76480">
+                        <meta itemprop="longitude" content="-122.41872">
+                    </div>
+                </div>
+            </div>
+        
+        <div>
+
+            
+                <a href="https://www.interviewcake.com/about">About</a>
+                |
+            
+            <a rel="nofollow" href="https://www.interviewcake.com/privacy-policy">Privacy</a>
+            |
+            <a rel="nofollow" href="https://www.interviewcake.com/terms-and-conditions">Terms</a>
+        </div>
+    </div>
+
+    
+
+</div> <!-- /"below-nav" -->
+
+    
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/jquery.min.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/bootstrap.min.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/angular.min.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/angular-route.min.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/angular-cookies.min.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/angular-animate.min.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/katex.min.js"></script>
+
+    
+
+    
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/underscore-min.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/angular-django-rest-resource.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/angular-seo.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/sticky.js"></script>
+    
+
+    <script type="text/javascript">
+        (function(){
+  var FLAGS = {
+    'learnings': true,'only_3_free_questions': true,'new_header': true,'allow_anonymous_purchase': false
+    },
+    SWITCHES = {
+    
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+    </script>
+
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/base.js"></script>
+
+    
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/prism.min.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/codemirror.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/python.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/ruby.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/javascript.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/clike.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/php.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/haskell.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/ui-codemirror.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/jquery.payment.js"></script>
+    <script src="./14.Mutable vs Immutable Objects _ Interview Cake_files/edgeUtils.js"></script>
+    
+
+
+
+
+    <script type="text/javascript">
+        window.CACHEBUST_QUERY_STR = '?bust=135';
+        //TODO: move above into the below
+        window.JS_CONSTANTS = {"INTEGRATIONS_SETTING_ONLY_INTEGRATIONS_THAT_SUPPORT_FRONT_END_ONLY": {"All": false, "Google Analytics": true, "Optimizely": true, "Adwords": true, "Facebook Pixel": true}, "C18N_LANGUAGES": [{"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}, {"dropdown_rank": 3, "prism": "ruby", "codemirror": "text/x-ruby", "codewars": "ruby", "short_name": "ruby", "case_convention": "snake", "notepad_template": "def my_function(arg)\n    # write the body of your function here\n    return \"running with #{arg}\"\nend\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nputs my_function('test input')\n", "display_name": "Ruby"}, {"dropdown_rank": 2, "prism": "java", "codemirror": "text/x-java", "codewars": "java", "short_name": "java", "case_convention": "camel", "notepad_template": "public class Solution {\n    public static String myFunction(String arg) {\n        // write the body of your function here\n        return \"running with \" + arg;\n    }\n    public static void main(String[] args) {\n        // run your function through some test cases here\n        // remember: debugging is half the battle!\n        String testInput = \"test input\";\n        System.out.println(myFunction(testInput));\n    }\n}", "display_name": "Java"}, {"dropdown_rank": 4, "prism": "javascript", "codemirror": "text/javascript", "codewars": "javascript", "short_name": "javascript", "case_convention": "camel", "notepad_template": "function myFunction(arg) {\n    // write the body of your function here\n    return 'running with ' + arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\nconsole.log(myFunction('test input'));\n", "display_name": "JavaScript"}, {"dropdown_rank": 5, "closest_languages": ["cpp", "java"], "prism": "c", "codemirror": "text/x-csrc", "codewars": "c", "short_name": "c", "case_convention": "camel", "notepad_template": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nconst char * my_function(char * arg) {\n    // write the body of your function here\n    return arg;\n}\n\nint main() {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    printf(\"%s\", my_function(\"test input\"));\n    return 0;\n}", "display_name": "C (beta)"}, {"dropdown_rank": 6, "closest_languages": ["c", "java"], "prism": "cpp", "codemirror": "text/x-c++src", "codewars": "cpp", "short_name": "cpp", "case_convention": "camel", "notepad_template": "#include <iostream>\nusing namespace std;\n\nstring myFunction (const string& arg)\n{\n    // write the body of your function here\n    return \"running with \" + arg;\n}\n\nint main ()\n{\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    cout << myFunction (\"test input\");\n    return 0;\n}", "display_name": "C++ (beta)"}], "CODEMIRROR_LANGUAGES": [{"dropdown_rank": 10, "codemirror": "text/x-haskell", "codewars": "haskell", "short_name": "haskell", "display_name": "Haskell", "notepad_template": "myFunction :: String -> String\n-- write the body of your function here\nmyFunction arg = \"running with \" ++ arg\n\nmain = do\n  -- run your function through some test cases here\n  -- remember: debugging is half the battle!\n  let result = myFunction \"test input\"\n  putStrLn result\n"}, {"dropdown_rank": 11, "codemirror": "", "short_name": "nolanguage", "prism": "none", "display_name": "No syntax"}, {"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}, {"dropdown_rank": 3, "prism": "ruby", "codemirror": "text/x-ruby", "codewars": "ruby", "short_name": "ruby", "case_convention": "snake", "notepad_template": "def my_function(arg)\n    # write the body of your function here\n    return \"running with #{arg}\"\nend\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nputs my_function('test input')\n", "display_name": "Ruby"}, {"dropdown_rank": 2, "prism": "java", "codemirror": "text/x-java", "codewars": "java", "short_name": "java", "case_convention": "camel", "notepad_template": "public class Solution {\n    public static String myFunction(String arg) {\n        // write the body of your function here\n        return \"running with \" + arg;\n    }\n    public static void main(String[] args) {\n        // run your function through some test cases here\n        // remember: debugging is half the battle!\n        String testInput = \"test input\";\n        System.out.println(myFunction(testInput));\n    }\n}", "display_name": "Java"}, {"dropdown_rank": 4, "prism": "javascript", "codemirror": "text/javascript", "codewars": "javascript", "short_name": "javascript", "case_convention": "camel", "notepad_template": "function myFunction(arg) {\n    // write the body of your function here\n    return 'running with ' + arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\nconsole.log(myFunction('test input'));\n", "display_name": "JavaScript"}, {"dropdown_rank": 5, "closest_languages": ["cpp", "java"], "prism": "c", "codemirror": "text/x-csrc", "codewars": "c", "short_name": "c", "case_convention": "camel", "notepad_template": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nconst char * my_function(char * arg) {\n    // write the body of your function here\n    return arg;\n}\n\nint main() {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    printf(\"%s\", my_function(\"test input\"));\n    return 0;\n}", "display_name": "C (beta)"}, {"dropdown_rank": 6, "closest_languages": ["c", "java"], "prism": "cpp", "codemirror": "text/x-c++src", "codewars": "cpp", "short_name": "cpp", "case_convention": "camel", "notepad_template": "#include <iostream>\nusing namespace std;\n\nstring myFunction (const string& arg)\n{\n    // write the body of your function here\n    return \"running with \" + arg;\n}\n\nint main ()\n{\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    cout << myFunction (\"test input\");\n    return 0;\n}", "display_name": "C++ (beta)"}, {"dropdown_rank": 7, "closest_languages": ["java"], "prism": "csharp", "codemirror": "text/x-csharp", "codewars": "csharp", "short_name": "csharp", "case_convention": "camel", "notepad_template": "using System;\n\nnamespace Solution\n{\n    class Solution\n    {\n        public static string MyFunction(string arg)\n        {\n            // Write the body of your function here\n            return $\"Running with {arg}\";\n        }\n\n        public static void Main(string[] args)\n        {\n            // Run your function through some test cases here.\n            // Remember: debugging is half the battle!\n            string testInput = \"test input\";\n            Console.WriteLine(MyFunction(testInput));\n        }\n    }\n}\n", "display_name": "C# (beta)"}, {"dropdown_rank": 9, "closest_languages": ["javascript"], "prism": "php", "codemirror": "text/x-php", "codewars": "php", "short_name": "php", "case_convention": "camel", "notepad_template": "<?php\n\nfunction myFunction($arg) {\n    // write the body of your function here\n    return \"running with \" . $arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\necho myFunction(\"test input\");\n\n?>", "display_name": "PHP (beta)"}, {"dropdown_rank": 8, "closest_languages": ["c", "java"], "prism": "objectivec", "codemirror": "text/x-objectivec", "short_name": "objectivec", "case_convention": "camel", "notepad_template": "#import <Foundation/Foundation.h>\n#import <stdio.h>\n\n@interface Solution : NSObject\n\n+ (NSString *)myFunction:(NSString *)arg;\n\n@end\n\n@implementation Solution\n\n+ (NSString *)myFunction:(NSString *)arg\n{\n  // write the body of your function here\n  return [@\"running with \" stringByAppendingString:arg];\n}\n\n@end\n\nint main (int argc, const char * argv[])\n{\n  @autoreleasepool {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    NSString * result = [Solution myFunction:@\"test input\"];\n    printf(\"%s\", [result UTF8String]);\n  }\n}", "display_name": "Objective-C (beta)"}], "PRISM_LANGUAGES": [{"dropdown_rank": 11, "codemirror": "", "short_name": "nolanguage", "prism": "none", "display_name": "No syntax"}, {"short_name": "html", "prism": "markup", "display_name": "HTML"}, {"short_name": "sql", "prism": "sql", "display_name": "SQL"}, {"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}, {"dropdown_rank": 3, "prism": "ruby", "codemirror": "text/x-ruby", "codewars": "ruby", "short_name": "ruby", "case_convention": "snake", "notepad_template": "def my_function(arg)\n    # write the body of your function here\n    return \"running with #{arg}\"\nend\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nputs my_function('test input')\n", "display_name": "Ruby"}, {"dropdown_rank": 2, "prism": "java", "codemirror": "text/x-java", "codewars": "java", "short_name": "java", "case_convention": "camel", "notepad_template": "public class Solution {\n    public static String myFunction(String arg) {\n        // write the body of your function here\n        return \"running with \" + arg;\n    }\n    public static void main(String[] args) {\n        // run your function through some test cases here\n        // remember: debugging is half the battle!\n        String testInput = \"test input\";\n        System.out.println(myFunction(testInput));\n    }\n}", "display_name": "Java"}, {"dropdown_rank": 4, "prism": "javascript", "codemirror": "text/javascript", "codewars": "javascript", "short_name": "javascript", "case_convention": "camel", "notepad_template": "function myFunction(arg) {\n    // write the body of your function here\n    return 'running with ' + arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\nconsole.log(myFunction('test input'));\n", "display_name": "JavaScript"}, {"dropdown_rank": 5, "closest_languages": ["cpp", "java"], "prism": "c", "codemirror": "text/x-csrc", "codewars": "c", "short_name": "c", "case_convention": "camel", "notepad_template": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nconst char * my_function(char * arg) {\n    // write the body of your function here\n    return arg;\n}\n\nint main() {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    printf(\"%s\", my_function(\"test input\"));\n    return 0;\n}", "display_name": "C (beta)"}, {"dropdown_rank": 6, "closest_languages": ["c", "java"], "prism": "cpp", "codemirror": "text/x-c++src", "codewars": "cpp", "short_name": "cpp", "case_convention": "camel", "notepad_template": "#include <iostream>\nusing namespace std;\n\nstring myFunction (const string& arg)\n{\n    // write the body of your function here\n    return \"running with \" + arg;\n}\n\nint main ()\n{\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    cout << myFunction (\"test input\");\n    return 0;\n}", "display_name": "C++ (beta)"}, {"dropdown_rank": 7, "closest_languages": ["java"], "prism": "csharp", "codemirror": "text/x-csharp", "codewars": "csharp", "short_name": "csharp", "case_convention": "camel", "notepad_template": "using System;\n\nnamespace Solution\n{\n    class Solution\n    {\n        public static string MyFunction(string arg)\n        {\n            // Write the body of your function here\n            return $\"Running with {arg}\";\n        }\n\n        public static void Main(string[] args)\n        {\n            // Run your function through some test cases here.\n            // Remember: debugging is half the battle!\n            string testInput = \"test input\";\n            Console.WriteLine(MyFunction(testInput));\n        }\n    }\n}\n", "display_name": "C# (beta)"}, {"dropdown_rank": 9, "closest_languages": ["javascript"], "prism": "php", "codemirror": "text/x-php", "codewars": "php", "short_name": "php", "case_convention": "camel", "notepad_template": "<?php\n\nfunction myFunction($arg) {\n    // write the body of your function here\n    return \"running with \" . $arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\necho myFunction(\"test input\");\n\n?>", "display_name": "PHP (beta)"}, {"closest_languages": ["java"], "prism": "swift", "codewars": "swift", "short_name": "swift", "case_convention": "camel", "display_name": "Swift (beta)"}, {"dropdown_rank": 8, "closest_languages": ["c", "java"], "prism": "objectivec", "codemirror": "text/x-objectivec", "short_name": "objectivec", "case_convention": "camel", "notepad_template": "#import <Foundation/Foundation.h>\n#import <stdio.h>\n\n@interface Solution : NSObject\n\n+ (NSString *)myFunction:(NSString *)arg;\n\n@end\n\n@implementation Solution\n\n+ (NSString *)myFunction:(NSString *)arg\n{\n  // write the body of your function here\n  return [@\"running with \" stringByAppendingString:arg];\n}\n\n@end\n\nint main (int argc, const char * argv[])\n{\n  @autoreleasepool {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    NSString * result = [Solution myFunction:@\"test input\"];\n    printf(\"%s\", [result UTF8String]);\n  }\n}", "display_name": "Objective-C (beta)"}], "next_step_type_enum": {"login": "_NEXT_STEP_TYPE_LOGIN_", "purchase": "_NEXT_STEP_TYPE_PURCHASE_", "done": "_NEXT_STEP_TYPE_DONE_", "question": "_NEXT_STEP_TYPE_QUESTION_"}, "CACHEBUST_QUERY_STR": "?bust=135", "DEFAULT_C18N_LANGUAGE": {"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}};
+
+        
+        window.JS_VARS = {"concept_slug": "mutable", "url_content_type": "concept"};
+        
+
+        
+    </script>
+
+
+
+    
+
+    
+    <script type="text/javascript" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/saved_resource"></script>
+    <script type="text/javascript">
+        Stripe.setPublishableKey('pk_live_4wtgGTkgBtk4YIB9JDjYdOD0');
+    </script>
+    
+
+    
+    
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/iPrOY23SGAp.html" style="border: none;"></iframe></div></div></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=149278655279066";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script id="twitter-wjs" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/widgets.js"></script>
+    
+
+    
+    
+        
+            <script type="text/ng-template" id="/partials/animation.html"><div class="animation-wrapper">
+    <div class="animation" id="Stage-[[getCompId()]]" ng-class="getCompId()">
+    </div>
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/animation_iframe.html"><div class="animation-iframe-wrapper">
+    <iframe class="animation-iframe animation-iframe-[[getCompId()]]"></iframe>
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/code-inline.html"><span class="ic-code-inline" ng-transclude></span></script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/code-block.html"><pre class="language-[[language]]">
+  <code class="language-[[language]]" ng-transclude></code>
+</pre>
+<span class="warning-message" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage" ng-cloak>
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)"></select>
+
+</div>
+<span class="only-content-language" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/complexity.html"><span class="complexity"><span math>O([[getComplexityMarkup()]])</span></span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/concept.html"><span class="concept-wrapper" ng-init="showConcept=false">
+
+    <span ng-click="showConcept=!showConcept" class="concept">
+        <span class="concept-name" ng-transclude></span>
+        <span class="show-concept-icon">&#8628;</span>
+    </span>
+
+    <div ng-show="showConcept" class="slide concept-explanation" ng-include="conceptPartialUrl">
+        Loading...
+    </div>
+
+</span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/function.html"><span class="ic-function"><span class="name" ng-transclude></span>()</span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/heading.html"><h3 class="heading slide" ng-show="shouldShow()" ng-cloak>[[getHeadingText()]]</h3>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/inline-footnote.html"><span class="footnote-wrapper" ng-init="show = false">
+    <span class="show-footnote-icon" ng-click="show = !show">&#8628;</span>
+    <p class="footnote" ng-transclude ng-show="show">Loading...</p>
+</span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/loading.html"><div class="Loading">
+    Loading...
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/math.html"><span class="ic-math" ng-class="{'block': isBlock()}" ng-transclude></span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/note.html"><div class="note slide" ng-show="shouldShow()">
+    <div class="note-content" ng-transclude>
+    </div>
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/section.html"><div class="section-wrapper" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()">
+    <span heading="[[section]]" hide-heading="[[hideHeading]]"></span>
+
+    <div class="section" ng-class="getSectionClass()" ng-transclude>
+    </div>
+
+    
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/variable.html"><span class="ic-variable" ng-transclude></span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/words.html"><span class="ic-words" ng-transclude></span>
+</script>
+        
+    
+
+
+    <!-- load current-user json with initial http request -->
+    <div class="hidden" data-preload-resource="/api/v1/current-user/" data-thejson="{&quot;id&quot;:2385549,&quot;username&quot;:&quot;gokumd&quot;,&quot;email&quot;:&quot;gokumd@gmail.com&quot;,&quot;date_joined&quot;:&quot;2016-01-02T20:29:37.549407+00:00&quot;,&quot;first_name&quot;:&quot;Goku&quot;,&quot;last_name&quot;:&quot;Mohandas&quot;,&quot;full_name&quot;:&quot;Goku Mohandas&quot;,&quot;short_name&quot;:&quot;Goku&quot;,&quot;is_anonymous&quot;:false,&quot;is_on_last_question&quot;:false,&quot;percent_done&quot;:66,&quot;num_questions_done&quot;:29,&quot;num_questions_remaining&quot;:15,&quot;recruiting_is_interested_in_intros&quot;:true,&quot;is_full_access&quot;:true,&quot;first_payment_date&quot;:&quot;2016-01-02T22:17:39.210063Z&quot;,&quot;last_payment_date&quot;:&quot;2016-01-02T22:17:37Z&quot;,&quot;num_free_questions_left&quot;:0,&quot;terms_has_agreed_to_latest&quot;:false,&quot;preferred_content_language&quot;:&quot;python&quot;,&quot;preferred_notepad_language&quot;:&quot;python&quot;,&quot;is_staff&quot;:false,&quot;auth_providers_human_readable_list&quot;:&quot;Google&quot;,&quot;num_auth_providers&quot;:1,&quot;auth_email&quot;:&quot;gokumd@gmail.com&quot;}">
+        {"id":2385549,"username":"gokumd","email":"gokumd@gmail.com","date_joined":"2016-01-02T20:29:37.549407+00:00","first_name":"Goku","last_name":"Mohandas","full_name":"Goku Mohandas","short_name":"Goku","is_anonymous":false,"is_on_last_question":false,"percent_done":66,"num_questions_done":29,"num_questions_remaining":15,"recruiting_is_interested_in_intros":true,"is_full_access":true,"first_payment_date":"2016-01-02T22:17:39.210063Z","last_payment_date":"2016-01-02T22:17:37Z","num_free_questions_left":0,"terms_has_agreed_to_latest":false,"preferred_content_language":"python","preferred_notepad_language":"python","is_staff":false,"auth_providers_human_readable_list":"Google","num_auth_providers":1,"auth_email":"gokumd@gmail.com"}
+    </div>
+
+    
+
+    <!-- Login Modal -->
+    <div ng-controller="LoginModalCtrl" class="modal fade login-modal ng-scope" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Log In" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 ng-bind="note" class="ng-binding">Log in to continue</h3>
+                    <button type="button" ng-show="closeable" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="login-btns">
+    <a ng-href="/auth/login/github/?next=%2Fnext" class="btn btn-soc-github" href="https://www.interviewcake.com/auth/login/github/?next=%2Fnext"><i class="fa fa-github"></i> | Log in with Github</a>
+    <a ng-href="/auth/login/google-oauth2/?next=%2Fnext" class="btn btn-soc-google-plus" href="https://www.interviewcake.com/auth/login/google-oauth2/?next=%2Fnext"><i class="fa my-fa-google-plus"></i> | Log in with Google</a>
+    <a ng-href="/auth/login/facebook/?next=%2Fnext" class="btn btn-soc-facebook" href="https://www.interviewcake.com/auth/login/facebook/?next=%2Fnext"><i class="fa my-fa-facebook"></i> | Log in with Facebook</a>
+</div>
+<p class="login-reassurance">
+    <small>
+        We'll never post on your wall or message your friends.
+    </small>
+</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="hvj2jStc2hfRdKE20LHithQ7s9Uv20k4O4IoBXE6yQxy2PQ8ogWB00ePNYaYgeyj">
+<div id="loading">
+. . .
+</div>
+
+
+<link href="./14.Mutable vs Immutable Objects _ Interview Cake_files/css(1)" rel="stylesheet" type="text/css">
+
+<iframe name="stripeXDM_default478297_provider" id="stripeXDM_default478297_provider" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/saved_resource(1).html"></iframe><span style="display: none;"><iframe style="display: none !important;" id="_olark_framesocket43923" src="./14.Mutable vs Immutable Objects _ Interview Cake_files/storage.html"></iframe></span><div><div id="olark-wrapper" class="" data-reactid=".0"><style rel="stylesheet" type="text/css" data-reactid=".0.0">#olark-wrapper .olark-launch-button {
+  background-color: #59a8c4 !important;
+}
+#olark-wrapper .olark-launch-button svg path {
+  fill: #ffffff !important;
+}
+#olark-wrapper .olark-launch-button .olark-button-text {
+  color: #ffffff !important;
+}
+#olark-wrapper .olark-top-bar {
+  background-color: #59a8c4 !important;
+  color: #ffffff !important;
+  border-color: #469dbe !important;
+}
+#olark-wrapper .olark-top-bar-text {
+  color: #ffffff !important;
+}
+#olark-wrapper .olark-top-bar-arrow {
+  fill: #ffffff !important;
+}
+#olark-wrapper #olark-container .olark-visitor-message {
+  background-color: rgba(89, 168, 196, 0.25) !important;
+  border: none !important;
+}
+#olark-wrapper #olark-container .olark-form-send-button {
+  background-color: #59a8c4 !important;
+  color: #ffffff !important;
+}
+#olark-wrapper #olark-container .olark-feedback-form-button {
+  background-color: #59a8c4 !important;
+  color: #ffffff !important;
+}
+#olark-wrapper #olark-container .olark-branding-panel .olark-branding-cancel-button {
+  background-color: #59a8c4 !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+#olark-wrapper #olark-container .olark-branding-panel .olark-branding-go-button {
+  border: none !important;
+  background: rgba(89, 168, 196, 0.35) !important;
+}
+#olark-wrapper .olark-end-chat-flag {
+  fill: #59a8c4 !important;
+}
+#olark-wrapper #olark-container .olark-form-confirmation-icon .olark-launch-button-icon {
+  fill: #59a8c4 !important;
+}
+#olark-wrapper #olark-container .olark-form-input:focus {
+  border-color: #59a8c4 !important;
+}
+#olark-wrapper #olark-container .olark-form-message-input:focus {
+  border-color: #59a8c4 !important;
+}
+</style><button class="olark-launch-button" data-reactid=".0.2"><svg x="0px" y="0px" viewBox="0 0 28 18" data-reactid=".0.2.0"><path fill="#ffffff" d="M28,3.2C28,1.5,26.5,0,24.8,0H3.2C1.5,0,0,1.5,0,3.2v11.5C0,16.5,1.5,18,3.2,18h21.5c1.8,0,3.2-1.5,3.2-3.2 V3.2z M24.7,14.8c-0.2,0.1-0.4,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.6-0.3l-5-5.3l-3.6,3c-0.3,0.2-0.6,0.3-0.9,0.3s-0.7-0.1-0.9-0.4l-3.6-3 l-5,5.3c-0.2,0.2-0.4,0.3-0.6,0.3c-0.2,0-0.4-0.1-0.6-0.2c-0.3-0.3-0.4-0.8,0-1.2l4.9-5.3L3.3,4.5C3,4.2,2.9,3.6,3.2,3.3 C3.5,2.9,4,2.9,4.4,3.2l9.6,7.9l9.6-7.9c0.4-0.3,0.9-0.2,1.2,0.1c0.3,0.4,0.2,0.9-0.1,1.2l-4.8,3.9l4.9,5.3 C25.1,14,25,14.5,24.7,14.8z" data-reactid=".0.2.0.0"></path></svg><div class="olark-notification-badge olark-hidden" data-reactid=".0.2.1"><div class="olark-notification-badge-text" data-reactid=".0.2.1.0">0</div></div></button><div id="olark-container" class="olark-hidden" data-reactid=".0.3"><div class="olark-top-bar" data-reactid=".0.3.0"><div class="olark-top-bar-text" data-reactid=".0.3.0.0">Send me a message!</div><div class="olark-top-bar-button" data-reactid=".0.3.0.1"><svg viewBox="0 0 15.1 8.9" fill="#ffffff" data-reactid=".0.3.0.1.0"><polygon class="olark-top-bar-arrow" points="0.2,1.4 7.6,8.9 15.1,1.4 13.7,0 7.6,6 1.6,0" data-reactid=".0.3.0.1.0.0"></polygon></svg></div></div><div class="olark-conversation-container olark-form-conversation-container olark-no-message-form" data-reactid=".0.3.1"><div class="olark-form-message" data-reactid=".0.3.1.0">Parker from Interview Cake here. You can reach my email inbox through this handy form!</div><div class="olark-form-container" data-reactid=".0.3.1.1"><form class="olark-form" novalidate="" data-reactid=".0.3.1.1.0"><div class="olark-form-input-container" data-reactid=".0.3.1.1.0.0:$fname"><input type="text" name="fname" class="olark-form-input-filled olark-form-input" id="olark-form-input-fname" tabindex="1" autocomplete="on" value="Goku Mohandas" required="" data-reactid=".0.3.1.1.0.0:$fname.0"><label class="olark-float-label" for="olark-form-input-fname" data-reactid=".0.3.1.1.0.0:$fname.1">click here and type your Name</label><span class="olark-required-asterisk" data-reactid=".0.3.1.1.0.0:$fname.2"><svg viewBox="0 0 20 20" x="0" y="0" fill="currentcolor" data-reactid=".0.3.1.1.0.0:$fname.2.0"><path d="M10,0C4.5,0,0,4.5,0,10c0,5.5,4.5,10,10,10s10-4.5,10-10C20,4.5,15.5,0,10,0z M13.8,13.6L12,15l-2-3L8,15l-1.8-1.4l2-2.8 L5,9.6l0.8-2.2L9,8.6L8.8,5h2.4L11,8.6l3.2-1.3L15,9.6l-3.2,1.1L13.8,13.6z" data-reactid=".0.3.1.1.0.0:$fname.2.0.0"></path></svg></span></div><div class="olark-form-input-container" data-reactid=".0.3.1.1.0.0:$email"><input type="email" name="email" class="olark-form-input-filled olark-form-input" id="olark-form-input-email" tabindex="2" autocomplete="on" value="gokumd@gmail.com" required="" data-reactid=".0.3.1.1.0.0:$email.0"><label class="olark-float-label" for="olark-form-input-email" data-reactid=".0.3.1.1.0.0:$email.1">click here and type your Email</label><span class="olark-required-asterisk" data-reactid=".0.3.1.1.0.0:$email.2"><svg viewBox="0 0 20 20" x="0" y="0" fill="currentcolor" data-reactid=".0.3.1.1.0.0:$email.2.0"><path d="M10,0C4.5,0,0,4.5,0,10c0,5.5,4.5,10,10,10s10-4.5,10-10C20,4.5,15.5,0,10,0z M13.8,13.6L12,15l-2-3L8,15l-1.8-1.4l2-2.8 L5,9.6l0.8-2.2L9,8.6L8.8,5h2.4L11,8.6l3.2-1.3L15,9.6l-3.2,1.1L13.8,13.6z" data-reactid=".0.3.1.1.0.0:$email.2.0.0"></path></svg></span></div><div class="olark-form-input-container" data-reactid=".0.3.1.1.0.0:$body"><div data-reactid=".0.3.1.1.0.0:$body.0"><div class="olark-form-message-input olark-clone-textarea" data-reactid=".0.3.1.1.0.0:$body.0.0" style="width: 330px !important; overflow-wrap: break-word;">Type a message...</div><textarea class="olark-form-message-input" tabindex="3" name="body" id="olark-form-input-body" placeholder="Type a message..." title="Type a message..." required="" data-reactid=".0.3.1.1.0.0:$body.0.1"></textarea></div><span class="olark-required-asterisk" data-reactid=".0.3.1.1.0.0:$body.2"><svg viewBox="0 0 20 20" x="0" y="0" fill="currentcolor" data-reactid=".0.3.1.1.0.0:$body.2.0"><path d="M10,0C4.5,0,0,4.5,0,10c0,5.5,4.5,10,10,10s10-4.5,10-10C20,4.5,15.5,0,10,0z M13.8,13.6L12,15l-2-3L8,15l-1.8-1.4l2-2.8 L5,9.6l0.8-2.2L9,8.6L8.8,5h2.4L11,8.6l3.2-1.3L15,9.6l-3.2,1.1L13.8,13.6z" data-reactid=".0.3.1.1.0.0:$body.2.0.0"></path></svg></span></div><button class="olark-form-send-button" type="submit" data-reactid=".0.3.1.1.0.2">Send</button></form></div></div></div></div></div></body></html>

@@ -1,0 +1,2622 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0056)https://www.interviewcake.com/question/python/top-scores -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./32.Top Scores _ Interview Cake_files/track"></script><script type="text/javascript" src="./32.Top Scores _ Interview Cake_files/identify"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <script type="text/javascript" async="" src="./32.Top Scores _ Interview Cake_files/prum.min.js"></script><script type="text/javascript" async="" src="./32.Top Scores _ Interview Cake_files/f78ae8e419ed65a0b5d9f07bb19c8d3a987aef19.js"></script><script type="text/javascript" async="" src="./32.Top Scores _ Interview Cake_files/4774384.js"></script><script type="text/javascript" async="" src="./32.Top Scores _ Interview Cake_files/mixpanel-2-latest.min.js"></script><script type="text/javascript" async="" src="./32.Top Scores _ Interview Cake_files/0751fb0485a5b0be210d27b9cefd9842c5c65cc6.2.js"></script><script type="text/javascript" async="" src="./32.Top Scores _ Interview Cake_files/analytics.js"></script><script type="text/javascript" async="" src="./32.Top Scores _ Interview Cake_files/fbevents.js"></script><script type="text/javascript" async="" src="./32.Top Scores _ Interview Cake_files/conversion_async.js"></script><script id="facebook-jssdk" src="./32.Top Scores _ Interview Cake_files/all.js"></script><script type="text/javascript" async="" src="./32.Top Scores _ Interview Cake_files/analytics.min.js"></script><script type="text/javascript">
+        
+        window.IC = window.IC || {};
+        window.IC.currentUser = JSON.parse('{"id":2385549,"username":"gokumd","email":"gokumd@gmail.com","date_joined":"2016-01-02T20:29:37.549407+00:00","first_name":"Goku","last_name":"Mohandas","full_name":"Goku Mohandas","short_name":"Goku","is_anonymous":false,"is_on_last_question":false,"percent_done":66,"num_questions_done":29,"num_questions_remaining":15,"recruiting_is_interested_in_intros":true,"is_full_access":true,"first_payment_date":"2016-01-02T22:17:39.210063Z","last_payment_date":"2016-01-02T22:17:37Z","num_free_questions_left":0,"terms_has_agreed_to_latest":false,"preferred_content_language":"python","preferred_notepad_language":"python","is_staff":false,"auth_providers_human_readable_list":"Google","num_auth_providers":1,"auth_email":"gokumd@gmail.com"}');
+        
+    </script>
+
+
+    
+    <script src="./32.Top Scores _ Interview Cake_files/1358232165.js"></script>
+    
+
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"transactionName":"ZVwAbEQCDUQCAUwKDFwWJE1YABdeDAwXDhpBUBZdGA4CXg0DSBNNRFAHT0VZMkIGEUwKDFxvC11BTQRSFw==","errorBeacon":"bam.nr-data.net","applicationID":"7328113","queueTime":0,"beacon":"bam.nr-data.net","licenseKey":"9e57878e2e","agent":"","applicationTime":287}</script>
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.interviewcake.com/images/favicon.ico?bust=135">
+        <link rel="canonical" href="https://www.interviewcake.com/question/java/top-scores">
+        <meta name="description" content="Efficiently sort numbers in an array, where each number is below a certain maximum.">
+
+        
+
+        <meta property="og:title" content="Top Scores | Interview Cake">
+        <meta property="og:description" content="Efficiently sort numbers in an array, where each number is below a certain maximum.">
+        <meta property="og:image" content="https://www.interviewcake.com/static/images/cake_white_on_blue_600_600_unrounded.png">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Interview Cake: Programming Interview Questions and Tips">
+        <meta property="fb:app_id" content="149278655279066">
+        <meta property="fb:admins" content="514407734">
+        <meta property="og:url" content="https://www.interviewcake.com/question/java/top-scores">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@interviewcake">
+        <meta name="twitter:title" content="Top Scores | Interview Cake">
+        <meta name="twitter:description" content="Efficiently sort numbers in an array, where each number is below a certain maximum.">
+        <meta name="twitter:creator" content="@interviewcake">
+        <meta name="twitter:image:src" content="https://www.interviewcake.com/static/images/cake_white_on_blue_600_600_unrounded.png">
+        <meta name="twitter:domain" content="interviewcake.com">
+
+        <title>Top Scores | Interview Cake</title>
+    
+
+
+    
+
+    
+    <script type="text/javascript">
+        window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(a){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+a+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},window.analytics.SNIPPET_VERSION="2.0.6",
+        window.analytics.load("rowk0wc1g6"),
+        window.analytics.page();
+    </script>
+    
+    
+
+
+    
+
+
+    
+
+        <link href="./32.Top Scores _ Interview Cake_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./32.Top Scores _ Interview Cake_files/bootstrap-glyphicons.css" rel="stylesheet">
+        <link href="./32.Top Scores _ Interview Cake_files/font-awesome.min.css" rel="stylesheet">
+        <link href="./32.Top Scores _ Interview Cake_files/katex.min.css" rel="stylesheet">
+    
+    
+        
+            <link rel="stylesheet" href="./32.Top Scores _ Interview Cake_files/4d3ba14d6001.css" type="text/css" media="all">
+        
+    
+
+
+
+
+<!--
+<link href='http://fonts.googleapis.com/css?family=Raleway:500,700,100' rel='stylesheet' type='text/css'>
+-->
+<!--
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+-->
+<link href="./32.Top Scores _ Interview Cake_files/css" rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" href="https://www.interviewcake.com/images/cake_white_on_blue_128_128_unrounded.png">
+<!--
+thought maybe for headings. but nope.
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+-->
+
+
+
+
+<meta name="50fc73d52056532c18787976ceb78fddb87b78b2" content="ceb4cec06fc4a780c7b31b85c07cf75d1ca58d9d">
+
+
+
+
+
+<script type="text/javascript">
+var _vwo_code=(function(){
+var account_id=50155,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script><script src="./32.Top Scores _ Interview Cake_files/j.php" type="text/javascript"></script>
+
+<script src="./32.Top Scores _ Interview Cake_files/application2.js" async="" defer="" data-cfasync="false"></script></head>
+<body ng-app="prepApp" ng-init="questionIsEmbedded = false" class="user-is-full-access   ng-scope"><div id="olark" style="display: none;"><olark><iframe frameborder="0" id="olark-loader" src="./32.Top Scores _ Interview Cake_files/saved_resource.html"></iframe></olark></div>
+
+<div class="print-header navbar-print-header navbar navbar-inverse">
+    <div class="navbar-header">
+        <span class="navbar-brand">
+            <img src="./32.Top Scores _ Interview Cake_files/cake_white_20_21.png" class="logo">
+            Interview Cake
+        </span>
+    </div>
+</div>
+
+
+
+
+<div class="navbar navbar-normal navbar-inverse ng-scope" role="navigation" ng-controller="HeaderCtrl" language="python">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://www.interviewcake.com/">
+            Interview Cake
+        </a>
+    </div>
+
+  <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <a href="https://www.interviewcake.com/coding-interview-tips">Tips and Tricks</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="https://www.interviewcake.com/question/python/top-scores" class="dropdown-toggle" data-toggle="dropdown" rel="nofollow">
+                    Glossary <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="https://www.interviewcake.com/big-o-notation-time-and-space-complexity">Big O Notation: <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span>, <span complexity="n^2" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.814108em;"></span><span class="strut bottom" style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">n</span><span class="vlist"><span class="" style="top: -0.363em; margin-right: 0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span><span class="mclose">)</span></span></span></span></span></span></span>, etc</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/article/logarithms">Logarithms</a>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/binary-search">Binary Search</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/counting-sort">Counting Sort</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/overlapping-subproblems">Overlapping Subproblems</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/memoization">Memoization</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/bottom-up">Bottom-Up Algorithms</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/lazy">Lazy Evaluation</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/garbage-collection">Garbage Collection</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/integer-overflow">Integer Overflow</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/js-closure">Closure</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/slice">Array Slicing</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/hashing">Hashing</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/mutable">Mutable vs Immutable</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/in-place">In-Place Operation</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/triangular-series">Triangular Series</a>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/array">Array</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/dynamic-array-amortized-analysis">Dynamic Array</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/hash-map">Hash Table</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/linked-list">Linked List</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/queue">Queue</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/stack">Stack</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/binary-tree">Binary Tree</a>
+                    </li>
+
+                    <li role="separator" class="divider"></li>
+
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/binary-numbers">Binary Numbers</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/and">Bitwise AND</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/or">Bitwise OR</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/not">Bitwise NOT</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/xor">Bitwise XOR</a>
+                    </li>
+                    <li>
+                        <a href="https://www.interviewcake.com/concept/bit-shift">Bit Shifting</a>
+                    </li>
+                </ul>
+            </li>
+
+            
+            
+            
+            <li>
+                
+                <a href="https://www.interviewcake.com/all-questions/python">All Questions</a>
+                
+            </li>
+            
+            <li>
+                
+                
+            </li>
+        </ul>
+
+
+
+        <ul class="nav navbar-nav navbar-right" ng-show="currentUserSet">
+
+            
+            <li>
+                
+
+                <a class="upgrade ng-hide" ng-hide="currentUser.is_full_access" href="https://www.interviewcake.com/upgrade">
+                    <!--
+                    <i class="fa fa-unlock-alt fa-lg" style="margin-right: 5px;" ></i>
+                    -->
+
+                    Get the full course
+
+                    <span class="glyphicon glyphicon-chevron-right full-access-badge"></span>
+
+</a>
+            </li>
+            
+
+
+
+            
+            <li class="dropdown language-dropdown ng-scope" ng-controller="NavbarTranslationCtrl" ng-show="contentLanguage&amp;&amp;currentUser.is_full_access ">
+                <a rel="nofollow" href="https://www.interviewcake.com/question/python/top-scores" class="dropdown-toggle ng-binding" data-toggle="dropdown">
+                    Python <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                
+                    <!-- ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/top-scores" ng-click="updateLanguage(language, true)" class="ng-binding">Python</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/top-scores" ng-click="updateLanguage(language, true)" class="ng-binding">Ruby</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/top-scores" ng-click="updateLanguage(language, true)" class="ng-binding">Java</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/top-scores" ng-click="updateLanguage(language, true)" class="ng-binding">JavaScript</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/top-scores" ng-click="updateLanguage(language, true)" class="ng-binding">C (beta)</a>
+                    </li><!-- end ngRepeat: language in contentLanguages --><li ng-repeat="language in contentLanguages" class="ng-scope">
+                        <a href="https://www.interviewcake.com/question/python/top-scores" ng-click="updateLanguage(language, true)" class="ng-binding">C++ (beta)</a>
+                    </li><!-- end ngRepeat: language in contentLanguages -->
+                
+                </ul>
+            </li>
+            
+
+            <li>
+                <p class="navbar-text">
+                    
+                    'sup <a rel="nofollow" trackling="" the-event="Settings Link Click" href="https://www.interviewcake.com/account">Goku</a>.
+                    
+                    <span ng-show="currentUser.is_full_access" class="glyphicon glyphicon-star full-access-badge"></span>
+                </p>
+            </li>
+            <li ng-hide="currentUser.is_anonymous">
+                <a rel="nofollow" tracklink="" the-event="Logout Link Click" the-properties="{&quot;which&quot; : &quot;header top right&quot;}" href="https://www.interviewcake.com/auth/logout/?next=/" class="ng-isolate-scope">Log out</a>
+            </li>
+
+            <li ng-show="currentUser.is_anonymous" class="ng-hide">
+                <a href="https://www.interviewcake.com/question/python/top-scores" rel="nofollow" ng-click="loginClick(&#39;header top right&#39;)">Log in to save progress</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="below-nav">
+
+    <div class="ic-alerts">
+        
+        
+    </div>
+
+    
+
+    
+    
+
+<div class="quiz ng-scope" ng-controller="PrepSeshApp">
+    
+        
+            
+
+<div ng-controller="NumberlineCtrl" class="numberline-wrapper  user-is-full-access ng-scope">
+
+    <section ng-controller="NumberlineScrollingCtrl" class="numberline-scrolling ng-scope" ngc-scroll="setEdgeFadeIntensity()">
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/stock-price" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Apple Stocks">
+    
+    
+
+            <span class="number">
+                1
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/product-of-other-numbers" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Product of All Other Numbers">
+    
+    
+
+            <span class="number">
+                2
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/highest-product-of-3" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Highest Product of 3">
+    
+    
+
+            <span class="number">
+                3
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/merging-ranges" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Merging Meeting Times">
+    
+    
+
+            <span class="number">
+                4
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/coin" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Making Change">
+    
+    
+
+            <span class="number">
+                5
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/rectangular-love" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Rectangular Love">
+    
+    
+
+            <span class="number">
+                6
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/temperature-tracker" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Temperature Tracker">
+    
+    
+
+            <span class="number">
+                7
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/balanced-binary-tree" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Balanced Binary Tree">
+    
+    
+
+            <span class="number">
+                8
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/bst-checker" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Binary Search Tree Checker">
+    
+    
+
+            <span class="number">
+                9
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/second-largest-item-in-bst" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="2nd Largest Item in a Binary Search Tree">
+    
+    
+
+            <span class="number">
+                10
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/compress-url-list" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="MillionGazillion">
+    
+    
+
+            <span class="number">
+                11
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-in-ordered-set" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find in Ordered Set">
+    
+    
+
+            <span class="number">
+                12
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-rotation-point" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find Rotation Point">
+    
+    
+
+            <span class="number">
+                13
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/inflight-entertainment" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Inflight Entertainment">
+    
+    
+
+            <span class="number">
+                14
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/nth-fibonacci" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Compute nth Fibonacci Number">
+    
+    
+
+            <span class="number">
+                15
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/cake-thief" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="The Cake Thief">
+    
+    
+
+            <span class="number">
+                16
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/js-scope" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="JavaScript Scope">
+    
+    
+
+            <span class="number">
+                17
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/js-whats-wrong" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="What&#39;s Wrong with This JavaScript?">
+    
+    
+
+            <span class="number">
+                18
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/queue-two-stacks" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Queue Two Stacks">
+    
+    
+
+            <span class="number">
+                19
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/largest-stack" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Largest Stack">
+    
+    
+
+            <span class="number">
+                20
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-unique-int-among-duplicates" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="The Stolen Breakfast Drone">
+    
+    
+
+            <span class="number">
+                21
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/delete-node" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Delete Node">
+    
+    
+
+            <span class="number">
+                22
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/linked-list-cycles" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Does This Linked List Have A Cycle?">
+    
+    
+
+            <span class="number">
+                23
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/reverse-linked-list" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Reverse A Linked List">
+    
+    
+
+            <span class="number">
+                24
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/kth-to-last-node-in-singly-linked-list" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Kth to Last Node in a Singly-Linked List">
+    
+    
+
+            <span class="number">
+                25
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/reverse-string-in-place" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Reverse String in Place">
+    
+    
+
+            <span class="number">
+                26
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/reverse-words" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Reverse Words">
+    
+    
+
+            <span class="number">
+                27
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/matching-parens" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Parenthesis Matching">
+    
+    
+
+            <span class="number">
+                28
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/bracket-validator" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Bracket Validator">
+    
+    
+
+            <span class="number">
+                29
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/permutation-palindrome" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Permutation Palindrome">
+    
+    
+
+            <span class="number">
+                30
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/recursive-string-permutations" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Recursive String Permutations">
+    
+    
+
+            <span class="number">
+                31
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper current                                                              unfinished                             ng-scope" ng-controller="NumberlineCurrentQuestionCtrl">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/top-scores" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Top Scores">
+    
+    
+
+            <span class="number">
+                32
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/which-appears-twice" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Which Appears Twice">
+    
+    
+
+            <span class="number">
+                33
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/word-cloud" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Word Cloud Data">
+    
+    
+
+            <span class="number">
+                34
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/shuffle" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="In-Place Shuffle">
+    
+    
+
+            <span class="number">
+                35
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/single-rifle-check" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Single Riffle Shuffle">
+    
+    
+
+            <span class="number">
+                36
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/simulate-5-sided-die" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Simulate 5-sided die">
+    
+    
+
+            <span class="number">
+                37
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/simulate-7-sided-die" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Simulate 7-sided die">
+    
+    
+
+            <span class="number">
+                38
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/two-egg-problem" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Two Egg Problem">
+    
+    
+
+            <span class="number">
+                39
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                done
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-duplicate-optimize-for-space" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find Repeat, Space Edition">
+    
+    
+
+            <span class="number">
+                40
+            </span>
+
+            
+                <i class="fa fa-check"></i>
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-duplicate-optimize-for-space-beast-mode" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find Repeat, Space Edition BEAST MODE">
+    
+    
+
+            <span class="number">
+                41
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/find-duplicate-files" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Find Duplicate Files">
+    
+    
+
+            <span class="number">
+                42
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/merge-sorted-arrays" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="Merge Sorted Arrays">
+    
+    
+
+            <span class="number">
+                43
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+            
+                <div class="numberline-number-wrapper 
+                           
+                                unfinished
+                           ">
+
+    
+    
+        <a href="https://www.interviewcake.com/question/url-shortener" title="" data-toggle="tooltip" data-placement="bottom" data-delay="{ &quot;show&quot;: 0, &quot;hide&quot;: 0}" data-original-title="URL Shortener">
+    
+    
+
+            <span class="number">
+                44
+            </span>
+
+            
+
+    
+    
+        </a>
+    
+    
+</div>
+
+            
+        
+    </section>
+
+    <div class="edge-fade left" ng-style="{left: edgeFadePositions.left + &#39;px&#39;}" style="left: -160px;"></div>
+    <div class="edge-fade right" ng-style="{right: edgeFadePositions.right + &#39;px&#39;}" style="right: 0px;"></div>
+
+    <div class="scroll-on-hover left ng-hide" ng-mouseenter="scrollDirection = &#39;-&#39;; toggleScroll()" ng-mouseleave="toggleScroll()" ng-hide="edgeFadePositions.left === -edgeFadeWidth">
+    </div>
+    <div class="scroll-on-hover right" ng-mouseenter="scrollDirection = &#39;+&#39;; toggleScroll()" ng-mouseleave="toggleScroll()" ng-hide="edgeFadePositions.right &lt;= -(edgeFadeWidth - 2)"> <!-- cuz chrome only scrolls to 2px less than it can -->
+    </div>
+
+</div>
+
+        
+    
+
+    
+        <div class="free-questions-left ng-hide" ng-show="currentUserSet &amp;&amp; !currentUser.is_full_access">
+
+
+<p>
+<span ng-show="currentUser.getNumFreeQuestionsLeft()&gt;0" class="ng-hide">
+
+    <span ng-show="currentUser.getNumFreeQuestionsLeft()==1" class="ng-hide">Just </span>
+    <strong class="num ng-binding">0</strong>
+
+</span>
+<span ng-show="currentUser.getNumFreeQuestionsLeft()==0">
+    No
+</span>
+
+more free question<span ng-show="currentUser.getNumFreeQuestionsLeft() != 1">s</span>
+
+left!
+</p>
+
+
+
+<a href="https://www.interviewcake.com/upgrade" class="btn btn-default btn-sm btn-rarr">
+    Upgrade Now
+</a>
+
+</div>
+
+    
+
+    
+    <div class="wrapper-hack" ng-init="slug=&#39;top-scores&#39;">
+<div class="card ng-scope" ng-class="{&#39;started&#39;: btnPresses.length &gt; 0}" ng-controller="CardCtrl">
+
+    <div class="sections">
+        
+    <div>
+<span class="question-data" data-name="Top Scores" data-meta_desc="Efficiently sort numbers in an array, where each number is below a certain maximum." data-title="" data-meta_keywords="" data-weight="1" data-difficulty="3" data-num-hints="3" data-num-gotchas="2" ng-init="setNumHints(3); setNumGotchas(2); ">
+</span>
+
+<div class="section-wrapper ng-isolate-scope section-question" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="question">
+    <h3 class="heading slide ng-binding ng-isolate-scope ng-hide" ng-show="shouldShow()" heading="question" hide-heading=""></h3>
+
+    <div class="section section-question" ng-class="getSectionClass()" ng-transclude="">
+<p class="ng-scope">
+<strong>
+You created a game that is more popular than Angry Birds.
+</strong>
+</p>
+<p class="ng-scope">
+You rank players in the game from highest to lowest score. So far you're using an algorithm that sorts in <span complexity="nlgn" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>lg</mo><mrow><mi>n</mi></mrow><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n\lg{n})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mop">l<span style="margin-right: 0.01389em;">g</span></span><span class="mord textstyle uncramped"><span class="mord mathit">n</span></span><span class="mclose">)</span></span></span></span></span></span></span> time, but players are complaining that their rankings aren't updated fast enough. You need a faster sorting algorithm.
+</p>
+
+<p class="ng-scope">
+Write a function that takes:
+</p>
+
+<ol class="ng-scope">
+<li>
+<span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__a-standard-list"><span class="ng-scope">a list</span></span> of <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__unsorted-scores"><span class="ng-scope">unsorted_scores</span></span>
+</li>
+<li>the <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__highest-possible-score"><span class="ng-scope">highest_possible_score</span></span> in the game</li>
+</ol>
+
+<p class="ng-scope">
+and returns a sorted <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span> of scores in less than <span complexity="nlgn" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>lg</mo><mrow><mi>n</mi></mrow><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n\lg{n})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mop">l<span style="margin-right: 0.01389em;">g</span></span><span class="mord textstyle uncramped"><span class="mord mathit">n</span></span><span class="mclose">)</span></span></span></span></span></span></span> time.
+</p>
+
+<p class="ng-scope">
+For example:
+</p>
+
+<div code-block="question__top-scores__example" language="python" translation-highlighting="dynamic" class="ng-scope ng-isolate-scope"><pre class="  language-python">  <code class="  language-python" ng-transclude="">unsorted_scores <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">37</span><span class="token punctuation">,</span> <span class="token number">89</span><span class="token punctuation">,</span> <span class="token number">41</span><span class="token punctuation">,</span> <span class="token number">65</span><span class="token punctuation">,</span> <span class="token number">91</span><span class="token punctuation">,</span> <span class="token number">53</span><span class="token punctuation">]</span>
+HIGHEST_POSSIBLE_SCORE <span class="token operator">=</span> <span class="token number">100</span>
+
+sort_scores<span class="token punctuation">(</span>unsorted_scores<span class="token punctuation">,</span> HIGHEST_POSSIBLE_SCORE<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># returns [37, 41, 53, 65, 89, 91]</span></code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p class="ng-scope">
+We’re defining <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.43056em;"></span><span class="strut bottom" style="height: 0.43056em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span></span> as the number of <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__unsorted-scores"><span class="ng-scope">unsorted_scores</span></span> because we’re expecting the number of players to keep climbing.
+</p>
+
+<p class="ng-scope">
+And we'll treat <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__highest-possible-score"><span class="ng-scope">highest_possible_score</span></span> as a constant instead of factoring it into our big O time and space costs, because the highest possible score isn’t going to change. Even if we <em>do</em> redesign the game a little, the scores will stay around the same order of magnitude.
+</p>
+
+</div>
+
+    
+</div>
+
+<div class="section-wrapper ng-isolate-scope section-gotchas ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="gotchas">
+    <h3 class="heading slide ng-binding ng-isolate-scope ng-hide" ng-show="shouldShow()" heading="gotchas" hide-heading="">Gotchas</h3>
+
+    <div class="section section-gotchas" ng-class="getSectionClass()" ng-transclude="">
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="1" type="gotcha">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+<strong>Multiple players can have the same score!</strong> If 10 people got a score of 200, the number 200 should appear 10 times in our output <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span>.
+</p>
+</div>
+</div>
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="2" type="gotcha">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+We can do this in <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> time and space.
+</p>
+</div>
+</div>
+</div>
+
+    
+</div>
+
+
+<div class="section-wrapper ng-isolate-scope section-breakdown ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="breakdown">
+    <h3 class="heading slide ng-binding ng-isolate-scope ng-hide" ng-show="shouldShow()" heading="breakdown" hide-heading="">Breakdown</h3>
+
+    <div class="section section-breakdown" ng-class="getSectionClass()" ng-transclude="">
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="1" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+<span complexity="nlgn" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>lg</mo><mrow><mi>n</mi></mrow><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n\lg{n})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mop">l<span style="margin-right: 0.01389em;">g</span></span><span class="mord textstyle uncramped"><span class="mord mathit">n</span></span><span class="mclose">)</span></span></span></span></span></span></span> is the time to beat. Even if our <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span> of scores were <em>already sorted</em> we'd have to do a full walk through the <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span> to confirm that it was in fact fully sorted. So we have to spend <em>at least</em> <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> time on our sorting function. If we're going to do better than <span complexity="nlgn" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>lg</mo><mrow><mi>n</mi></mrow><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n\lg{n})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mop">l<span style="margin-right: 0.01389em;">g</span></span><span class="mord textstyle uncramped"><span class="mord mathit">n</span></span><span class="mclose">)</span></span></span></span></span></span></span>, we're probably going to do exactly <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span>.
+</p>
+
+<p class="ng-scope">
+What are some common ways to get <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> runtime?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="2" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+One common way to get <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> runtime is to use a <span concept="greedy" class="ng-isolate-scope"><span class="concept-wrapper" ng-init="showConcept=false">
+
+    <span ng-click="showConcept=!showConcept" class="concept">
+        <span class="concept-name" ng-transclude=""><span class="ng-scope">greedy algorithm</span></span>
+        <span class="show-concept-icon">↴</span>
+    </span>
+
+    <!-- ngInclude: conceptPartialUrl --><div ng-show="showConcept" class="slide concept-explanation ng-scope ng-hide" ng-include="conceptPartialUrl"><div class="ng-scope">
+<p>
+A <strong>greedy</strong> algorithm iterates through the problem space taking the optimal solution "so far," until it reaches the end.
+</p>
+
+<p>
+The greedy approach is only optimal if the problem has "optimal substructure," which means stitching together optimal solutions to subproblems yields an optimal solution.
+</p>
+
+<!--
+This is not true, for example, in path finding.
+-->
+<script type="text/javascript"></script>
+</div>
+</div>
+
+</span>
+</span>. But in this case we're not looking to just grab a specific value from our input set (e.g. the "largest" or the "greatest difference")—we're looking to reorder the whole set. That doesn't lend itself as well to a greedy approach.
+</p>
+<p class="ng-scope">
+Another common way to get <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> runtime is to use <span concept="counting" class="ng-isolate-scope"><span class="concept-wrapper" ng-init="showConcept=false">
+
+    <span ng-click="showConcept=!showConcept" class="concept">
+        <span class="concept-name" ng-transclude=""><span class="ng-scope">counting</span></span>
+        <span class="show-concept-icon">↴</span>
+    </span>
+
+    <!-- ngInclude: conceptPartialUrl --><div ng-show="showConcept" class="slide concept-explanation ng-scope ng-hide" ng-include="conceptPartialUrl"><div class="ng-scope">
+<p>
+<strong>Counting</strong> is a common pattern in time-saving algorithms. It can often get you <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> runtime, but at the expense of adding <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> space.
+</p>
+
+<p>
+The idea is to define <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting__a-hash-table"><span class="ng-scope">a dictionary</span></span> or <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting__standard-list"><span class="ng-scope">list</span></span> (call it e.g. <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting__counts"><span class="ng-scope">counts</span></span>) where the keys/indices represent the items from the input set and the values represent the number of times the item appears. In one pass through the input you can fully populate <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting__counts"><span class="ng-scope">counts</span></span>:
+</p>
+
+<div code-block="concept__counting__counts-with-hash" language="python" translation-highlighting="dynamic" class="ng-isolate-scope"><pre class=" language-python">  <code class=" language-python" ng-transclude="">counts <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">for</span> item <span class="token keyword">in</span> the_list<span class="token punctuation">:</span>
+    <span class="token keyword">if</span> item <span class="token keyword">in</span> counts<span class="token punctuation">:</span>
+        counts<span class="token punctuation">[</span>item<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        counts<span class="token punctuation">[</span>item<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span></code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p>
+Once you know how many times each item appears, it's trivial to:
+</p>
+
+<ul>
+<li>
+generate a sorted <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting__standard-list"><span class="ng-scope">list</span></span>
+</li>
+<li>
+find the item that appears the most times
+</li>
+<li>
+etc
+</li>
+</ul>
+
+<script type="text/javascript">
+            var elTranslations = {"words": {"concept__counting__standard-list": {"objectivec": "array", "cpp": "vector", "javascript": "array", "ruby": "array", "python": "list", "java": "array", "php": "array", "csharp": "list", "c": "array", "default": "list", "swift": "array"}, "concept__counting__a-hash-table": {"objectivec": "a dictionary", "php": "an array", "cpp": "an unordered map", "csharp": "a dictionary", "ruby": "a hash", "swift": "a dictionary", "c": "a hash table", "javascript": "an object", "python": "a dictionary", "java": "a hash map"}}, "code-blocks": {"setup": {"javascript": "var theArray = [1, 2, 2, 3, 4, 4, 4];\nvar expectedCounts = {\n    1: 1,\n    2: 2,\n    3: 1,\n    4: 3,\n};", "python": "the_list = [1, 2, 2, 3, 4, 4, 4]\nexpected_counts = {\n    1: 1,\n    2: 2,\n    3: 1,\n    4: 3,\n}", "ruby": "the_array = [1, 2, 2, 3, 4, 4, 4]\nexpected_counts = {\n    1 => 1,\n    2 => 2,\n    3 => 1,\n    4 => 3,\n}"}, "concept__counting__counts-with-hash": {"cpp": "unorderd_map&lt;int, size_t> counts;\n\nfor (int item : theVector) {\n    if ( counts.find(item) == counts.end() ) {\n        counts[item] = 1;\n    } \n    else {\n        ++counts[item];\n    }\n}", "javascript": {"tests": "assertEqual(counts, expectedCounts);", "code": "var counts = {};\ntheArray.forEach(function(item) {\n    if (counts.hasOwnProperty(item)) {\n        counts[item] += 1;\n    } else {\n        counts[item] = 1;\n    }\n});"}, "ruby": {"tests": "assertEqual(counts, expected_counts)", "code": "counts = {}\nthe_array.each do |item|\n    if counts.include? item\n        counts[item] += 1\n    else\n        counts[item] = 1\n    end\nend"}, "c": "// Assume we've already implemented a hash table\nHashTable *hashTableNew(void);\nHashTable *hashTableInsert(HashTable *ht, const char *key, void *value, size_t valueSize);\nvoid *hashTableFind(HashTable *ht, const char *key);\n\nchar key[16];\nsize_t i;\nHashTable *counts = hashTableNew();\n\nfor (i = 0; i &lt; theArrayLength; i++) {\n    snprintf(key, sizeof(key), \"%d\", theArray[i]);\n    key[sizeof(key) - 1] = '\\0';\n    int *item = hashTableFind(counts, key);\n    if (item != NULL) {\n        *item += 1;\n    }\n    else {\n        int first = 1;\n        counts = hashTableInsert(counts, key, &first, sizeof(int));\n    }\n}", "python": {"tests": "assertEqual(counts, expected_counts)", "code": "counts = {}\nfor item in the_list:\n    if item in counts:\n        counts[item] += 1\n    else:\n        counts[item] = 1"}, "java": "Map&lt;Integer, Integer> counts = new HashMap&lt;Integer, Integer>();\n\nfor (int item : theArray) {\n    if (counts.containsKey(item)) {\n        int incrementedCount = counts.get(item) + 1;\n        counts.put(item, incrementedCount);\n    } else {\n        counts.put(item, 1);\n    }\n}"}}, "vars": {"concept__counting__counts": {"default": "counts"}}};
+            var codeTypes = ['words', 'code-blocks', 'vars', 'funcs', 'code-inlines'];
+
+            var mergeObjects = function(objectA, objectB) {
+                objectA = objectA || {};
+                objectB = objectB || {};
+                for (var key in objectB) {
+                    objectA[key] = objectB[key];
+                }
+                return objectA;
+            }
+
+            if (!window.contentTranslations) {
+                window.contentTranslations = elTranslations;
+            } else {
+                for (var i=0; i<codeTypes.length; i++) {
+                    window.contentTranslations[codeTypes[i]] = mergeObjects(window.contentTranslations[codeTypes[i]], elTranslations[codeTypes[i]]);
+                }
+            }
+            </script>
+</div>
+</div>
+
+</span>
+</span>. We can build <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__a-standard-list"><span class="ng-scope">a list</span></span> <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__scores-to-counts"><span class="ng-scope">scores_to_counts</span></span> where the indices represent scores and the values represent how many times the score appears. Once we have that, can we generate a sorted <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span> of scores?
+</p>
+</div>
+</div>
+
+<div class="note slide ng-isolate-scope ng-hide" ng-show="shouldShow()" note="" number="3" type="hint">
+    <div class="note-content" ng-transclude="">
+<p class="ng-scope">
+What if we did an in-order walk through <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__scores-to-counts"><span class="ng-scope">scores_to_counts</span></span>. Each index represents a <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__score"><span class="ng-scope">score</span></span> and its value represents the <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__count"><span class="ng-scope">count</span></span> of appearances. So we can simply add the score to a new <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span> <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__sorted-scores"><span class="ng-scope">sorted_scores</span></span> as many times as <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__count"><span class="ng-scope">count</span></span> of appearances.
+</p>
+</div>
+</div>
+
+</div>
+
+    
+</div>
+
+
+<div class="section-wrapper ng-isolate-scope section-solution ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="solution">
+    <h3 class="heading slide ng-binding ng-isolate-scope" ng-show="shouldShow()" heading="solution" hide-heading="">Solution</h3>
+
+    <div class="section section-solution" ng-class="getSectionClass()" ng-transclude="">
+<p class="ng-scope">
+We use <span concept="counting-sort" class="ng-isolate-scope"><span class="concept-wrapper" ng-init="showConcept=false">
+
+    <span ng-click="showConcept=!showConcept" class="concept">
+        <span class="concept-name" ng-transclude=""><span class="ng-scope">counting sort</span></span>
+        <span class="show-concept-icon">↴</span>
+    </span>
+
+    <!-- ngInclude: conceptPartialUrl --><div ng-show="showConcept" class="slide concept-explanation ng-scope ng-hide" ng-include="conceptPartialUrl"><div class="ng-scope">
+<p>
+<strong>Counting sort</strong> is a very time-efficient (and somewhat space-inefficient) algorithm for sorting that avoids comparisons and exploits the <span complexity="1" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></span></span> time insertions and lookups in <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__a-standard-list"><span class="ng-scope">a list</span></span>.
+</p>
+
+<p>
+The idea is simple: if you're sorting <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math="n"><span class="katex"><span class="katex-mathml"><math><semantics><mrow></mrow><annotation encoding="application/x-tex"></annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0em;"></span><span class="strut bottom" style="height: 0em; vertical-align: 0em;"></span><span class="base textstyle uncramped"></span></span></span></span> integers and you know they all fall in the range <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mn>1</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">1..100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.64444em;"></span><span class="strut bottom" style="height: 0.64444em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord">1</span><span class="mord">.</span><span class="mord">.</span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span></span>, you can generate a sorted <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__standard-list"><span class="ng-scope">list</span></span> this way:
+</p>
+
+<ul>
+<li>
+Allocate <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__a-standard-list"><span class="ng-scope">a list</span></span> <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting-sort__nums-to-counts"><span class="ng-scope">nums_to_counts</span></span> where the indices represent numbers from our input <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__standard-list"><span class="ng-scope">list</span></span> and the values represent how many times the index number appears. Start each value at 0.
+</li>
+<li>
+In one pass of the input <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__standard-list"><span class="ng-scope">list</span></span>, update <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting-sort__nums-to-counts"><span class="ng-scope">nums_to_counts</span></span> as you go, so that at the end the values in <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting-sort__nums-to-counts"><span class="ng-scope">nums_to_counts</span></span> are correct.
+</li>
+<li>
+Allocate <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__a-standard-list"><span class="ng-scope">a list</span></span> <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting-sort__sorted-array"><span class="ng-scope">sorted_list</span></span> where we'll store our sorted numbers.
+</li>
+<li>
+In one in-order pass of <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting-sort__nums-to-counts"><span class="ng-scope">nums_to_counts</span></span> put each number, the correct number of times, into <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting-sort__sorted-array"><span class="ng-scope">sorted_list</span></span>.
+</li>
+</ul>
+
+<div code-block="concept__counting-sort__counting-sort" language="python" translation-highlighting="dynamic" class="ng-isolate-scope"><pre class=" language-python">  <code class=" language-python" ng-transclude=""><span class="token keyword">def</span> <span class="token function">counting_sort</span><span class="token punctuation">(</span>the_list<span class="token punctuation">,</span> max_value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token comment" spellcheck="true"># list of 0s at indices 0..max_value</span>
+    nums_to_counts <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>max_value<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># populate nums_to_counts</span>
+    <span class="token keyword">for</span> item <span class="token keyword">in</span> the_list<span class="token punctuation">:</span>
+        nums_to_counts<span class="token punctuation">[</span>item<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+
+    <span class="token comment" spellcheck="true"># populate the final sorted list</span>
+    sorted_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token comment" spellcheck="true"># for each item in nums_to_counts</span>
+    <span class="token keyword">for</span> item<span class="token punctuation">,</span> count <span class="token keyword">in</span> enumerate<span class="token punctuation">(</span>nums_to_counts<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+        <span class="token comment" spellcheck="true"># for the number of times the item occurs</span>
+        <span class="token keyword">for</span> time <span class="token keyword">in</span> range<span class="token punctuation">(</span>count<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+            <span class="token comment" spellcheck="true"># add it to the sorted list</span>
+            sorted_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> sorted_list</code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+<p>
+<strong>Counting sort takes <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> time and <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> additional space</strong> (for the new <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__standard-list"><span class="ng-scope">list</span></span> that we end up returning).
+</p>
+
+<div class="aside">
+
+
+
+<p>
+<strong>Wait, aren't we nesting two loops towards the bottom? So shouldn't it be <span complexity="n^2" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.814108em;"></span><span class="strut bottom" style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">n</span><span class="vlist"><span class="" style="top: -0.363em; margin-right: 0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span><span class="mclose">)</span></span></span></span></span></span></span> time?</strong> Notice <em>what those loops iterate over</em>. The <em>outer</em> loop runs once for each <em>unique</em> number in the  <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__standard-list"><span class="ng-scope">list</span></span>. The <em>inner</em> loop runs once for each <em>time that number occurred</em>.
+</p>
+
+<p>
+So in essence we're just looping through the <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.43056em;"></span><span class="strut bottom" style="height: 0.43056em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span></span> numbers from our input <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__standard-list"><span class="ng-scope">list</span></span>, except we're splitting it into two steps:
+(1) each unique number, and
+(2) each time that number appeared.
+</p>
+
+<p>
+Here's another way to think about it: in each iteration of our two nested loops, we append one item to <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting-sort__sorted-array"><span class="ng-scope">sorted_list</span></span>. How many numbers end up in <span class="ic-variable ng-isolate-scope" ng-transclude="" var="concept__counting-sort__sorted-array"><span class="ng-scope">sorted_list</span></span> in the end? Exactly how many were in our input <span class="ic-words ng-isolate-scope" ng-transclude="" words="concept__counting-sort__standard-list"><span class="ng-scope">list</span></span>! <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.43056em;"></span><span class="strut bottom" style="height: 0.43056em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span></span>!
+</p>
+
+</div>
+
+
+<p>
+There are some rare cases where even though our input items aren't integers bound by constants, we can write a function that <em>maps</em> our items to integers from 0 to some constant such that different items will always map to different integers. This allows us to use counting sort.
+</p>
+
+<script type="text/javascript">
+            var elTranslations = {"words": {"concept__counting-sort__a-standard-list": {"objectivec": "an array", "cpp": "a vector", "javascript": "an array", "ruby": "an array", "python": "a list", "java": "an array", "php": "an array", "csharp": "a list", "c": "an array", "default": "a list", "swift": "an array"}, "concept__counting-sort__standard-list": {"objectivec": "array", "cpp": "vector", "javascript": "array", "ruby": "array", "python": "list", "java": "array", "php": "array", "csharp": "list", "c": "array", "default": "list", "swift": "array"}}, "code-blocks": {"setup": {"cpp": "const int maxValue = 10;\n\nconst vector<vector<vector<int>>> tests {\n    vector<vector<int>> { vector<int> {1, 4, 2}, vector<int> {1, 2, 4} },\n    vector<vector<int>> { vector<int> {1, 7, 9, 0, 3}, vector<int> {0, 1, 3, 7, 9} },\n};", "javascript": "var tests = [\n    [[[1, 4, 2], 4], [1, 2, 4]],\n    [[[1, 7, 9, 0, 3], 10], [0, 1, 3, 7, 9]],\n];", "ruby": "tests = [\n    [[[1, 4, 2], 4], [1, 2, 4]],\n    [[[1, 7, 9, 0, 3], 10], [0, 1, 3, 7, 9]],\n]", "c": "const int maxValue = 10;\n\nconst int tests[2][2][5] = {\n    { {1, 4, 2 }, {1, 2, 4} },\n    { {1, 7, 9, 0, 3}, {0, 1, 3, 7, 9} }\n};\n\nconst int testsLength[2] = { 3, 5 };", "python": "tests = [\n    [[[1, 4, 2], 4], [1, 2, 4]],\n    [[[1, 7, 9, 0, 3], 10], [0, 1, 3, 7, 9]],\n]", "java": "int maxValue = 10;\n\nint[][][] tests = new int[][][]{\n    { {1, 4, 2}, {1, 2, 4} },\n    { {1, 7, 9, 0, 3}, {0, 1, 3, 7, 9} },\n};"}, "concept__counting-sort__counting-sort": {"cpp": {"tests": "for (const auto& test : tests) {\n    assertEqual(countingSort(test[0], maxValue), test[1]);\n}", "code": "vector&lt;int> countingSort(const vector&lt;int>& theVector, int maxValue)\n{\n\n    // array of 0s at indices 0..maxValue\n    vector&lt;size_t> numsToCounts(maxValue + 1);\n\n    // populate numsToCounts\n    for (int num : theVector) {\n        ++numsToCounts[num];\n    }\n\n    // populate the final sorted vector\n    vector&lt;int> sortedVector(theVector.size());\n    size_t currentSortedIndex = 0;\n\n    // for each num in numsToCounts\n    for (size_t num = 0; num &lt; numsToCounts.size(); ++num) {\n        size_t count = numsToCounts[num];\n\n        // for the number of times the item occurs\n        for (size_t x = 0; x &lt; count; ++x) {\n\n            // add it to the sorted array\n            sortedVector[currentSortedIndex] = num;\n            ++currentSortedIndex;\n        }\n    }\n\n    return sortedVector;\n}"}, "javascript": {"tests": "testInputAndOutputLists(countingSort, tests, true);", "code": "function countingSort(theArray, maxValue) {\n\n    // array of 0s at indices 0..maxValue\n    var numsToCounts = [];\n    for (var i = 0; i &lt; maxValue + 1; i++) {\n        numsToCounts[i] = 0;\n    }\n\n    // populate numsToCounts\n    theArray.forEach(function(num) {\n        numsToCounts[num] += 1;\n    });\n\n    // populate the final sorted array\n    var sortedArray = [];\n    var currentSortedIndex = 0;\n\n    // for each num in numsToCounts\n    for (var num = 0; num &lt; numsToCounts.length; num++) {\n        var count = numsToCounts[num];\n\n        // for the number of times the item occurs\n        for (var x = 0; x &lt; count; x++) {\n\n            // add it to the sorted array\n            sortedArray[currentSortedIndex] = num;\n            currentSortedIndex++;\n        }\n    }\n\n    return sortedArray;\n}"}, "ruby": {"tests": "testInputAndOutputLists(method(:counting_sort), tests, true)", "code": "def counting_sort(the_array, max_value)\n\n    # array of 0s at indices 0..max_value\n    nums_to_counts = [0] * (max_value+1)\n\n    # populate nums_to_counts\n    the_array.each do |item|\n        nums_to_counts[item] += 1\n    end\n\n    # populate the final sorted array\n    sorted_array = []\n\n    # for each item in nums_to_counts\n    nums_to_counts.each_with_index do |count, item|\n\n        # for the number of times the item occurs\n        (0...count).each do |time|\n\n            # add it to the sorted array\n            sorted_array.push(item)\n        end\n    end\n\n    return sorted_array\nend"}, "c": {"tests": "{\n    size_t i;\n    for (i = 0; i < 2; i++) {\n        int *output;\n        char msg[256];\n\n        output = countingSort(tests[i][0], testsLength[i], maxValue);\n        snprintf(msg, sizeof(msg), \"'tests[%lu][1] == output'\", i);\n        ASSERT_EQUAL(tests[i][1], output, testsLength[i] * sizeof(int), msg);\n        free(output);\n    }\n}", "code": "int *countingSort(const int *theArray, size_t theArrayLength, int maxValue)\n{\n    // returns a dynamically allocated array of sorted values.\n    int *sortedArray;\n    size_t num;\n    size_t currentSortedIndex = 0;\n    size_t numsToCountsLength = maxValue + 1;\n    size_t numsToCounts[numsToCountsLength]; // array from indices 0..maxValue\n\n    // allocate array of sorted values\n    sortedArray = malloc(theArrayLength * sizeof(int));\n    assert(sortedArray != NULL);\n\n    // start each numsToCounts at 0\n    memset(numsToCounts, 0, sizeof(numsToCounts));\n\n    // populate numsToCounts\n    for (num = 0; num &lt; theArrayLength; num++) {\n        int value = theArray[num];\n        numsToCounts[value] += 1;\n    }\n\n    // populate the final sorted array\n    for (num = 0; num &lt; numsToCountsLength; num++) {\n        size_t i;\n        size_t count = numsToCounts[num];\n\n        // for the number of times the item occurs\n        for (i = 0; i &lt; count; i++) {\n            // add it to the sorted array\n            sortedArray[currentSortedIndex] = num;\n            currentSortedIndex++;\n        }\n    }\n\n    return sortedArray;\n}"}, "python": {"tests": "testInputAndOutputLists(counting_sort, tests, True)", "code": "def counting_sort(the_list, max_value):\n\n    # list of 0s at indices 0..max_value\n    nums_to_counts = [0] * (max_value+1)\n\n    # populate nums_to_counts\n    for item in the_list:\n        nums_to_counts[item] += 1\n\n    # populate the final sorted list\n    sorted_list = []\n\n    # for each item in nums_to_counts\n    for item, count in enumerate(nums_to_counts):\n\n        # for the number of times the item occurs\n        for time in range(count):\n\n            # add it to the sorted list\n            sorted_list.append(item)\n\n    return sorted_list"}, "java": {"tests": "for (int[][] test : tests) {\n    assertEqual(t.countingSort(test[0], maxValue), test[1]);\n}", "code": "public int[] countingSort(int[] theArray, int maxValue) {\n\n    // array of 0s at indices 0..maxValue\n    int numsToCounts[] = new int[maxValue + 1];\n\n    // populate numsToCounts\n    for (int num : theArray) {\n        numsToCounts[num] += 1;\n    }\n\n    // populate the final sorted array\n    int[] sortedArray = new int[theArray.length];\n    int currentSortedIndex = 0;\n\n    // for each num in numsToCounts\n    for (int num = 0; num &lt; numsToCounts.length; num++) {\n        int count = numsToCounts[num];\n\n        // for the number of times the item occurs\n        for (int x = 0; x &lt; count; x++) {\n\n            // add it to the sorted array\n            sortedArray[currentSortedIndex] = num;\n            currentSortedIndex++;\n        }\n    }\n\n    return sortedArray;\n}"}}}, "vars": {"concept__counting-sort__nums-to-counts": {"camel": "numsToCounts", "snake": "nums_to_counts"}, "concept__counting-sort__sorted-array": {"python": "sorted_list", "default": "sortedArray", "cpp": "sortedVector", "snake": "sorted_array"}}};
+            var codeTypes = ['words', 'code-blocks', 'vars', 'funcs', 'code-inlines'];
+
+            var mergeObjects = function(objectA, objectB) {
+                objectA = objectA || {};
+                objectB = objectB || {};
+                for (var key in objectB) {
+                    objectA[key] = objectB[key];
+                }
+                return objectA;
+            }
+
+            if (!window.contentTranslations) {
+                window.contentTranslations = elTranslations;
+            } else {
+                for (var i=0; i<codeTypes.length; i++) {
+                    window.contentTranslations[codeTypes[i]] = mergeObjects(window.contentTranslations[codeTypes[i]], elTranslations[codeTypes[i]]);
+                }
+            }
+            </script>
+</div>
+</div>
+
+</span>
+</span>.
+</p>
+
+<div code-block="question__top-scores__solution" language="python" translation-highlighting="dynamic" class="ng-scope ng-isolate-scope"><pre class="  language-python">  <code class="  language-python" ng-transclude=""><span class="token keyword">def</span> <span class="token function">sort_scores</span><span class="token punctuation">(</span>unordered_scores<span class="token punctuation">,</span> highest_possible_score<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token comment" spellcheck="true"># list of 0s at indices 0..highest_possible_score</span>
+    scores_to_counts <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>highest_possible_score<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># populate scores_to_counts</span>
+    <span class="token keyword">for</span> score <span class="token keyword">in</span> unordered_scores<span class="token punctuation">:</span>
+        scores_to_counts<span class="token punctuation">[</span>score<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+
+    <span class="token comment" spellcheck="true"># populate the final sorted list</span>
+    sorted_scores <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token comment" spellcheck="true"># for each item in scores_to_counts</span>
+    <span class="token keyword">for</span> score<span class="token punctuation">,</span> count <span class="token keyword">in</span> enumerate<span class="token punctuation">(</span>scores_to_counts<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+        <span class="token comment" spellcheck="true"># for the number of times the item occurs</span>
+        <span class="token keyword">for</span> time <span class="token keyword">in</span> range<span class="token punctuation">(</span>count<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+            <span class="token comment" spellcheck="true"># add it to the sorted list</span>
+            sorted_scores<span class="token punctuation">.</span>append<span class="token punctuation">(</span>score<span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> sorted_scores</code>
+</pre>
+<span class="warning-message ng-binding ng-hide" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage">
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Ruby">Ruby</option><option value="2" label="Java">Java</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option></select>
+
+</div>
+<span class="only-content-language ng-binding ng-hide" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</div>
+
+</div>
+
+    
+</div>
+
+<div class="section-wrapper ng-isolate-scope section-complexity ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="complexity">
+    <h3 class="heading slide ng-binding ng-isolate-scope" ng-show="shouldShow()" heading="complexity" hide-heading="">Complexity</h3>
+
+    <div class="section section-complexity" ng-class="getSectionClass()" ng-transclude="">
+<p class="ng-scope">
+<span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> time and <span complexity="n" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></span></span> space, where <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.43056em;"></span><span class="strut bottom" style="height: 0.43056em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span></span> is the number of scores.
+</p>
+
+<div class="aside ng-scope">
+
+<p>
+<strong>Wait, aren't we nesting two loops towards the bottom? So shouldn't it be <span complexity="n^2" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.814108em;"></span><span class="strut bottom" style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">n</span><span class="vlist"><span class="" style="top: -0.363em; margin-right: 0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span class="" style="font-size: 0em;">​</span></span>​</span></span></span><span class="mclose">)</span></span></span></span></span></span></span> time?</strong> Notice <em>what those loops iterate over</em>. The <em>outer</em> loop runs once for each <em>unique</em> number in the  <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span>. The <em>inner</em> loop runs once for each <em>time that number occurred</em>.
+</p>
+
+<p>
+So in essence we're just looping through the <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.43056em;"></span><span class="strut bottom" style="height: 0.43056em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span></span> numbers from our input <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span>, except we're splitting it into two steps:
+(1) each unique number, and
+(2) each time that number appeared.
+</p>
+
+<p>
+Here's another way to think about it: in each iteration of our two nested loops, we append one item to <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__sorted-scores"><span class="ng-scope">sorted_scores</span></span>. How many numbers end up in <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__sorted-scores"><span class="ng-scope">sorted_scores</span></span> in the end? Exactly how many were in our input <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span>! <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.43056em;"></span><span class="strut bottom" style="height: 0.43056em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span></span>!
+</p>
+
+</div>
+
+<p class="ng-scope">
+  If we didn't treat <span class="ic-variable ng-isolate-scope" ng-transclude="" var="question__top-scores__highest-possible-score"><span class="ng-scope">highest_possible_score</span></span> as a
+  constant, we could call it <span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.69444em;"></span><span class="strut bottom" style="height: 0.69444em; vertical-align: 0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.03148em;">k</span></span></span></span></span> and say we
+  have <span complexity="n+k" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>+</mo><mi>k</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n+k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathit" style="margin-right: 0.03148em;">k</span><span class="mclose">)</span></span></span></span></span></span></span> time
+  and <span complexity="n+k" class="ng-isolate-scope"><span class="complexity"><span class="ic-math ng-isolate-scope" ng-class="{&#39;block&#39;: isBlock()}" ng-transclude="" math=""><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>+</mo><mi>k</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n+k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right: 0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathit" style="margin-right: 0.03148em;">k</span><span class="mclose">)</span></span></span></span></span></span></span> space.
+</p>
+
+
+</div>
+
+    
+</div>
+
+<div class="section-wrapper ng-isolate-scope section-bonus ng-hide" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()" section="bonus">
+    <h3 class="heading slide ng-binding ng-isolate-scope" ng-show="shouldShow()" heading="bonus" hide-heading="">Bonus</h3>
+
+    <div class="section section-bonus" ng-class="getSectionClass()" ng-transclude="">
+  <p class="ng-scope">
+    Note that by optimizing for time we ended up incurring some space
+    cost! What if we were optimizing for space?
+  </p>
+  <p class="ng-scope">
+    We chose to generate and return a separate,
+    sorted <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span>. Could we instead sort
+    the <span class="ic-words ng-isolate-scope" ng-transclude="" words="question__top-scores__standard-list"><span class="ng-scope">list</span></span> in place? Does this change
+    the time complexity? The space complexity?
+  </p>
+</div>
+
+    
+</div>
+
+
+
+<script type="text/javascript">
+            var elTranslations = {"code-blocks": {"question__top-scores__example": {"javascript": {"setup": "function sortScores(a, b) {};", "code": "var unsortedScores = [37, 89, 41, 65, 91, 53];\nconst HIGHEST_POSSIBLE_SCORE = 100;\n\nsortScores(unsortedScores, HIGHEST_POSSIBLE_SCORE);\n// returns [37, 41, 53, 65, 89, 91]", "tests": ""}, "python": {"setup": "def sort_scores(a, b):\n    pass", "code": "unsorted_scores = [37, 89, 41, 65, 91, 53]\nHIGHEST_POSSIBLE_SCORE = 100\n\nsort_scores(unsorted_scores, HIGHEST_POSSIBLE_SCORE)\n# returns [37, 41, 53, 65, 89, 91]", "tests": ""}, "ruby": {"setup": "def sort_scores(a, b)\nend", "code": "unsorted_scores = [37, 89, 41, 65, 91, 53]\nHIGHEST_POSSIBLE_SCORE = 100\n\nsort_scores(unsorted_scores, HIGHEST_POSSIBLE_SCORE)\n# returns [37, 41, 53, 65, 89, 91]", "tests": ""}, "c": "int unsortedScores[6] = {37, 89, 41, 65, 91, 53};\nconst int HIGHEST_POSSIBLE_SCORE = 100;\n\nint *sortedScores = sortScores(\n        sizeof(unsortedScores) / sizeof(unsortedScores[0]),\n        unsortedScores,\n        HIGHEST_POSSIBLE_SCORE);\n// sortedScores: [37, 41, 53, 65, 89, 91]", "java": "int[] unsortedScores = {37, 89, 41, 65, 91, 53};\nfinal int HIGHEST_POSSIBLE_SCORE = 100;\n\nint[] sortedScores = sortScores(unsortedScores, HIGHEST_POSSIBLE_SCORE);\n// sortedScores: [37, 41, 53, 65, 89, 91]", "swift": "let unsortedScores = [37, 89, 41, 65, 91, 53]\nlet highestPossibleScore = 100\n\nlet sortedScores = sortScores(unsortedScores, highestPossibleScore)\n// sortedScores: [37, 41, 53, 65, 89, 91]", "cpp": "const vector&lt;int> unsortedScores {37, 89, 41, 65, 91, 53};\nconst int HIGHEST_POSSIBLE_SCORE = 100;\n\nvector&lt;int> sortedScores = sortScores(unsortedScores, HIGHEST_POSSIBLE_SCORE);\n// sortedScores: [37, 41, 53, 65, 89, 91]"}, "setup": {"javascript": "var tests = [\n    [ [ [3, 1, 8, 9, 2], 9], [1, 2, 3, 8, 9] ],\n    [ [ [10, 10, 9], 10], [9, 10, 10] ],\n];", "python": "tests = [\n    ([ [3, 1, 8, 9, 2], 9], [1, 2, 3, 8, 9]),\n    ([ [10, 10, 9], 10], [9, 10, 10]),\n]", "ruby": "tests = [\n    [ [ [3, 1, 8, 9, 2], 9], [1, 2, 3, 8, 9] ],\n    [ [ [10, 10, 9], 10], [9, 10, 10] ],\n]", "c": "const int TESTS_NUM = 2;\nint inputs[2][5] = {\n    {3, 1, 8, 9, 2},\n    {10, 10, 9},\n};\nint sizes[2] = {5, 3};\nint highestScores[2] = {9, 10};\nint expected[2][5] = {\n    {1, 2, 3, 8, 9},\n    {9, 10, 10},\n};", "java": "int[][][] tests = new int[][][]{\n    { {3, 1, 8, 9, 2}, {1, 2, 3, 8, 9} },\n    { {10, 10, 9}, {9, 10, 10} },\n};", "swift": "let tests = [\n    [ [3, 1, 8, 9, 2], [1, 2, 3, 8, 9] ],\n    [ [10, 10, 9], [9, 10, 10] ]\n]", "cpp": "const vector<vector<vector<int>>> tests {\n    vector<vector<int>>{ vector<int>{3, 1, 8, 9, 2}, vector<int>{1, 2, 3, 8, 9} },\n    vector<vector<int>>{ vector<int>{10, 10, 9}, vector<int>{9, 10, 10} },\n};"}, "question__top-scores__solution": {"javascript": {"code": "function sortScores(unorderedScores, highestPossibleScore) {\n\n    // array of 0s at indices 0..highestPossibleScore\n    var scoresToCounts = [];\n    for (var i = 0; i &lt; highestPossibleScore + 1; i++) {\n        scoresToCounts.push(0);\n    }\n\n    // populate scoresToCounts\n    unorderedScores.forEach(function(score) {\n        scoresToCounts[score]++;\n    });\n\n    // populate the final sorted array\n    var sortedScores = [];\n\n    // for each item in scoresToCounts\n    scoresToCounts.forEach(function(count, score) {\n\n        // for the number of times the item occurs\n        for (var time = 0; time &lt; count; time++) {\n            sortedScores.push(score);\n        }\n    });\n\n    return sortedScores;\n}", "tests": "testInputAndOutputLists(sortScores, tests, true);"}, "python": {"code": "def sort_scores(unordered_scores, highest_possible_score):\n\n    # list of 0s at indices 0..highest_possible_score\n    scores_to_counts = [0] * (highest_possible_score+1)\n\n    # populate scores_to_counts\n    for score in unordered_scores:\n        scores_to_counts[score] += 1\n\n    # populate the final sorted list\n    sorted_scores = []\n\n    # for each item in scores_to_counts\n    for score, count in enumerate(scores_to_counts):\n\n        # for the number of times the item occurs\n        for time in range(count):\n\n            # add it to the sorted list\n            sorted_scores.append(score)\n\n    return sorted_scores", "tests": "testInputAndOutputLists(sort_scores, tests, True)"}, "ruby": {"code": "def sort_scores(unordered_scores, highest_possible_score)\n\n    # array of 0s at indices 0..highest_possible_score\n    scores_to_counts = [0] * (highest_possible_score+1)\n\n    # populate scores_to_counts\n    unordered_scores.each do |score|\n        scores_to_counts[score] += 1\n    end\n\n    # populate the final sorted array\n    sorted_scores = []\n\n    # for each item in scores_to_counts\n    scores_to_counts.each_with_index do |count, score|\n\n        # for the number of times the item occurs\n        (0...count).each do |time|\n\n            # add it to the sorted array\n            sorted_scores.push(score)\n        end\n    end\n\n    return sorted_scores\nend", "tests": "testInputAndOutputLists(method(:sort_scores), tests, true)"}, "c": {"code": "int * sortScores(int length, int* unorderedScores, int highestPossibleScore)\n{\n    int i, score;\n    int *sortedScores, *scoresToCounts;\n    int currentSortedIndex = 0;\n\n    // array of 0s at indices 0..highestPossibleScore\n    scoresToCounts = malloc(sizeof(int) * (highestPossibleScore + 1));\n    assert(scoresToCounts != 0);\n    memset(scoresToCounts, 0, sizeof(int) * (highestPossibleScore + 1));\n\n    // populate scoresToCounts\n    for (i = 0; i &lt; length; i++) {\n        scoresToCounts[unorderedScores[i]]++;\n    }\n\n    // populate the final sorted array\n    sortedScores = malloc(sizeof(int) * length);\n    assert(sortedScores != 0);\n\n    // for each item in scoresToCounts\n    for (score = 0; score &lt;= highestPossibleScore; score++) {\n        int occurence;\n        int count = scoresToCounts[score];\n\n        // for the number of times the item occurs\n        for (occurence = 0; occurence &lt; count; occurence++) {\n            // add it to the sorted array\n            sortedScores[currentSortedIndex] = score;\n            currentSortedIndex++;\n        }\n    }\n\n    free(scoresToCounts);\n    return sortedScores;\n}", "tests": "for (int t = 0; t < TESTS_NUM; t++) {\n    int *actual = sortScores(sizes[t], inputs[t], highestScores[t]);\n    ASSERT_EQUAL(actual, expected[t], sizes[t] * sizeof(int), \"assertion failure\");\n    free(actual);\n}"}, "java": {"code": "public int[] sortScores(int[] unorderedScores, int highestPossibleScore) {\n\n    // array of 0s at indices 0..highestPossibleScore\n    int[] scoresToCounts = new int[highestPossibleScore + 1];\n\n    // populate scoresToCounts\n    for (int score : unorderedScores) {\n        scoresToCounts[score]++;\n    }\n\n    // populate the final sorted array\n    int[] sortedScores = new int[unorderedScores.length];\n    int currentSortedIndex = 0;\n\n    // for each item in scoresToCounts\n    for (int score = 0; score &lt;= highestPossibleScore; score++) {\n        int count = scoresToCounts[score];\n\n        // for the number of times the item occurs\n        for (int occurrence = 0; occurrence &lt; count; occurrence++) {\n\n            // add it to the sorted array\n            sortedScores[currentSortedIndex] = score;\n            currentSortedIndex++;\n        }\n    }\n\n    return sortedScores;\n}", "tests": "for (int[][] test : tests) {\n    assertEqual(t.sortScores(test[0], 10), test[1]);\n}"}, "swift": {"code": "func sortScores(_ unorderedScores: [Int], highestPossibleScore: Int) -> [Int] {\n    \n    // array of 0s at indices 0..highestPossibleScore\n    var scoresToCounts = Array(repeating: 0, count: highestPossibleScore + 1)\n    \n    // populate scoresToCounts\n    for score in unorderedScores {\n        scoresToCounts[score] += 1\n    }\n    \n    // populate the final sorted array\n    var sortedScores = Array(repeating: 0, count: unorderedScores.count)\n    var currentSortedIndex = 0\n    \n    // for each item in scoresToCounts\n    for score in 0...highestPossibleScore {\n        let count = scoresToCounts[score]\n        \n        // for the number of times the item occurs\n        for _ in 0..&lt;count {\n            \n            // add it to the sorted array\n            sortedScores[currentSortedIndex] = score\n            currentSortedIndex += 1\n        }\n    }\n    \n    return sortedScores\n}", "tests": "for test in tests {\n    try assertEqual(sortScores(test[0], highestPossibleScore: 10), test[1])\n}"}, "cpp": {"code": "vector&lt;int> sortScores(const vector&lt;int>& unorderedScores, const int highestPossibleScore) \n{\n    // vector of 0s at indices 0..highestPossibleScore\n    vector&lt;size_t> scoresToCounts(highestPossibleScore + 1);\n\n    // populate scoresToCounts\n    for (int score : unorderedScores) {\n        ++scoresToCounts[score];\n    }\n\n    // populate the final sorted array\n    vector&lt;int> sortedScores(unorderedScores.size());\n    size_t currentSortedIndex = 0;\n\n    // for each item in scoresToCounts\n    for (int score = 0; score &lt;= highestPossibleScore; ++score) {\n        size_t count = scoresToCounts[score];\n\n        // for the number of times the item occurs\n        for (size_t occurrence = 0; occurrence &lt; count; ++occurrence) {\n            // add it to the sorted array\n            sortedScores[currentSortedIndex] = score;\n            ++currentSortedIndex;\n        }\n    }\n\n    return sortedScores;\n}", "tests": "for (const auto& test : tests) {\n    assertEqual(sortScores(test[0], 10), test[1]);\n}"}}}, "vars": {"question__top-scores__sorted-scores": {"snake": "sorted_scores", "camel": "sortedScores"}, "question__top-scores__score": {"default": "score"}, "question__top-scores__count": {"default": "count"}, "question__top-scores__highest-possible-score": {"snake": "highest_possible_score", "camel": "highestPossibleScore"}, "question__top-scores__scores-to-counts": {"snake": "scores_to_counts", "camel": "scoresToCounts"}, "question__top-scores__unsorted-scores": {"snake": "unsorted_scores", "camel": "unsortedScores"}}, "words": {"question__top-scores__a-standard-list": {"javascript": "an array", "python": "a list", "default": "a list", "php": "an array", "ruby": "an array", "swift": "an array", "cpp": "a vector", "objectivec": "an array", "csharp": "a list", "c": "an array", "java": "an array"}, "question__top-scores__standard-list": {"javascript": "array", "python": "list", "default": "list", "php": "array", "ruby": "array", "swift": "array", "cpp": "vector", "objectivec": "array", "csharp": "list", "c": "array", "java": "array"}}};
+            var codeTypes = ['words', 'code-blocks', 'vars', 'funcs', 'code-inlines'];
+
+            var mergeObjects = function(objectA, objectB) {
+                objectA = objectA || {};
+                objectB = objectB || {};
+                for (var key in objectB) {
+                    objectA[key] = objectB[key];
+                }
+                return objectA;
+            }
+
+            if (!window.contentTranslations) {
+                window.contentTranslations = elTranslations;
+            } else {
+                for (var i=0; i<codeTypes.length; i++) {
+                    window.contentTranslations[codeTypes[i]] = mergeObjects(window.contentTranslations[codeTypes[i]], elTranslations[codeTypes[i]]);
+                }
+            }
+            </script>
+</div>
+
+
+    </div>
+
+    <div class="btn-sets">
+
+        <p class="prompt ng-binding" ng-bind="getPromptStr()" ng-hide="&#39;full&#39; !== &#39;full&#39; &amp;&amp; endedQuestion">Do you have an answer?</p>
+
+        <div class="btn-set btn-set-during ng-hide" ng-show="isSingleTrack &amp;&amp; getBtnSet()==&#39;during&#39;">
+                <a ng-click="showPress()" id="btn-show" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-chevron-down"></span><span class="text ng-binding" ng-bind="getShowBtnText()">Show answer</span></a>
+        </div>
+
+        <div class="btn-set btn-set-during" ng-show="!isSingleTrack &amp;&amp; getBtnSet()==&#39;during&#39;">
+                <a ng-click="haveAnswerPress()" id="btn-got-it" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-ok"></span><span class="text ng-binding" ng-bind="getHaveAnswerBtnText()">I have an answer</span></a>
+                <a ng-click="dontHaveAnswerPress()" id="btn-hint" class="btn btn-default btn-large" style=""><span class="fa fa-question"></span><span class="text ng-binding" ng-bind="getDontHaveAnswerBtnText()">I need a hint</span></a>
+        </div>
+
+        
+            <div class="btn-set btn-set-after-option ng-hide" ng-show="getBtnSet()==&#39;after-option&#39;">
+                    <a ng-click="feelExpertPress()" id="btn-feel-good" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-ok"></span><span class="text">Yes, I'm expert on this</span></a>
+                    <a ng-click="dontFeelExpertPress()" id="btn-need-review" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-repeat"></span><span class="text">Not quite, review later</span></a>
+            </div>
+            <div class="btn-set btn-set-after-must-review ng-hide" ng-show="getBtnSet()==&#39;after-must-review&#39;">
+                    <a ng-click="nextQuestionPress()" id="btn-next" class="btn btn-default btn-large" style=""><span class="glyphicon glyphicon-chevron-right"></span><span class="text">Next question</span></a>
+            </div>
+        
+
+        <div class="share-btns share-btns-quiz-end ng-hide" ng-show="getBtnSet()==&#39;after-option&#39;">
+            <p>
+                Like this problem? Pass it on!
+            </p>
+
+            
+
+<a class="custom-share facebook-share ng-isolate-scope" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.interviewcake.com/question/python/top-scores" target="_blank" tracklink="" the-event="FB share click" the-properties="{&quot;which&quot; : &quot;post-question option&quot;}"><i class="fa fa-facebook"> </i> Share</a>
+<a class="custom-share twitter-share ng-isolate-scope" href="https://twitter.com/intent/tweet?text=Solved%20this%20coding%20interview%20question%21&amp;via=interviewcake&amp;related=interviewcake&amp;url=https%3A//www.interviewcake.com/question/python/top-scores" target="_blank" tracklink="" the-event="Twitter share click" the-properties="{&quot;which&quot; : &quot;post-question option&quot;}"><i class="fa fa-twitter"> </i> Tweet</a>
+<a class="custom-share linkedin-share ng-isolate-scope" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.interviewcake.com/question/python/top-scores&amp;title=&amp;summary=Solved%20this%20coding%20interview%20question%21&amp;source=Interview%20Cake" target="_blank" tracklink="" the-event="LinkedIn share click" the-properties="{&quot;which&quot; : &quot;post-question option&quot;}"><i class="fa fa-linkedin"> </i> Share</a>
+
+
+        </div>
+        <div class="share-btns share-btns-quiz-end ng-hide" ng-show="getBtnSet()==&#39;after-must-review&#39;">
+            <p>
+                Like this problem? Pass it on!
+            </p>
+
+            
+
+<a class="custom-share facebook-share ng-isolate-scope" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.interviewcake.com/question/python/top-scores" target="_blank" tracklink="" the-event="FB share click" the-properties="{&quot;which&quot; : &quot;post-question must review&quot;}"><i class="fa fa-facebook"> </i> Share</a>
+<a class="custom-share twitter-share ng-isolate-scope" href="https://twitter.com/intent/tweet?text=Tough%20coding%20interview%20question%21&amp;via=interviewcake&amp;related=interviewcake&amp;url=https%3A//www.interviewcake.com/question/python/top-scores" target="_blank" tracklink="" the-event="Twitter share click" the-properties="{&quot;which&quot; : &quot;post-question must review&quot;}"><i class="fa fa-twitter"> </i> Tweet</a>
+<a class="custom-share linkedin-share ng-isolate-scope" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.interviewcake.com/question/python/top-scores&amp;title=&amp;summary=Tough%20coding%20interview%20question%21&amp;source=Interview%20Cake" target="_blank" tracklink="" the-event="LinkedIn share click" the-properties="{&quot;which&quot; : &quot;post-question must review&quot;}"><i class="fa fa-linkedin"> </i> Share</a>
+
+        </div>
+
+    </div>
+
+    
+        <div ng-controller="NotepadCtrl" class="notepad-outer-wrapper ng-scope tab-mode" ng-class="notepadMode" style="bottom: 0px;">
+    <div class="notepad-inner-wrapper tab-mode" ng-class="notepadMode">
+        <div class="notepad-buttons tab-mode" ng-class="notepadMode">
+            <div class="select-language ng-hide" ng-mousedown="isNotepadRelatedElementClicked=true" ng-mouseup="isNotepadRelatedElementClicked=false" ng-show="notepadMode!==&#39;tab-mode&#39;">
+                <select ng-model="selectedLanguage" ng-options="language.display_name for language in codemirrorLanguages | orderBy: &#39;dropdown_rank&#39;" ng-change="selectFromLanguageDropdown()" class="ng-pristine ng-untouched ng-valid"><option value="0" selected="selected" label="Python">Python</option><option value="1" label="Java">Java</option><option value="2" label="Ruby">Ruby</option><option value="3" label="JavaScript">JavaScript</option><option value="4" label="C (beta)">C (beta)</option><option value="5" label="C++ (beta)">C++ (beta)</option><option value="6" label="C# (beta)">C# (beta)</option><option value="7" label="Objective-C (beta)">Objective-C (beta)</option><option value="8" label="PHP (beta)">PHP (beta)</option><option value="9" label="Haskell">Haskell</option><option value="10" label="No syntax">No syntax</option></select>
+            </div>
+            <span class="tab ng-hide" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="clickIcon(&#39;tab-mode&#39;)" ng-mouseup="isNotepadRelatedElementClicked=false" ng-show="notepadMode!==&#39;tab-mode&#39;"></span>
+            <span class="type-and-look" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="clickIcon(&#39;type-and-look-mode&#39;)" ng-mouseup="isNotepadRelatedElementClicked=false"></span>
+            <span class="focus" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="clickIcon(&#39;focus-mode&#39;)" ng-mouseup="isNotepadRelatedElementClicked=false"></span>
+        </div>
+        <div class="notepad-typing tab-mode" ng-class="{&#39;output-displayed&#39;: outputDisplayed &amp;&amp; selectedLanguage.codewars}">
+            <div class="ng-pristine ng-untouched ng-valid cm-s-default CodeMirror" ui-codemirror-opts="editorOptions" ui-refresh="isCodemirrorUpdated" ng-model="userCode"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 26px; left: 22px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" not-content="true" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" not-content="true" style="min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" not-content="true"></div><div class="CodeMirror-gutter-filler" not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-width: 86.9688px; min-height: 29px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 17.85px;">&nbsp;</div></div><div class="CodeMirror-code"><pre><span style="padding-right: 0.1px;"><span class="cm-variable">Type</span> <span class="cm-variable">code</span><span class="cm-operator">!</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 29px;"></div><div class="CodeMirror-gutters" style="display: none; height: 62px;"></div></div></div>
+        </div>
+
+        
+
+        <div class="notepad-run tab-mode" ng-class="notepadMode" ng-show="selectedLanguage.codewars">
+            <span class="output-button ng-binding ng-hide" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="outputDisplayed = !outputDisplayed; codemirrorElement.focus()" ng-mouseup="isNotepadRelatedElementClicked=false" ng-show="outputDisplayed || output !== undefined" ng-bind="outputDisplayed ? &#39;HIDE&#39; : &#39;SHOW&#39;">SHOW</span>
+            <span class="output-button" ng-mousedown="isNotepadRelatedElementClicked=true" ng-click="runCode()" ng-mouseup="isNotepadRelatedElementClicked=false">RUN</span>
+        </div>
+        <div class="notepad-output tab-mode" ng-class="notepadMode" ng-show="selectedLanguage.codewars" ng-mousedown="isNotepadRelatedElementClicked=true" ng-mouseup="isNotepadRelatedElementClicked=false">
+            <span class="powered-by">
+                Code execution powered by Qualified.io
+            </span>
+            <p class="content output-help ng-binding ng-hide" ng-show="outputHelp" ng-bind="outputHelp"></p>
+            <p class="content output ng-binding ng-hide" ng-show="output" ng-bind="output"></p>
+            <p class="content output-error ng-binding" ng-bind="outputError"></p>
+        </div>
+
+        
+    </div>
+</div>
+
+    
+
+</div>
+</div>
+
+
+
+    <div ng-view=""></div>
+</div>
+
+
+    
+    
+    
+
+
+    <div id="print-footer">
+        <p>
+            Want more coding interview help?
+        </p>
+
+        <p>
+            Check out <span class="url">interviewcake.com</span> for more advice, guides, and practice questions.
+        </p>
+    </div>
+
+    <div id="footer">
+
+        <a class="newsletter-link" href="https://www.interviewcake.com/free-weekly-coding-interview-problem-newsletter">Subscribe to our weekly question email list »</a>
+
+        <div class="links">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="by-company">
+                            <h5>
+                                Programming interview questions by company:
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="https://www.interviewcake.com/google-interview-questions">Google interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/facebook-interview-questions">Facebook interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/amazon-interview-questions">Amazon interview questions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="by-language">
+                            <h5>
+                                Programming interview questions by language:
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a href="https://www.interviewcake.com/java-interview-questions">Java interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/python-interview-questions">Python interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/ruby-interview-questions">Ruby interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/javascript-interview-questions">JavaScript interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/sql-interview-questions">SQL interview questions</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.interviewcake.com/testing-and-qa-interview-questions">Testing and QA interview questions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+
+            <a class="facebook ng-isolate-scope" href="https://www.facebook.com/interviewcake" target="_blank" tracklink="" the-event="FB footer click"><i class="fa fa-facebook"></i></a>
+            <a class="twitter ng-isolate-scope" href="https://www.twitter.com/interviewcake" target="_blank" tracklink="" the-event="Twitter footer click"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        
+
+            <div itemscope="" itemtype="http://schema.org/Corporation">
+                <span class="schemaorghide" itemprop="description">Programming interview practice and tips for software engineers looking for jobs.</span>
+
+                Copyright © 2016
+                <span itemprop="name">Cake Labs, Inc.</span> All rights reserved.
+                <span class="schemaorghide" itemprop="image">https://www.interviewcake.com/static//images/cake_white_on_blue_600.png</span>
+                <span class="schemaorghide" itemprop="logo">https://www.interviewcake.com/static//images/cake_white_on_blue_600.png</span>
+                <span class="schemaorghide" itemprop="url">https://www.interviewcake.com</span>
+                <span class="schemaorghide" itemprop="telephone">(804) 876-2253</span>
+
+                <address itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">228 Park Ave S #82632</span>,
+                    <span itemprop="addressLocality">New York</span>,
+                    <span itemprop="addressRegion">NY</span>
+                    <span itemprop="addressCountry">US</span>
+                    <span itemprop="postalCode">10003</span>
+                    <span itemprop="telephone">(804) 876-2253</span>
+                </address>
+
+                <address class="schemaorghide" itemprop="location" itemscope="" itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="addressCountry">US</span>
+                    <span itemprop="addressLocality">New York</span>
+                    <span itemprop="addressRegion">NY</span>
+                    <span itemprop="streetAddress">228 Park Ave S #82632</span>
+                    <span itemprop="postalCode">10003</span>
+                    <span itemprop="telephone">(804) 876-2253</span>
+                </address>
+
+                <div itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                    <div itemprop="geo" itemscope="" itemtype="http://schema.org/GeoCoordinates">
+                        <meta itemprop="latitude" content="37.76480">
+                        <meta itemprop="longitude" content="-122.41872">
+                    </div>
+                </div>
+            </div>
+        
+        <div>
+
+            
+                <a href="https://www.interviewcake.com/about">About</a>
+                |
+            
+            <a rel="nofollow" href="https://www.interviewcake.com/privacy-policy">Privacy</a>
+            |
+            <a rel="nofollow" href="https://www.interviewcake.com/terms-and-conditions">Terms</a>
+        </div>
+    </div>
+
+    
+
+</div> <!-- /"below-nav" -->
+
+    
+    <script src="./32.Top Scores _ Interview Cake_files/jquery.min.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/bootstrap.min.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/angular.min.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/angular-route.min.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/angular-cookies.min.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/angular-animate.min.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/katex.min.js"></script>
+
+    
+
+    
+    <script src="./32.Top Scores _ Interview Cake_files/underscore-min.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/angular-django-rest-resource.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/angular-seo.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/sticky.js"></script>
+    
+
+    <script type="text/javascript">
+        (function(){
+  var FLAGS = {
+    'learnings': true,'only_3_free_questions': true,'new_header': true,'allow_anonymous_purchase': false
+    },
+    SWITCHES = {
+    
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();
+
+    </script>
+
+    <script src="./32.Top Scores _ Interview Cake_files/base.js"></script>
+
+    
+    <script src="./32.Top Scores _ Interview Cake_files/prism.min.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/codemirror.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/python.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/ruby.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/javascript.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/clike.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/php.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/haskell.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/ui-codemirror.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/jquery.payment.js"></script>
+    <script src="./32.Top Scores _ Interview Cake_files/edgeUtils.js"></script>
+    
+
+
+
+
+    <script type="text/javascript">
+        window.CACHEBUST_QUERY_STR = '?bust=135';
+        //TODO: move above into the below
+        window.JS_CONSTANTS = {"INTEGRATIONS_SETTING_ONLY_INTEGRATIONS_THAT_SUPPORT_FRONT_END_ONLY": {"All": false, "Google Analytics": true, "Optimizely": true, "Adwords": true, "Facebook Pixel": true}, "C18N_LANGUAGES": [{"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}, {"dropdown_rank": 3, "prism": "ruby", "codemirror": "text/x-ruby", "codewars": "ruby", "short_name": "ruby", "case_convention": "snake", "notepad_template": "def my_function(arg)\n    # write the body of your function here\n    return \"running with #{arg}\"\nend\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nputs my_function('test input')\n", "display_name": "Ruby"}, {"dropdown_rank": 2, "prism": "java", "codemirror": "text/x-java", "codewars": "java", "short_name": "java", "case_convention": "camel", "notepad_template": "public class Solution {\n    public static String myFunction(String arg) {\n        // write the body of your function here\n        return \"running with \" + arg;\n    }\n    public static void main(String[] args) {\n        // run your function through some test cases here\n        // remember: debugging is half the battle!\n        String testInput = \"test input\";\n        System.out.println(myFunction(testInput));\n    }\n}", "display_name": "Java"}, {"dropdown_rank": 4, "prism": "javascript", "codemirror": "text/javascript", "codewars": "javascript", "short_name": "javascript", "case_convention": "camel", "notepad_template": "function myFunction(arg) {\n    // write the body of your function here\n    return 'running with ' + arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\nconsole.log(myFunction('test input'));\n", "display_name": "JavaScript"}, {"dropdown_rank": 5, "closest_languages": ["cpp", "java"], "prism": "c", "codemirror": "text/x-csrc", "codewars": "c", "short_name": "c", "case_convention": "camel", "notepad_template": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nconst char * my_function(char * arg) {\n    // write the body of your function here\n    return arg;\n}\n\nint main() {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    printf(\"%s\", my_function(\"test input\"));\n    return 0;\n}", "display_name": "C (beta)"}, {"dropdown_rank": 6, "closest_languages": ["c", "java"], "prism": "cpp", "codemirror": "text/x-c++src", "codewars": "cpp", "short_name": "cpp", "case_convention": "camel", "notepad_template": "#include <iostream>\nusing namespace std;\n\nstring myFunction (const string& arg)\n{\n    // write the body of your function here\n    return \"running with \" + arg;\n}\n\nint main ()\n{\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    cout << myFunction (\"test input\");\n    return 0;\n}", "display_name": "C++ (beta)"}], "CODEMIRROR_LANGUAGES": [{"dropdown_rank": 10, "codemirror": "text/x-haskell", "codewars": "haskell", "short_name": "haskell", "display_name": "Haskell", "notepad_template": "myFunction :: String -> String\n-- write the body of your function here\nmyFunction arg = \"running with \" ++ arg\n\nmain = do\n  -- run your function through some test cases here\n  -- remember: debugging is half the battle!\n  let result = myFunction \"test input\"\n  putStrLn result\n"}, {"dropdown_rank": 11, "codemirror": "", "short_name": "nolanguage", "prism": "none", "display_name": "No syntax"}, {"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}, {"dropdown_rank": 3, "prism": "ruby", "codemirror": "text/x-ruby", "codewars": "ruby", "short_name": "ruby", "case_convention": "snake", "notepad_template": "def my_function(arg)\n    # write the body of your function here\n    return \"running with #{arg}\"\nend\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nputs my_function('test input')\n", "display_name": "Ruby"}, {"dropdown_rank": 2, "prism": "java", "codemirror": "text/x-java", "codewars": "java", "short_name": "java", "case_convention": "camel", "notepad_template": "public class Solution {\n    public static String myFunction(String arg) {\n        // write the body of your function here\n        return \"running with \" + arg;\n    }\n    public static void main(String[] args) {\n        // run your function through some test cases here\n        // remember: debugging is half the battle!\n        String testInput = \"test input\";\n        System.out.println(myFunction(testInput));\n    }\n}", "display_name": "Java"}, {"dropdown_rank": 4, "prism": "javascript", "codemirror": "text/javascript", "codewars": "javascript", "short_name": "javascript", "case_convention": "camel", "notepad_template": "function myFunction(arg) {\n    // write the body of your function here\n    return 'running with ' + arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\nconsole.log(myFunction('test input'));\n", "display_name": "JavaScript"}, {"dropdown_rank": 5, "closest_languages": ["cpp", "java"], "prism": "c", "codemirror": "text/x-csrc", "codewars": "c", "short_name": "c", "case_convention": "camel", "notepad_template": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nconst char * my_function(char * arg) {\n    // write the body of your function here\n    return arg;\n}\n\nint main() {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    printf(\"%s\", my_function(\"test input\"));\n    return 0;\n}", "display_name": "C (beta)"}, {"dropdown_rank": 6, "closest_languages": ["c", "java"], "prism": "cpp", "codemirror": "text/x-c++src", "codewars": "cpp", "short_name": "cpp", "case_convention": "camel", "notepad_template": "#include <iostream>\nusing namespace std;\n\nstring myFunction (const string& arg)\n{\n    // write the body of your function here\n    return \"running with \" + arg;\n}\n\nint main ()\n{\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    cout << myFunction (\"test input\");\n    return 0;\n}", "display_name": "C++ (beta)"}, {"dropdown_rank": 7, "closest_languages": ["java"], "prism": "csharp", "codemirror": "text/x-csharp", "codewars": "csharp", "short_name": "csharp", "case_convention": "camel", "notepad_template": "using System;\n\nnamespace Solution\n{\n    class Solution\n    {\n        public static string MyFunction(string arg)\n        {\n            // Write the body of your function here\n            return $\"Running with {arg}\";\n        }\n\n        public static void Main(string[] args)\n        {\n            // Run your function through some test cases here.\n            // Remember: debugging is half the battle!\n            string testInput = \"test input\";\n            Console.WriteLine(MyFunction(testInput));\n        }\n    }\n}\n", "display_name": "C# (beta)"}, {"dropdown_rank": 9, "closest_languages": ["javascript"], "prism": "php", "codemirror": "text/x-php", "codewars": "php", "short_name": "php", "case_convention": "camel", "notepad_template": "<?php\n\nfunction myFunction($arg) {\n    // write the body of your function here\n    return \"running with \" . $arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\necho myFunction(\"test input\");\n\n?>", "display_name": "PHP (beta)"}, {"dropdown_rank": 8, "closest_languages": ["c", "java"], "prism": "objectivec", "codemirror": "text/x-objectivec", "short_name": "objectivec", "case_convention": "camel", "notepad_template": "#import <Foundation/Foundation.h>\n#import <stdio.h>\n\n@interface Solution : NSObject\n\n+ (NSString *)myFunction:(NSString *)arg;\n\n@end\n\n@implementation Solution\n\n+ (NSString *)myFunction:(NSString *)arg\n{\n  // write the body of your function here\n  return [@\"running with \" stringByAppendingString:arg];\n}\n\n@end\n\nint main (int argc, const char * argv[])\n{\n  @autoreleasepool {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    NSString * result = [Solution myFunction:@\"test input\"];\n    printf(\"%s\", [result UTF8String]);\n  }\n}", "display_name": "Objective-C (beta)"}], "PRISM_LANGUAGES": [{"dropdown_rank": 11, "codemirror": "", "short_name": "nolanguage", "prism": "none", "display_name": "No syntax"}, {"short_name": "html", "prism": "markup", "display_name": "HTML"}, {"short_name": "sql", "prism": "sql", "display_name": "SQL"}, {"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}, {"dropdown_rank": 3, "prism": "ruby", "codemirror": "text/x-ruby", "codewars": "ruby", "short_name": "ruby", "case_convention": "snake", "notepad_template": "def my_function(arg)\n    # write the body of your function here\n    return \"running with #{arg}\"\nend\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nputs my_function('test input')\n", "display_name": "Ruby"}, {"dropdown_rank": 2, "prism": "java", "codemirror": "text/x-java", "codewars": "java", "short_name": "java", "case_convention": "camel", "notepad_template": "public class Solution {\n    public static String myFunction(String arg) {\n        // write the body of your function here\n        return \"running with \" + arg;\n    }\n    public static void main(String[] args) {\n        // run your function through some test cases here\n        // remember: debugging is half the battle!\n        String testInput = \"test input\";\n        System.out.println(myFunction(testInput));\n    }\n}", "display_name": "Java"}, {"dropdown_rank": 4, "prism": "javascript", "codemirror": "text/javascript", "codewars": "javascript", "short_name": "javascript", "case_convention": "camel", "notepad_template": "function myFunction(arg) {\n    // write the body of your function here\n    return 'running with ' + arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\nconsole.log(myFunction('test input'));\n", "display_name": "JavaScript"}, {"dropdown_rank": 5, "closest_languages": ["cpp", "java"], "prism": "c", "codemirror": "text/x-csrc", "codewars": "c", "short_name": "c", "case_convention": "camel", "notepad_template": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nconst char * my_function(char * arg) {\n    // write the body of your function here\n    return arg;\n}\n\nint main() {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    printf(\"%s\", my_function(\"test input\"));\n    return 0;\n}", "display_name": "C (beta)"}, {"dropdown_rank": 6, "closest_languages": ["c", "java"], "prism": "cpp", "codemirror": "text/x-c++src", "codewars": "cpp", "short_name": "cpp", "case_convention": "camel", "notepad_template": "#include <iostream>\nusing namespace std;\n\nstring myFunction (const string& arg)\n{\n    // write the body of your function here\n    return \"running with \" + arg;\n}\n\nint main ()\n{\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    cout << myFunction (\"test input\");\n    return 0;\n}", "display_name": "C++ (beta)"}, {"dropdown_rank": 7, "closest_languages": ["java"], "prism": "csharp", "codemirror": "text/x-csharp", "codewars": "csharp", "short_name": "csharp", "case_convention": "camel", "notepad_template": "using System;\n\nnamespace Solution\n{\n    class Solution\n    {\n        public static string MyFunction(string arg)\n        {\n            // Write the body of your function here\n            return $\"Running with {arg}\";\n        }\n\n        public static void Main(string[] args)\n        {\n            // Run your function through some test cases here.\n            // Remember: debugging is half the battle!\n            string testInput = \"test input\";\n            Console.WriteLine(MyFunction(testInput));\n        }\n    }\n}\n", "display_name": "C# (beta)"}, {"dropdown_rank": 9, "closest_languages": ["javascript"], "prism": "php", "codemirror": "text/x-php", "codewars": "php", "short_name": "php", "case_convention": "camel", "notepad_template": "<?php\n\nfunction myFunction($arg) {\n    // write the body of your function here\n    return \"running with \" . $arg;\n}\n\n// run your function through some test cases here\n// remember: debugging is half the battle!\necho myFunction(\"test input\");\n\n?>", "display_name": "PHP (beta)"}, {"closest_languages": ["java"], "prism": "swift", "codewars": "swift", "short_name": "swift", "case_convention": "camel", "display_name": "Swift (beta)"}, {"dropdown_rank": 8, "closest_languages": ["c", "java"], "prism": "objectivec", "codemirror": "text/x-objectivec", "short_name": "objectivec", "case_convention": "camel", "notepad_template": "#import <Foundation/Foundation.h>\n#import <stdio.h>\n\n@interface Solution : NSObject\n\n+ (NSString *)myFunction:(NSString *)arg;\n\n@end\n\n@implementation Solution\n\n+ (NSString *)myFunction:(NSString *)arg\n{\n  // write the body of your function here\n  return [@\"running with \" stringByAppendingString:arg];\n}\n\n@end\n\nint main (int argc, const char * argv[])\n{\n  @autoreleasepool {\n    // run your function through some test cases here\n    // remember: debugging is half the battle!\n    NSString * result = [Solution myFunction:@\"test input\"];\n    printf(\"%s\", [result UTF8String]);\n  }\n}", "display_name": "Objective-C (beta)"}], "next_step_type_enum": {"login": "_NEXT_STEP_TYPE_LOGIN_", "purchase": "_NEXT_STEP_TYPE_PURCHASE_", "done": "_NEXT_STEP_TYPE_DONE_", "question": "_NEXT_STEP_TYPE_QUESTION_"}, "CACHEBUST_QUERY_STR": "?bust=135", "DEFAULT_C18N_LANGUAGE": {"dropdown_rank": 1, "prism": "python", "codemirror": "text/x-python", "codewars": "python", "short_name": "python", "case_convention": "snake", "notepad_template": "def my_function(arg):\n    # write the body of your function here\n    return 'running with %s' % arg\n\n# run your function through some test cases here\n# remember: debugging is half the battle!\nprint my_function('test input')\n", "display_name": "Python"}};
+
+        
+        window.JS_VARS = {"questions_fully_attempted": ["largest-stack", "find-in-ordered-set", "stock-price", "queue-two-stacks", "which-appears-twice", "find-rotation-point", "matching-parens", "reverse-string-in-place", "balanced-binary-tree", "compress-url-list", "bst-checker", "bracket-validator", "permutation-palindrome", "temperature-tracker", "inflight-entertainment", "recursive-string-permutations", "shuffle", "highest-product-of-3", "top-scores", "simulate-5-sided-die", "reverse-linked-list", "linked-list-cycles", "merging-ranges", "second-largest-item-in-bst", "find-duplicate-optimize-for-space", "rectangular-love", "word-cloud", "two-egg-problem", "simulate-7-sided-die", "nth-fibonacci", "product-of-other-numbers", "find-unique-int-among-duplicates", "cake-thief", "delete-node", "kth-to-last-node-in-singly-linked-list", "reverse-words"], "url_content_type": "question"};
+        
+
+        
+    </script>
+
+
+
+    
+
+    
+    <script type="text/javascript" src="./32.Top Scores _ Interview Cake_files/saved_resource"></script>
+    <script type="text/javascript">
+        Stripe.setPublishableKey('pk_live_4wtgGTkgBtk4YIB9JDjYdOD0');
+    </script>
+    
+
+    
+    
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./32.Top Scores _ Interview Cake_files/iPrOY23SGAp.html" style="border: none;"></iframe></div></div></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=149278655279066";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script id="twitter-wjs" src="./32.Top Scores _ Interview Cake_files/widgets.js"></script>
+    
+
+    
+    
+        
+            <script type="text/ng-template" id="/partials/animation.html"><div class="animation-wrapper">
+    <div class="animation" id="Stage-[[getCompId()]]" ng-class="getCompId()">
+    </div>
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/animation_iframe.html"><div class="animation-iframe-wrapper">
+    <iframe class="animation-iframe animation-iframe-[[getCompId()]]"></iframe>
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/code-inline.html"><span class="ic-code-inline" ng-transclude></span></script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/code-block.html"><pre class="language-[[language]]">
+  <code class="language-[[language]]" ng-transclude></code>
+</pre>
+<span class="warning-message" ng-show="warningMessage" ng-bind="warningMessage"></span>
+<div class="select-content-language" ng-hide="staticLanguage" ng-cloak>
+
+    <select ng-model="contentLanguage" ng-options="language.display_name for language in contentLanguages" ng-change="updateLanguage(contentLanguage)"></select>
+
+</div>
+<span class="only-content-language" ng-show="staticLanguage" ng-bind="onlyLanguage"></span>
+<!-- FE TESTING <button class="run-tests" ng-show="showTests && hasTests" ng-click="runTests()">TEST</button> -->
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/complexity.html"><span class="complexity"><span math>O([[getComplexityMarkup()]])</span></span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/concept.html"><span class="concept-wrapper" ng-init="showConcept=false">
+
+    <span ng-click="showConcept=!showConcept" class="concept">
+        <span class="concept-name" ng-transclude></span>
+        <span class="show-concept-icon">&#8628;</span>
+    </span>
+
+    <div ng-show="showConcept" class="slide concept-explanation" ng-include="conceptPartialUrl">
+        Loading...
+    </div>
+
+</span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/function.html"><span class="ic-function"><span class="name" ng-transclude></span>()</span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/heading.html"><h3 class="heading slide" ng-show="shouldShow()" ng-cloak>[[getHeadingText()]]</h3>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/inline-footnote.html"><span class="footnote-wrapper" ng-init="show = false">
+    <span class="show-footnote-icon" ng-click="show = !show">&#8628;</span>
+    <p class="footnote" ng-transclude ng-show="show">Loading...</p>
+</span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/loading.html"><div class="Loading">
+    Loading...
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/math.html"><span class="ic-math" ng-class="{'block': isBlock()}" ng-transclude></span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/note.html"><div class="note slide" ng-show="shouldShow()">
+    <div class="note-content" ng-transclude>
+    </div>
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/section.html"><div class="section-wrapper" ng-class="getSectionClass()" ng-init="ready=false" ng-show="shouldShow()">
+    <span heading="[[section]]" hide-heading="[[hideHeading]]"></span>
+
+    <div class="section" ng-class="getSectionClass()" ng-transclude>
+    </div>
+
+    
+</div>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/variable.html"><span class="ic-variable" ng-transclude></span>
+</script>
+        
+    
+        
+            <script type="text/ng-template" id="/partials/words.html"><span class="ic-words" ng-transclude></span>
+</script>
+        
+    
+
+
+    <!-- load current-user json with initial http request -->
+    <div class="hidden" data-preload-resource="/api/v1/current-user/" data-thejson="{&quot;id&quot;:2385549,&quot;username&quot;:&quot;gokumd&quot;,&quot;email&quot;:&quot;gokumd@gmail.com&quot;,&quot;date_joined&quot;:&quot;2016-01-02T20:29:37.549407+00:00&quot;,&quot;first_name&quot;:&quot;Goku&quot;,&quot;last_name&quot;:&quot;Mohandas&quot;,&quot;full_name&quot;:&quot;Goku Mohandas&quot;,&quot;short_name&quot;:&quot;Goku&quot;,&quot;is_anonymous&quot;:false,&quot;is_on_last_question&quot;:false,&quot;percent_done&quot;:66,&quot;num_questions_done&quot;:29,&quot;num_questions_remaining&quot;:15,&quot;recruiting_is_interested_in_intros&quot;:true,&quot;is_full_access&quot;:true,&quot;first_payment_date&quot;:&quot;2016-01-02T22:17:39.210063Z&quot;,&quot;last_payment_date&quot;:&quot;2016-01-02T22:17:37Z&quot;,&quot;num_free_questions_left&quot;:0,&quot;terms_has_agreed_to_latest&quot;:false,&quot;preferred_content_language&quot;:&quot;python&quot;,&quot;preferred_notepad_language&quot;:&quot;python&quot;,&quot;is_staff&quot;:false,&quot;auth_providers_human_readable_list&quot;:&quot;Google&quot;,&quot;num_auth_providers&quot;:1,&quot;auth_email&quot;:&quot;gokumd@gmail.com&quot;}">
+        {"id":2385549,"username":"gokumd","email":"gokumd@gmail.com","date_joined":"2016-01-02T20:29:37.549407+00:00","first_name":"Goku","last_name":"Mohandas","full_name":"Goku Mohandas","short_name":"Goku","is_anonymous":false,"is_on_last_question":false,"percent_done":66,"num_questions_done":29,"num_questions_remaining":15,"recruiting_is_interested_in_intros":true,"is_full_access":true,"first_payment_date":"2016-01-02T22:17:39.210063Z","last_payment_date":"2016-01-02T22:17:37Z","num_free_questions_left":0,"terms_has_agreed_to_latest":false,"preferred_content_language":"python","preferred_notepad_language":"python","is_staff":false,"auth_providers_human_readable_list":"Google","num_auth_providers":1,"auth_email":"gokumd@gmail.com"}
+    </div>
+
+    
+
+    <!-- Login Modal -->
+    <div ng-controller="LoginModalCtrl" class="modal fade login-modal ng-scope" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Log In" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 ng-bind="note" class="ng-binding">Log in to continue</h3>
+                    <button type="button" ng-show="closeable" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="login-btns">
+    <a ng-href="/auth/login/github/?next=%2Fnext" class="btn btn-soc-github" href="https://www.interviewcake.com/auth/login/github/?next=%2Fnext"><i class="fa fa-github"></i> | Log in with Github</a>
+    <a ng-href="/auth/login/google-oauth2/?next=%2Fnext" class="btn btn-soc-google-plus" href="https://www.interviewcake.com/auth/login/google-oauth2/?next=%2Fnext"><i class="fa my-fa-google-plus"></i> | Log in with Google</a>
+    <a ng-href="/auth/login/facebook/?next=%2Fnext" class="btn btn-soc-facebook" href="https://www.interviewcake.com/auth/login/facebook/?next=%2Fnext"><i class="fa my-fa-facebook"></i> | Log in with Facebook</a>
+</div>
+<p class="login-reassurance">
+    <small>
+        We'll never post on your wall or message your friends.
+    </small>
+</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="BFZJuLv3CoFQDJl4QxxPaves3agmRUqv8eo5MQGX8XXxsOxae2M8HeCaoZwP58EK">
+<div id="loading">
+. . .
+</div>
+
+
+<link href="./32.Top Scores _ Interview Cake_files/css(1)" rel="stylesheet" type="text/css">
+
+<iframe name="stripeXDM_default689623_provider" id="stripeXDM_default689623_provider" src="./32.Top Scores _ Interview Cake_files/channel.html" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./32.Top Scores _ Interview Cake_files/saved_resource(1).html"></iframe></body></html>
