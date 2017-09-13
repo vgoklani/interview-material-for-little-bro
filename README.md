@@ -1,2 +1,1 @@
-# interview-prep
-python interview questions
+easy interview questions for Sanjay
